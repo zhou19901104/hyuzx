@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>后台用户管理-{$Think.config.cms_name}</title>
+	<include file="Public/head" />
+	<style>td{ height:22px; line-height:22px}</style>
+</head>
+<body>
+	<div class="midder">
+<table style='float:left;width:20%;'>
+	<tr>
+		<td colspan="10" class="table_title">文章管理</td>
+	</tr>
+	<tr class="Toolbar_inbox ct">
+		<td>文章类别</td>
+	</tr>
+	<volist name='class_list' id='class_list'>
+		<tr>
+			<if condition='$id eq $class_list["id"]'>
+				<td style='border: 1px solid #C6DCF2;background:#999;'>
+				<a style='color:#fff;' href="{:U('/Admin/Content/content_list',array('id'=>$class_list['id']))}">{$class_list.class_name}</td>
+			<else />
+				<td style='border: 1px solid #C6DCF2;'>
+				<a href="{:U('/Admin/Content/content_list',array('id'=>$class_list['id']))}">{$class_list.class_name}</td>
+			</if>
+		</tr>
+	</volist>
+	<volist name='class_afer' id="c_afer">
+		<tr>
+			<if condition='$id eq $c_afer["id"]'>
+				<td style='border: 1px solid #C6DCF2;background:#999;'>
+				<a style='color:#fff;' href="{:U('/Admin/Content/content_list',array('id'=>$c_afer['id']))}">{$c_afer.class_name}</td>
+			<else />
+				<td style='border: 1px solid #C6DCF2;'>
+				<a href="{:U('/Admin/Content/content_list',array('id'=>$c_afer['id']))}">{$c_afer.class_name}</td>
+			</if>
+		</tr>
+	</volist>
+</table>
+<table  cellpadding="0" cellspacing="0" style='float:right;width:80%;'>
+<tr>
+            <td colspan="10" class="table_title"><span class="fr">
+                    <a href="{:U('/Admin/Content/content_add')}">添加文章</a>
+                </span>
+            </td>
+
+</tr>
+<!--<tr>
+	<td colspan="0">
+		<form action="{:U('/Admin/Content/out_excel')}" method='POST'>
+			<input type='submit' value='导出Excel'>
+		</form>
+    </td>
+</tr>-->
+            <tr class="Toolbar_inbox ct">
+                <td align='center' width='20'>文章ID</td>
+                <td align='center' width='100'>标题</td>
+                <td align='center' width='50'>发布时间</td>
+                <td align='center' width='50'>管理操作</td>
+            </tr>
+        <volist name="content_list" id="vo">
+            <tr class='ol'>
+                <td align='center'>{$vo.id}</td>
+                <td align='center'>{$vo.title}</td>
+                <td align='center'>{$vo.createtime|date="Y-m-d",###}</td>
+				<td align='center'>
+                    <a href="{:U('/Admin/Content/content_edit/',array('id'=>$vo['id']))}">修改</a>
+                    | <a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/Content/content_del/',array('id'=>$vo['id']))}','确定删除该文章吗?')">删除</a>
+                </td>
+            </tr>
+        </volist>
+		
+        <tr class="tr">
+          <td colspan="13" class="pages" style='text-align:center;'>
+            {$page}
+          </td>
+        </tr>
+		
+</table>
+</div>
+</body>
+	</html>

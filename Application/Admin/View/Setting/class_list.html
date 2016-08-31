@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>后台用户管理-{$Think.config.cms_name}</title>
+	<include file="Public:head" />
+	<style>td{ height:22px; line-height:22px}</style>
+</head>
+<body>
+	<div class="midder">
+
+<table  cellpadding="0" cellspacing="0">
+<tr>
+            <td colspan="6" class="table_title">
+               栏目管理  <span class="fr">
+                    <a href="{:U('/Admin/Setting/class_add')}">添加栏目</a>
+                </span>
+            </td>
+</tr>
+            <tr class="Toolbar_inbox ct">
+                <td align='center'>排序</td>
+                <td align='center'>分类名称</td>
+                <td align='center'>管理操作</td>
+            </tr>
+        <volist name="class_list" id="vo">
+            <tr class='ol'>
+                <td align='center'>{$vo.sort}</td>
+                <td>{$vo.class_name}</td>
+                <td align='center'>
+                    <a href="{:U('/Admin/Setting/class_edit/',array('id'=>$vo['id']))}">修改</a>
+                    | <a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/Setting/class_del/',array('id'=>$vo['id']))}','确定删除该栏目吗?')">删除</a>
+                </td>
+            </tr>
+			<volist name="vo.pp_class" id="pp_vo">
+				<tr class='od'>
+					<td align='center'>{$pp_vo.sort}</td>
+					<td><div class="boarda">{$pp_vo.class_name}</div></td>
+					<td align='center'>
+						<a href="{:U('/Admin/Setting/class_edit/',array('id'=>$pp_vo['id']))}">修改</a>
+						| <a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/Setting/class_del/',array('id'=>$pp_vo['id']))}','确定删除该栏目吗?')">删除</a>
+					</td>
+				</tr>
+				<volist name="pp_vo.kk_class" id="kk_vo">
+					<tr class='od'>
+						<td align='center'>{$kk_vo.sort}</td>
+						<td><div class="boardb">{$kk_vo.class_name}</div></td>
+						<td align='center'>
+							<a href="{:U('/Admin/Setting/class_edit/',array('id'=>$kk_vo['id']))}">修改</a>
+							| <a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/Setting/class_del/',array('id'=>$kk_vo['id']))}','确定删除该栏目吗?')">删除</a>
+						</td>
+					</tr>
+					<foreach name="kk_vo['cc_class']" item="c_vo">
+						<tr class='od'>
+							<td align='center'>{$c_vo.sort}</td>
+							<td><div class="boardc">{$c_vo.class_name}</div></td>
+							<td align='center'>
+								<a href="{:U('/Admin/Setting/class_edit/',array('id'=>$c_vo['id']))}">修改</a>
+								| <a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/Setting/class_del/',array('id'=>$c_vo['id']))}','确定删除该栏目吗?')">删除</a>
+							</td>
+						</tr>
+					</foreach>
+				</volist>
+			</volist>
+        </volist>
+</table>
+</div>
+</body>
+	</html>

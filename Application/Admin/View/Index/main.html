@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Copyright" content="{$ikphp.ikphp_site_name}" />
+<title>管理中心-{$Think.config.cms_name}</title>
+<include file="Public:head" />
+<style>.fbox{float:left;width:45%;margin-right:10px;}</style>
+</head>
+<body>
+
+<div class="midder">
+
+
+<table>
+	<tr class="table_title">
+		<td colspan="4">服务器信息</td>
+	</tr>
+    <volist name="system" id="vo" key="k">
+                                <php> if($k%2==1) echo "<tr class='ol'>";</php>
+                                <td width="120" align="right">{$key}：</td>
+                                <td>{$vo}</td>
+                                <php> if($k%2==0) echo "</tr>";</php>
+                        </volist>
+                            <php>if(count($caches)%2==1) echo '<td>&nbsp;</td><td>&nbsp;</td></tr>';</php>
+<tr class="ol">
+<td>Temp/cache</td><td><if condition="!is_writable('./Temp/cache')"><font color="red">不可写</font>(请设置为可写777权限)<else />可写</if></td><td>Public/upload目录</td><td><if condition="!is_writable('./Public/upload')"><font color="red">不可写</font>(请设置为可写777权限)<else />可写</if></td></tr>
+</table>
+
+</div>
+
+</body>
+</html>

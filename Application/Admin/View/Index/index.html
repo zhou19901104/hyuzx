@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理中心-{$Think.config.cms_name}</title>
+<include file="Public/head" />
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/css/main.css"/>
+<script language="javascript">
+$(function(){
+	//窗口
+	var set_h = function(){
+        var heights = document.documentElement.clientHeight-80;
+        $("#MainIframe, .menubox").height(heights-9);
+        $('body').css('overflow','hidden');
+    }
+    $(window).resize(function(){
+        set_h();
+    });
+    set_h();
+	//菜单事件
+    //默认载入左侧菜单
+    $('.MenuList').load($('.MenuList').attr('data-uri'));
+	//左侧菜单收缩
+	$('.actuator').live('click',function(){
+		var _self = $(this), par = _self.parent();
+		if(par.attr('class')=='treemenu_on')
+		{
+			par.removeClass().addClass('treemenu_off');
+			par.find('.submenu').slideUp(100);
+		}else{
+			par.removeClass().addClass('treemenu_on');
+			par.find('.submenu').slideDown(100);
+		}		
+	});	
+
+    //顶部菜单点击
+    $('#topnav a').live('click', function(){
+        var data_id = $(this).attr('data-id');
+        //改变样式
+        $(this).parent().addClass("on").siblings().removeClass("on");
+        //改变左侧
+		$.get($('.MenuList').attr('data-uri'), { id: data_id },
+			function(data){
+				$('.MenuList').html(data);
+				$('#MainIframe').attr('src',$('.MenuList li ul li a').attr('href'));
+		});
+    });	
+	$('.submenu li').live('click',function(){
+		$('.submenu li').each(function(i){
+			$(this).find('a').removeClass();
+		});
+		$(this).find('a').removeClass().addClass('submenuB');
+	});
+});
+function refresh() {
+	parent.MainIframe.location.reload();
+}
+</script>
+</head>
+<body scroll="no" style="margin:0; padding:0;">
+
+<div class="header">
+    <div class="logo"><a href="{:U('/index')}" >&nbsp;</a></div>
+    <div class="nav_sub">
+    	<if condition='$re.pj neq NULL'>
+    		<a href="javascript:void(0);" class="leftclick">隐藏左菜单</a>
+       您好,{$re['brand']} &nbsp; | 
+       <a href="javascript:void(0);" onclick="refresh();">刷新</a> | 
+       <a href="{:U('/Admin/Login/logout')}" target="_parent">[退出]</a><br>
+       <h1>
+
+       	您是我们
+       	<eq name="re.pj" value="1"><font color='yellow'>★☆☆☆☆</font></eq>
+       	<eq name="re.pj" value="2"><font color='yellow'>★★☆☆☆</font></eq>
+       	<eq name="re.pj" value="3"><font color='yellow'>★★★☆☆</font></eq>
+       	<eq name="re.pj" value="4"><font color='yellow'>★★★★☆</font></eq>
+       	<eq name="re.pj" value="5"><font color='yellow'>★★★★★</font></eq>
+       	用户
+       </h1>
+
+    		<else />
+    	<a href="javascript:void(0);" class="leftclick">隐藏左菜单</a>
+       您好,{$_SESSION['username']} &nbsp; | 
+       <a href="javascript:void(0);" onclick="refresh();">刷新</a> | 
+       <a href="{:U('Login/logout')}" target="_parent">[退出]</a><br>
+    	</if>
+    </div>
+    <ul class="nav" id="topnav">	
+		<volist name="main_menu" id="vo">
+			<?php
+				if($i == 1){	//设置首菜单ID
+					$first_menu_id = $vo['id'];
+				}
+			?>
+			
+			<li <eq name="i" value="1">class="on"</eq>><a style="outline:none;" hidefocus="true" data-id="{$vo['id']}" href="javascript:;">{$vo.title}</a></li>
+		
+		</volist>
+    </ul>                   
+</div>
+<div class="LeftMenu">
+    <div class="menubox">
+        <ul id="root_index" class="MenuList" data-uri="<?php echo U('/Admin/Index/left', array('id'=>$first_menu_id));	?>">
+        	{$sub_menu_html}
+
+        </ul>
+        <div class="cl"></div>
+    </div>
+                        
+</div>
+
+<div class="right_main">
+	<div class="header_line"><span>&nbsp;</span></div>
+	<iframe width="100%" scrolling="yes" height="100%" frameborder="0" noresize="" src="{:U('/Admin/Index/main')}" name="MainIframe" id="MainIframe"></iframe>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>后台用户管理-{$Think.config.cms_name}</title>
+	<include file="Public:head" />
+	
+</head>
+
+<style type="text/css">
+.file{ position:absolute; top:1; right:700px; height:24px; filter:alpha(opacity:0);opacity: 0;width:375px ;border:1px solid red;}
+</style>
+<body>
+	<div class="midder">
+<form action="{:U('/Admin/Setting/banner_add')}" method="post" name="form" id="myform" enctype="multipart/form-data">
+<table  cellpadding="0" cellspacing="0">
+<tr>
+            <td colspan="9" class="table_title">
+               添加幻灯片
+            </td>
+</tr>
+
+                <tr class="tr rt">
+                    <td width="100">图片：</td>
+                    <td colspan="3" class="lt">
+                        <input type="text" name="img_url" id="img_url" style="width:300px;" value="">
+						<input type='button' class='btn' value='浏览...' />
+						<input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('img_url').value=this.value" />
+                    </td>
+                </tr>
+				
+				<tr class="tr rt">
+                    <td width="100">链接地址URL:</td>
+                    <td colspan="3" class="lt">
+                        <input type="text" name="url" style="width:200px;" value="http://">
+                    </td>
+                </tr>
+				
+				<tr class="tr rt">
+                    <td width="100">排序:</td>
+                    <td colspan="3" class="lt">
+                        <input type="text" name="sort" id="sort" style="width:200px;" value="0">
+                    </td>
+                </tr>
+
+                <tr class="tr lt">
+        <td colspan="4">
+            
+                <input class="bginput" type="submit" name="submit" value="添 加">
+            &nbsp;
+            <input class="bginput" type="button" onclick="javascript:history.back(-1);" value="返 回" ></td>
+    </tr>
+    
+</table>
+</form>
+</div>
+
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    //var ue = UE.getEditor('content');
+	
+	var ue = UE.getEditor('ue_content');
+    
+</script>
+</body>
+	</html>

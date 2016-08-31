@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>后台用户管理-{$Think.config.cms_name}</title>
+	<include file="Public:head" />
+	<style>td{ height:22px; line-height:22px}</style>
+</head>
+<body>
+	<div class="midder">
+
+<table  cellpadding="0" cellspacing="0">
+<tr>
+            <td colspan="6" class="table_title">
+               首页幻灯片管理  <span class="fr">
+                    <a href="{:U('/Admin/Setting/banner_add')}">添加幻灯片</a>
+                </span>
+            </td>
+</tr>
+            <tr class="Toolbar_inbox ct">
+                <td align='center'>ID</td>
+                <td align='center'>缩略图</td>
+                <td align='center'>管理操作</td>
+            </tr>
+        <volist name="img_list" id="vo">
+            <tr class='ol'>
+                <td align='center'>{$vo.id}</td>
+                <td align='center'>
+				<img style='width:145px;height:65px;' src='/jiaen_new{$vo.img_url}'>
+				</td>
+                <td align='center'>
+                    <a href="{:U('/Admin/Setting/banner_edit/',array('id'=>$vo['id']))}">修改</a>
+                    | <a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/Setting/banner_del/',array('id'=>$vo['id']))}','确定删除该幻灯片吗?')">删除</a>
+                </td>
+            </tr>
+        </volist>
+        <tr class="tr">
+          <td colspan="6" class="pages">
+            {$page}
+          </td>
+        </tr>
+</table>
+<div class="pagebar">{$pageUrl}</div>
+</div>
+</body>
+	</html>

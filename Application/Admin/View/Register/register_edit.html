@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>后台用户管理-{$Think.config.cms_name}</title>
+	<include file="Public:head" />
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/date/css/pikaday.css"/>
+	<script type="text/javascript" src="__PUBLIC__/date/js/pikaday.min.js"></script>
+</head>
+<script>
+	
+	function changChild(tid){  
+		$.post("{:U('/Admin/Register/get_yisheng/')}",{"id":tid},function(json){  
+			$("#child").html("");//清空专家列表
+			for(var i=0;i<json.length;i++){  
+				//添加专家
+				$("#child").append("<option value='"+json[i].id+"'>"+json[i].experts_name+"</option>");  
+			}  
+		},'json');  
+	}  
+	$(function(){  
+		//初始化科室列表
+		$.post("{:U('/Admin/Register/get_list/')}",null,function(json){  
+			for(var i=0;i<json.length;i++){  
+				//添加科室
+				$("#parent").append("<option value='"+json[i].id+"'>"+json[i].department_name+"</option>");  
+			}  
+			changChild($("#parent").val());  
+		},'json');  
+		$("#parent").change(function(){  
+			changChild($(this).val());  
+		}); 
+	});
+
+</script>
+<body>
+	<div class="midder">
+
+<table  cellpadding="0" cellspacing="0">
+<tr>
+            <td colspan="9" class="table_title">
+               挂号信息修改
+            </td>
+</tr>
+          
+            <form action="{:U('/Admin/Register/register_edit')}" method="post" name="form" id="myform">
+    
+            
+
+                <tr class="tr rt">
+                    <td width="100">科室：</td>
+                    <td colspan="3" class="lt">
+                        <select name="department_id" id='parent'>
+						</select>
+                    </td>
+                </tr>
+				
+				<tr class="tr rt">
+                    <td width="100">专家：</td>
+                    <td colspan="3" class="lt">
+                        <select name="experts_id" id='child'>
+						</select>
+                    </td>
+                </tr>
+				
+				
+                <tr class="tr rt">
+                    <td width="100">日期：</td>
+                    <td colspan="3" class="lt">
+						<input name="user_date" class="wenben" type="text" id='datepicker' readonly="readonly" value='{$register_re.user_date}'>
+                    </td>
+                </tr>
+				
+				<tr class="tr rt">
+                    <td width="100">时间：</td>
+                    <td colspan="3" class="lt">
+					<eq name="register_re.user_time" value="1">
+						<input type="radio" name="user_time" value="1" id="RadioGroup4_0" checked>上午
+						<input type="radio" name="user_time" value="2" id="RadioGroup4_0">下午
+					<else />
+						<input type="radio" name="user_time" value="1" id="RadioGroup4_0">上午
+						<input type="radio" name="user_time" value="2" id="RadioGroup4_0" checked>下午
+					</eq>
+						<input type='hidden' name='id' value='{$register_re.id}'>
+                    </td>
+                </tr>
+				
+                <tr class="tr lt">
+        <td colspan="4">
+            
+                <input class="bginput" type="submit" name="submit" value="修 改">
+            &nbsp;
+            <input class="bginput" type="button" onclick="javascript:history.back(-1);" value="返 回" ></td>
+    </tr>
+    </form>
+</table>
+</div>
+</body>
+	</html>
+<script type="text/javascript">
+
+    var picker = new Pikaday(
+    {
+        field: document.getElementById('datepicker'),
+        firstDay: 1,
+        minDate: new Date('2010-01-01'),
+        maxDate: new Date('2020-12-31'),
+        yearRange: [2000,2020]
+    });
+
+</script>
