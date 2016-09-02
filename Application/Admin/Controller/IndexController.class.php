@@ -2,45 +2,53 @@
 
 namespace Admin\Controller;
 
+use Think\Model;
+
 class IndexController extends CommonController{
     
-     public function _initialize()
-     {
-       parent::_initialize();	//RBAC 验证接口初始化
-
-     }
 
     public function index()
     {
 		
-      /*  $username = session('username');    // 用户名
-        $roleid   = session('roleid');      // 角色ID
+        $username = session('username');    // 用户名
+        $roleid   = session('role_id');      // 角色ID
         if($username == C('SPECIAL_USER')){     //如果是无视权限限制的用户，则获取所有主菜单
-            $sql = 'SELECT `id`,`title`,name FROM `'.C('db_prefix').'node` WHERE ( `status` =1 AND `display`=1 AND `level`<>1 AND id not in(103,107,100,97,110)) ORDER BY sort DESC';
+            $sql = 'SELECT `id`,`title`,name
+                    FROM `'.C('DB_PREFIX').'node`
+                    WHERE ( `status` =1 AND `display`=1 AND `level`<>1 AND id not in(103,107,100,97,110))
+                    ORDER BY sort DESC';
         }else{  //更具角色权限设置，获取可显示的主菜单
-          $sql = "SELECT `".C('db_prefix')."node`.`id` as id,`".C('db_prefix')."node`.`title` as title FROM `".C('db_prefix')."node`,`".C('db_prefix')."access` WHERE `".C('db_prefix')."node`.id=`".C('db_prefix')."access`.node_id AND `".C('db_prefix')."access`.role_id=$roleid  AND  `".C('db_prefix')."node`.`status` =1 AND `".C('db_prefix')."node`.`display`=1 AND (`".C('db_prefix')."node`.`level` =0 OR `".C('db_prefix')."node`.`level` =2)  ORDER BY `".C('db_prefix')."node`.sort DESC";
+          $sql = "SELECT `".C('DB_PREFIX')."node`.`id` as id,`".C('DB_PREFIX')."node`.`title` as title
+                 FROM `".C('DB_PREFIX')."node`,`".C('DB_PREFIX')."access`
+                 WHERE `".C('DB_PREFIX')."node`.id=`".C('DB_PREFIX')."access`.node_id
+                 AND `".C('DB_PREFIX')."access`.role_id=$roleid  AND  `".C('DB_PREFIX')."node`.`status` =1
+                 AND `".C('DB_PREFIX')."node`.`display`=1 AND (`".C('DB_PREFIX')."node`.`level` =0 OR `".C('DB_PREFIX')."node`.`level` =2)
+                 ORDER BY `".C('DB_PREFIX')."node`.sort DESC";
         }
 
         //$Model = new Model(); // 实例化一个model对象 没有对应任何数据表
 
         $main_menu = M('Node')->query($sql);
-        if ($_SESSION['roleid'] == 5) {
+
+        if ($_SESSION['role_id'] == 5) {
             $m = M('seller_info');
             $re = $m->where('uid = "'.$_SESSION['userid'].'"')->find();
             $this->assign('re',$re);
         }
         $this->assign('main_menu',$main_menu);
-        $this->assign('username',$username);*/
+        $this->assign('username',$username);
+
         $this->display();
     }
     
     public function left()
     {
-        $pid = $this->_get('id',intval,0);    //选择子菜单
+        $pid = I('get.id');    //选择子菜单
         $NodeDB = D('Node');
         $datas = $this->left_child_menu($pid);
         $parent_info = $NodeDB->getNode(array('id'=>$pid),'title');
-        //$sub_menu_html = '<dl>'; 
+        //$sub_menu_html = '<dl>';
+        $sub_menu_html = '';
         foreach($datas as $key => $_value) {
             $sub_array = $this->left_child_menu($_value['id']);
             $sub_menu_html .= "<li class=\"treemenu_on\"><a style=\"outline:none;\" hidefocus=\"true\" href=\"javascript:void(0)\" class=\"actuator\">{$_value[title]}</a><ul class=\"submenu\" style=\"display: block;\">";
@@ -79,9 +87,18 @@ class IndexController extends CommonController{
         $username = session('username');    // 用户名
         $roleid   = session('roleid');      // 角色ID
         if($username == C('SPECIAL_USER')){     //如果是无视权限限制的用户，则获取所有主菜单
-            $sql = "SELECT `id`,`data`,`title` FROM `".C('db_prefix')."node` WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=$pid ) ORDER BY sort DESC";
+            $sql = "SELECT `id`,`data`,`title`
+                    FROM `".C('DB_PREFIX')."node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=$pid )
+                    ORDER BY sort DESC";
         }else{
-            $sql = "SELECT `".C('db_prefix')."node`.`id` as `id` , `".C('db_prefix')."node`.`data` as `data`, `".C('db_prefix')."node`.`title` as `title` FROM `".C('db_prefix')."node`,`".C('db_prefix')."access` WHERE `".C('db_prefix')."node`.id = `".C('db_prefix')."access`.node_id AND `".C('db_prefix')."access`.role_id = $roleid AND `".C('db_prefix')."node`.`pid` =$pid AND `".C('db_prefix')."node`.`status` =1 AND `".C('db_prefix')."node`.`display` =2 AND `".C('db_prefix')."node`.`level` <>1 ORDER BY `".C('db_prefix')."node`.sort DESC";
+            $sql = "SELECT `".C('DB_PREFIX')."node`.`id` as `id` , `".C('DB_PREFIX')."node`.`data` as `data`, `".C('DB_PREFIX')."node`.`title` as `title`
+                    FROM `".C('DB_PREFIX')."node`,`".C('DB_PREFIX')."access`
+                    WHERE `".C('DB_PREFIX')."node`.id = `".C('DB_PREFIX')."access`.node_id
+                    AND `".C('DB_PREFIX')."access`.role_id = $roleid AND `".C('DB_PREFIX')."node`.`pid` =$pid
+                    AND `".C('DB_PREFIX')."node`.`status` =1 AND `".C('DB_PREFIX')."node`.`display` =2
+                    AND `".C('DB_PREFIX')."node`.`level` <>1
+                    ORDER BY `".C('DB_PREFIX')."node`.sort DESC";
         }
         $Model = new Model(); // 实例化一个model对象 没有对应任何数据表
         $result = $Model->query($sql);

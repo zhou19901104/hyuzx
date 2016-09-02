@@ -10,10 +10,7 @@ namespace Admin\Controller;
 
 class DoctorController extends CommonController{
 
-	public function _initialize(){
-       parent::_initialize();	//RBAC 验证接口初始化
-    }
-	
+
 	//医生列表
 	public function doctor_list () {
 		$list = M('doctor')->select();

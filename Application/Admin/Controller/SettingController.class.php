@@ -9,10 +9,7 @@ namespace Admin\Controller;
 
 class SettingController extends CommonController{
 
-	public function _initialize(){
-       parent::_initialize();	//RBAC 验证接口初始化
-    }
-	
+
 	//栏目列表
 	public function class_list() {
 	
@@ -36,7 +33,7 @@ class SettingController extends CommonController{
 	//添加栏目
 	public function class_add() {
 		if ($_POST) {
-			$class_data = $this->_post();
+			$class_data = I('post.');
 			$check = M('class')->where('class_name = "'.$class_data['class_name'].'"')->find();
 			if (!$check) {
 				$re = M('class')->add($class_data);
@@ -68,7 +65,7 @@ class SettingController extends CommonController{
 	//修改栏目
 	public function class_edit() {
 		if ($_POST) {
-			$class_data = $this->_post();
+			$class_data = I('post.');
 			$check = M('class')->where('class_name = "'.$class_data['id'].'"')->find();
 			if (!$check) {
 				$re = M('class')->where('id = "'.$class_data['id'].'"')->save($class_data);
@@ -81,7 +78,7 @@ class SettingController extends CommonController{
 				$this->error('栏目名称有重复，请重新输入！');
 			}
 		} else {
-			$id = $this->_get('id');
+			$id = I('get.id');
 			$class_info = M('class')->where('id = "'.$id.'"')->find();
 			$class_list = M('class')->where('pid = 0')->order('sort desc')->select();
 			
@@ -102,7 +99,7 @@ class SettingController extends CommonController{
 
 	//删除栏目
 	public function class_del() {
-		$id = $this->_get('id');
+		$id = I('get.id');
 		
 		$class_re = M('class')->where('id = "'.$id.'"')->delete();
 		$class_list_del = M('class')->where('pid = "'.$id.'"')->delete();
@@ -130,7 +127,7 @@ class SettingController extends CommonController{
 	//添加友情链接
 	public function link_add() {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = I('post.');
 			$data['time'] = time();
 			if ($data['link_url'] == '' || $data['link_name'] == '') {
 				$this->error('名称和URL都不能为空！');
@@ -155,7 +152,7 @@ class SettingController extends CommonController{
 	//修改友情链接
 	public function link_edit() {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = I('post.');
 			$check = M('link')->where('link_name = "'.$data['link_name'].'"')->find();
 			if (!$check) {
 				$re = M('link')->where('id = "'.$data['id'].'"')->save($data);
@@ -168,7 +165,7 @@ class SettingController extends CommonController{
 				$this->error('友情链接名称重复！');
 			}
 		} else {
-			$id = $this->_get('id');
+			$id = I('get.id');
 			$info = M('link')->where('id = "'.$id.'"')->find();
 			$this->assign('info',$info);
 			$this->display();
@@ -177,7 +174,7 @@ class SettingController extends CommonController{
 	
 	//删除友情链接
 	public function link_del() {
-		$id = $this->_get('id');
+		$id =I('get.id');
 		$re = M('link')->where('id = "'.$id.'"')->delete();
 		if ($re) {
 			$this->success('删除成功！',U('Admin/Setting/link_list'));
@@ -240,7 +237,7 @@ class SettingController extends CommonController{
 	//首页banner修改
 	public function banner_edit() {
 		if ($_POST) {
-			$data = $this->_post();
+			$data =I('post.');
 			if ($data['img_url'] == '') {
 				$this->error('请上传图片！');
 				exit();
@@ -266,7 +263,7 @@ class SettingController extends CommonController{
 			}
 			
 		} else {
-			$id = $this->_get('id');
+			$id = I('get.id');
 			$info = M('banner')->where('id = "'.$id.'"')->find();
 			$this->assign('info',$info);
 			$this->display();
@@ -275,7 +272,7 @@ class SettingController extends CommonController{
 	
 	///首页banner删除
 	public function banner_del() {
-		$id = $this->_get('id');
+		$id = I('get.id');
 		$dir_re = M('banner')->where('id = "'.$id.'"')->find();
 		$re = M('banner')->where('id = "'.$id.'"')->delete();
 		@unlink('.'.$dir_re['banner_url'].$dir_re['banner_filename']);

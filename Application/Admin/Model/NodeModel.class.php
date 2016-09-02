@@ -1,4 +1,9 @@
-<?php 
+<?php
+
+namespace Admin\Model;
+
+use Think\Model;
+
 class NodeModel extends Model {
 
 	//自动验证

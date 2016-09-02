@@ -1,4 +1,9 @@
-<?php 
+<?php
+
+namespace Admin\Model;
+
+use Think\Model;
+
 class AccessModel extends Model {
 
 	// 获取所有信息

@@ -3,6 +3,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>管理中心-<?php echo (C("cms_name")); ?></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="/Public/css/style.css?333"/>
+<script src="/Public/js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="/Public/js/function.js"></script>
+<script type="text/javascript" src="/Public/js/artDialog/jquery.artDialog.js?skin=default"></script>
+<script type="text/javascript" src="/Public/js/artDialog/plugins/iframeTools.js"></script>
+<script type="text/javascript" src="/Public/js/jquery.js"></script>
+<script type="text/javascript" src="/Public/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/js/ue/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/Public/js/ue/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="/Public/js/ue/lang/zh-cn/zh-cn.js"></script>
 
 <link type="text/css" rel="stylesheet" href="/Public/css/main.css"/>
 <script language="javascript">

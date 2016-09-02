@@ -9,11 +9,6 @@ namespace Admin\Controller;
 
 class AnliController extends CommonController
 {
-
-	public function _initialize(){
-       parent::_initialize();	//RBAC 验证接口初始化
-    }
-	
 	
 	public function anli_list () {
 		$list = M('case')->select();

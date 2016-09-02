@@ -6,15 +6,18 @@
 
 namespace Admin\Controller;
 
+
+
 class NodeController extends CommonController {
-	public function _initialize() {
+/*	public function _initialize() {
 		parent::_initialize();	//RBAC 验证接口初始化
 		Vendor('Common.Tree');	//导入通用树型类
 	}
-	
+	*/
 	//菜单列表
-	public function index(){
-		
+	public function index()
+	{
+		vendor('Common.Tree');
 		$Node = D('Node')->getAllNode();
 		$array = array();
 		// 构建生成树中所需的数据
@@ -66,7 +69,8 @@ class NodeController extends CommonController {
 					</td>
 				  </tr>";
 
-  		$Tree = new Tree();
+		$Tree = new \Tree();
+
 		$Tree->icon = array('&nbsp;&nbsp;&nbsp;│ ','&nbsp;&nbsp;&nbsp;├─ ','&nbsp;&nbsp;&nbsp;└─ ');
 		$Tree->nbsp = '&nbsp;&nbsp;&nbsp;';
 		$Tree->init($array);
@@ -78,6 +82,7 @@ class NodeController extends CommonController {
 
 	//添加菜单
 	public function add(){
+		vendor('Common.Tree');
 		if(isset($_POST['dosubmit'])) {
 			$NodeDB = M("Node");
 			//根据表单提交的POST数据创建数据对象
@@ -94,7 +99,7 @@ class NodeController extends CommonController {
 			
 		}else{
 			$Node = D('Node')->getAllNode();
-			$pid = $this->_get('pid','intval',0);	//选择子菜单
+			$pid = I('get.pid');	//选择子菜单
 			$array = array();
 			foreach($Node as $k => $r) {
 				$r['id']         = $r['id'];
@@ -104,7 +109,7 @@ class NodeController extends CommonController {
 				$array[$r['id']] = $r;
 			}
 			$str  = "<option value='\$id' \$selected \$disabled >\$spacer \$title</option>";
-			$Tree = new Tree();
+			$Tree = new \Tree();
 			$Tree->init($array);
 			$select_categorys = $Tree->get_tree(0, $str, $pid);
 			$this->assign('tpltitle','添加');
@@ -116,6 +121,7 @@ class NodeController extends CommonController {
 
 	//编辑菜单
 	public function edit(){
+		vendor('Common.Tree');
 		$NodeDB = D('Node');
 		if(isset($_POST['dosubmit'])) {
 			//根据表单提交的POST数据创建数据对象
@@ -131,8 +137,8 @@ class NodeController extends CommonController {
 			}
 			
 		}else{
-			$id = $this->_get('id','intval',0);
-			$pid = $this->_get('pid','intval',0);	//选择子菜单
+			$id = I('get.id');
+			$pid = I('get.pid');	//选择子菜单
 			if(!$id || !$pid)$this->error('参数错误!');
 
 			$allNode = $NodeDB->getAllNode();
@@ -145,7 +151,7 @@ class NodeController extends CommonController {
 				$array[$r['id']] = $r;
 			}
 			$str  = "<option value='\$id' \$selected \$disabled >\$spacer \$title</option>";
-			$Tree = new Tree();
+			$Tree = new \Tree();
 			$Tree->init($array);
 			$select_categorys = $Tree->get_tree(0, $str, $pid);
 			$this->assign('tpltitle','编辑');
@@ -158,7 +164,7 @@ class NodeController extends CommonController {
 	
 	//删除菜单
 	public function del(){
-		$id = $this->_get('id','intval',0);
+		$id = I('get.id');
 		if(!$id)$this->error('参数错误!');
 		$NodeDB = D('Node');
 		$info = $NodeDB -> getNode(array('id'=>$id),'id');

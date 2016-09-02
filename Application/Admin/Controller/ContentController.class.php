@@ -9,16 +9,13 @@ namespace Admin\Controller;
 
 class ContentController extends CommonController{
 
-	public function _initialize(){
-       parent::_initialize();	//RBAC 验证接口初始化
-    }
-	
+
 	//文章列表
     public function content_list () {
 		$class_list = M('class')->where('pid = "12"')->select();
 		$class_afer = M('class')->where('id <> "12" and id = "11"')->select();
 		
-		$id = $this->_get('id');
+		$id = I('get.id');
 		
 		if ($id == '') {
 			$id = '13';
@@ -72,7 +69,7 @@ class ContentController extends CommonController{
 	//添加文章
     public function content_add() {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = I('post.');
 			$data['createtime'] = time();
 			$data['read_num'] = 0;
 
@@ -125,7 +122,7 @@ class ContentController extends CommonController{
 	//修改文章
     public function content_edit() {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = I('post.');
 			$content_re = M('content')->where('id = "'.$data['id'].'"')->find();
 			
 			//基本信息为空验证
@@ -136,9 +133,7 @@ class ContentController extends CommonController{
 			
 			//更新关键字
 			$keyword_up_re = M('keyword')->where('id = "'.$keyword_data['id'].'"')->save($keyword_data);
-			
-			
-			
+
 			//更新文章数据
 			$content_data = $data;
 			if (!$_POST['recommend']) {
@@ -180,7 +175,7 @@ class ContentController extends CommonController{
 			}
 			
 		} else {
-			$id = $this->_get('id');
+			$id = I('get.id');
 			$info = M('content')->where('id = "'.$id.'"')->find();
 			$keyword_re = M('keyword')->where('content_id = "'.$id.'"')->find();
 			$info['keyword'] = $keyword_re['keyword'];
@@ -208,7 +203,7 @@ class ContentController extends CommonController{
 	
 	//删除文章
     public function content_del() {
-		$id = $this->_get('id');
+		$id = I('get.id');
 		$re = M('content')->where('id = "'.$id.'"')->find();
 		$del_re = M('content')->where('id = "'.$id.'"')->delete();
 

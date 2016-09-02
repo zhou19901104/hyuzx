@@ -8,10 +8,11 @@ use Think\Controller;
 class CommonController extends Controller
 {
 
-     public function _initialize(){
-        /*
-        * 载入各种扩展
-        */
+   /* public function _initialize(){
+
+       parent::_initialize();
+       /*      * 载入各种扩展
+       */
         //import("ORG.Util.Image"); //图像操作类库
         //Load('extend');     //Think扩展函数库
 
@@ -46,7 +47,19 @@ class CommonController extends Controller
                     redirect(PHP_FILE . C('USER_AUTH_GATEWAY'));
                 }
             }
-        }*/
+        }
 
-    }
+    }*/
+
+   public function __construct()
+   {
+      parent::__construct();
+
+      if(CONTROLLER_NAME != 'Login'){
+         if(session('role_id') != 1 || session('userid') != 1){
+            $this->redirect('Home/Index/index');
+         }
+      }
+   }
+
 }

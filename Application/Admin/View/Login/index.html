@@ -11,7 +11,7 @@
     <div class="login">
     
 <div class="info">
-<form method="post"action="{:U('Admin/Login/checkLogin')}">
+<form method="post" action="{:U('Admin/Login/checklogin/')}">
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <th height="35" scope="row">用户名:</th>
@@ -23,7 +23,7 @@
   </tr>
    <tr>
     <th height="35" scope="row">验证码:</th>
-    <td><input type="text" name="verify" class="linput" /><img id="verifyImg" SRC="__APP__/Admin/Login/verify?" onclick='this.src=this.src+"&"+Math.random()' BORDER="0" ALT="点击刷新验证码" style="cursor:pointer" align="absmiddle"></td>
+    <td><input type="text" name="verify" class="linput" /><img id="verifyImg" src="__APP__/Admin/Login/verify?" onclick='this.src=this.src+"&"+Math.random()' border="0" ALT="点击刷新验证码" style="cursor:pointer" align="absmiddle"></td>
   </tr>
   <tr>
     <th scope="row">&nbsp;</th>
