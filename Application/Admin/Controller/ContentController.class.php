@@ -69,7 +69,7 @@ class ContentController extends CommonController{
 	//添加文章
     public function content_add() {
 		if ($_POST) {
-			$data = I('post.');
+			$data = $_POST;
 			$data['createtime'] = time();
 			$data['read_num'] = 0;
 
@@ -122,7 +122,7 @@ class ContentController extends CommonController{
 	//修改文章
     public function content_edit() {
 		if ($_POST) {
-			$data = I('post.');
+			$data = $_POST;
 			$content_re = M('content')->where('id = "'.$data['id'].'"')->find();
 			
 			//基本信息为空验证

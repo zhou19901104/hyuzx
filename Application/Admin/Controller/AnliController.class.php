@@ -18,7 +18,7 @@ class AnliController extends CommonController
 	
 	public function anli_add() {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = $_POST;
 			if (!$data['related']) {
 				$data['related'] = 0;
 			}
@@ -65,7 +65,7 @@ class AnliController extends CommonController
 	
 	public function anli_edit() {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = $_POST;
 			$re_data = M('case')->where('id = "'.$data['id'].'"')->find();
 			if (!$data['related']) {
 				$data['related'] = 0;
@@ -122,7 +122,7 @@ class AnliController extends CommonController
 				$this->error('修改失败!');
 			}
 		} else {
-			$id = $this->_get('id');
+			$id = I('get.id');
 			$info = M('case')->where('id = "'.$id.'"')->find();
 			$this->assign('info',$info);
 			$this->display();
@@ -130,7 +130,7 @@ class AnliController extends CommonController
 	}
 	
 	public function anli_del () {
-		$id = $this->_get('id');
+		$id = I('get.id');
 		$re = M('case')->where('id = "'.$id.'"')->find();
 		@unlink('./Public/Uploads/anli/list_'.$re['img_url']);
 		@unlink('./Public/Uploads/anli/info_'.$re['img_url']);

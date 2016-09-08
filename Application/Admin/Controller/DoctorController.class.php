@@ -25,7 +25,7 @@ class DoctorController extends CommonController{
 	//添加医生信息
 	public function doctor_add () {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = $_POST;
 			if (!$data['related']) {
 				$data['related'] = 0;
 			}
@@ -61,7 +61,7 @@ class DoctorController extends CommonController{
 	//修改医生信息
 	public function doctor_edit () {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = $_POST;
 			if (!$data['related']) {
 				$data['related'] = 0;
 			}
@@ -105,7 +105,7 @@ class DoctorController extends CommonController{
 			}
 			
 		} else {
-			$id = $this->_get('id');
+			$id = I('get.id');
 			$info = M('doctor')->where('id = "'.$id.'"')->find();
 			$class_list = M('doctor_class')->select();
 			$this->assign('class_list',$class_list);
@@ -116,7 +116,7 @@ class DoctorController extends CommonController{
 	
 	//删除医生信息
 	public function doctor_del () {
-		$id = $this->_get('id');
+		$id = I('get.id');
 		$re = M('doctor')->where('id = "'.$id.'"')->find();
 		@unlink('./Public/Uploads/doctor/list_'.$re['img_url']);
 		@unlink('./Public/Uploads/doctor/info_'.$re['img_url']);
@@ -142,7 +142,7 @@ class DoctorController extends CommonController{
 	//添加医生类别
 	public function doctor_class_add () {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = $_POST;
 			$check = M('doctor_class')->where('class_name = "'.$data['class_name'].'"')->find();
 			if (!$check) {
 				$re = M('doctor_class')->add($data);
@@ -162,7 +162,7 @@ class DoctorController extends CommonController{
 	//修改医生类别
 	public function doctor_class_edit () {
 		if ($_POST) {
-			$data = $this->_post();
+			$data = $_POST;
 			$check = M('doctor_class')->where('class_name = "'.$data['class_name'].'"')->find();
 			if (!$check) {
 				$re = M('doctor_class')->where('id = "'.$data['id'].'"')->save($data);
@@ -175,7 +175,7 @@ class DoctorController extends CommonController{
 				$this->error('类别名称重复!');
 			}
 		} else {
-			$id = $this->_get('id');
+			$id = I('get.id');
 			$info = M('doctor_class')->where('id = "'.$id.'"')->find();
 			$this->assign('info',$info);
 			$this->display();
@@ -185,7 +185,7 @@ class DoctorController extends CommonController{
 	
 	//删除医生类别
 	public function doctor_class_del () {
-		$id = $this->_get('id');
+		$id = I('get.id');
 		$re = M('doctor_class')->where('id = "'.$id.'"')->delete();
 		if ($re) {
 			$this->success('删除成功!',U('Admin/Doctor/doctor_class_list'));

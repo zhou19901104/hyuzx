@@ -28,7 +28,7 @@
   </div>
   <div class="ewm"></div>
   <ul class="flo-list">
-    <li><a target='_blank' href="http://pkt.zoosnet.net/LR/Chatpre.aspx?id=PKT67204838&cid=1469000068684805339274&lng=cn&sid=1469000068684805339274&p=http%3A//hyuzx.com/&rf1=&rf2=&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&bid=&d=1469000257113"><img src="__PUBLIC__/index/images/serve-img.png" alt=""></a></li>
+    <li><a target='_blank' href="{:C('SHANG_WU')}"><img src="__PUBLIC__/index/images/serve-img.png" alt=""></a></li>
     <li id="online"><a href="javascript:void(0)"><img src="__PUBLIC__/index/images/talk-img.png" alt=""></a></li>
     <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="__PUBLIC__/index/images/VIP-img.png" alt=""></a></li>
     <li class="top"><img src="__PUBLIC__/index/images/top-img.png" alt=""></li>
@@ -147,29 +147,29 @@
 <div class="project-wrap">
   <p class="pro-tit"><img src="__PUBLIC__/index/images/pro-tit.png" alt=""></p>
   <div class="pro-list">
-    <div class="prolist">
+    <div class="prolist" style="height: 520px;;">
       <ul class="prslide">
         <volist name='p_list' id='p_l'>
           <if condition="$p_l['id'] neq 98">
-            <li>
+            <li class="bd">
               <img src="__PUBLIC__/index/images/p-{$key}.png" alt="">
               <p class="p-1">{$p_l.class_name}</p>
               <p class="p-2">{$p_l.class_e_name}</p>
-              <div class="none">
+              <div class="none block">
                 <p class="p-3">{$p_l.introduction}</p>
                 <p class="p-4"><a href="{:U('Home/Index/new_list',array('id'=>$p_l['id']))}">更多</a></p>
               </div>
             </li>
             <else />
-            <!--<li>
+            <li class="bd">
               <img src="__PUBLIC__/index/images/p-{$key}.png" alt="">
               <p class="p-1">{$p_l.class_name}</p>
               <p class="p-2">{$p_l.class_e_name}</p>
-              <div class="none">
+              <div class="none block">
                 <p class="p-3">{$p_l.introduction}</p>
                 <p class="p-4"><a href="/">更多</a></p>
               </div>
-            </li>-->
+            </li>
           </if>
         </volist>
       </ul>

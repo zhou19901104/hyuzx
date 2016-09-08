@@ -163,14 +163,14 @@ $('.guide-li').hover(function() {
 
 });
 
-/*焕誉项目轮播*/	
+/*焕誉项目轮播
 	$('.pro-list .prslide>li').hover(function() {
 		var prnum=$(this).index();
 		$(this).addClass('bd').siblings('li').removeClass('bd');//鼠标滑过时加上边框背景
 		$('.prslide li').eq(prnum).children('.none').addClass('block');//划过时文字div显示
-		/*if(prnum != 1){
-			$('.prslide li').eq(1).children('.none').removeClass('block');//当index不是1时，默认第二个的文字div隐藏
-		}*/
+		//if(prnum != 1){
+		//	$('.prslide li').eq(1).children('.none').removeClass('block');//当index不是1时，默认第二个的文字div隐藏
+		//}
 	}, function() {
 		var prnum=$(this).index();
 		$(this).removeClass('bd');
@@ -182,6 +182,10 @@ $('.guide-li').hover(function() {
 	}, function() {
 		$('.prolist').stop().animate({'height': '330px'}, 500);//当鼠标滑过时高度变回原来的
 	});
+	*/
+
+
+
 //轮播
 	var prwidth=$('.prslide li').width();
 	var prnum_li = $('.prslide li').length;

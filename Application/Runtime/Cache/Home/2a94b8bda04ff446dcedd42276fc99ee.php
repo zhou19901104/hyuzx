@@ -28,7 +28,7 @@
   </div>
   <div class="ewm"></div>
   <ul class="flo-list">
-    <li><a target='_blank' href="http://pkt.zoosnet.net/LR/Chatpre.aspx?id=PKT67204838&cid=1469000068684805339274&lng=cn&sid=1469000068684805339274&p=http%3A//hyuzx.com/&rf1=&rf2=&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&bid=&d=1469000257113"><img src="/Public/index/images/serve-img.png" alt=""></a></li>
+    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="/Public/index/images/serve-img.png" alt=""></a></li>
     <li id="online"><a href="javascript:void(0)"><img src="/Public/index/images/talk-img.png" alt=""></a></li>
     <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="/Public/index/images/VIP-img.png" alt=""></a></li>
     <li class="top"><img src="/Public/index/images/top-img.png" alt=""></li>
@@ -122,27 +122,27 @@
 <div class="project-wrap">
   <p class="pro-tit"><img src="/Public/index/images/pro-tit.png" alt=""></p>
   <div class="pro-list">
-    <div class="prolist">
+    <div class="prolist" style="height: 520px;;">
       <ul class="prslide">
-        <?php if(is_array($p_list)): $i = 0; $__LIST__ = $p_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_l): $mod = ($i % 2 );++$i; if($p_l['id'] != 98): ?><li>
+        <?php if(is_array($p_list)): $i = 0; $__LIST__ = $p_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_l): $mod = ($i % 2 );++$i; if($p_l['id'] != 98): ?><li class="bd">
               <img src="/Public/index/images/p-<?php echo ($key); ?>.png" alt="">
               <p class="p-1"><?php echo ($p_l["class_name"]); ?></p>
               <p class="p-2"><?php echo ($p_l["class_e_name"]); ?></p>
-              <div class="none">
+              <div class="none block">
                 <p class="p-3"><?php echo ($p_l["introduction"]); ?></p>
                 <p class="p-4"><a href="<?php echo U('Home/Index/new_list',array('id'=>$p_l['id']));?>">更多</a></p>
               </div>
             </li>
             <?php else: ?>
-            <!--<li>
+            <li class="bd">
               <img src="/Public/index/images/p-<?php echo ($key); ?>.png" alt="">
               <p class="p-1"><?php echo ($p_l["class_name"]); ?></p>
               <p class="p-2"><?php echo ($p_l["class_e_name"]); ?></p>
-              <div class="none">
+              <div class="none block">
                 <p class="p-3"><?php echo ($p_l["introduction"]); ?></p>
                 <p class="p-4"><a href="/">更多</a></p>
               </div>
-            </li>--><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+            </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
       </ul>
     </div>
     <!--<span class="s-s-l"></span>

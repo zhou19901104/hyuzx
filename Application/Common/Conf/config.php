@@ -16,7 +16,9 @@ return array(
   'DB_PORT'   => 3306, // 端口
   'DB_PREFIX' => 'sd_', // 数据库表前缀
 
+
   'SHOW_PAGE_TRACE'  =>  false,//开启页面跟踪信息
+
 
    //配置站点绝对路径
   'SITE_URL' => 'http://www.hyuzx.com/',
@@ -25,5 +27,9 @@ return array(
   //'URL_PATHINFO_DEPR'     =>  '-',	// PATHINFO模式下，各参数之间的分割符号
   'UPLOAD_MAX_FILESIZE'=>'2M',//设置允许上传单个文件的大小
   'UPLOAD_ALLOW_EXT'=>array('jpg','jpeg','bmp','gif','png'),//设置允许上传文件的类型
+
+   'SHANG_WU' => 'http://pkt.zoosnet.net/LR/Chatpre.aspx?id=PKT67204838&cid=1469000068684805339274&lng=cn&sid=1469000068684805339274&p=http%3A//hyuzx.com/&rf1=&rf2=&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&bid=&d=1469000257113',
+
+
 
 );
