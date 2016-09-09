@@ -178,19 +178,31 @@
         <div class="r-b">
           <ul class="zjslide">
 
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-4.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-0.png" alt=""></a></li>
+<!--            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-4.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-0.png" alt=""></a></li>-->
             <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-1.png" alt=""></a></li>-->
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-6.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-2.png" alt=""></a></li>
+        <!--    <li><a href="javascript:void(0);"><img src="/Public/index/images/z-6.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-2.png" alt=""></a></li>-->
             <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-3.png" alt=""></a></li>-->
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-12.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-5.png" alt=""></a></li>
+          <!--  <li><a href="javascript:void(0);"><img src="/Public/index/images/z-12.png" alt=""></a></li>
+            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-5.png" alt=""></a></li>-->
             <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-7.png" alt=""></a></li>
             <li><a href="javascript:void(0);"><img src="/Public/index/images/z-8.png" alt=""></a></li>
             <li><a href="javascript:void(0);"><img src="/Public/index/images/z-9.png" alt=""></a></li>
             <li><a href="javascript:void(0);"><img src="/Public/index/images/z-10.png" alt=""></a></li>
             <li><a href="javascript:void(0);"><img src="/Public/index/images/z-11.png" alt=""></a></li>-->
+
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/12"><img src="/Public/index/images/z-4.png" alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/6"><img src="/Public/index/images/z-0.png" alt=""></a></li>
+            <!-- <li><a href="javascript:void(0);"><img src="/Public/index/images/z-1.png" alt=""></a></li> -->
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/14"><img src="/Public/index/images/z-6.png" alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/11"><img src="/Public/index/images/z-2.png" alt=""></a></li>
+            <!-- <li><a href="javascript:void(0);"><img src="/Public/index/images/z-3.png" alt=""></a></li> -->
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/15"><img src="/Public/index/images/z-12.png" alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/13"><img src="/Public/index/images/z-5.png" alt=""></a></li>
+
+
+
           </ul>
         </div>
         <span class="s-s-l"></span>
@@ -293,6 +305,7 @@
     <div class="f-l">
       <p><img src="/Public/index/images/fot-logo.jpg" alt=""></p>
     </div>
+
     <div class="f-m">
       <ul class="f-nav">
         <?php if(is_array($foot_list)): $i = 0; $__LIST__ = $foot_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$f_list): $mod = ($i % 2 );++$i;?><li>
@@ -305,6 +318,7 @@
           </li><?php endforeach; endif; else: echo "" ;endif; ?>
       </ul>
     </div>
+
     <div class="f-r">
       <dl>
         <dt><img src="/Public/index/images/f-ewm.jpg" alt=""></dt>
@@ -328,5 +342,5 @@
   var LiveAutoInvite1='来自首页的对话';
   var LiveAutoInvite2=' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通</b>';
 </script>
-<script language="javascript" src="http://pkt.zoosnet.net/JS/LsJS.aspx?siteid=PKT67204838&float=1&lng=cn"></script>
+<script language="javascript" src="<?php echo C('SHANG_WU');?>"></script>
 </html>

@@ -703,34 +703,16 @@ a {
     right: 4%;
 }
 
-
-
-
-
-
-
-
-
-
 /* 专家团队 */
-
-.special_doctor{
-    text-align: center;
-    margin: 20px 0 30px 0;
-}
-
-
 .doctor-wrap {
     width: 100%;
     background: #0e0415;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
 }
 
 .doctor-wrap .doctor {
     width: 1200px;
-    height:800px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -746,12 +728,13 @@ a {
 
 .doctor-wrap .doctor .zj-list .zj-l {
     float: left;
+    position: relative;
 }
 
 .doctor-wrap .doctor .zj-list .zj-l .big-img {
     position: absolute;
     top: 0;
-    left: 17%;
+    left: 0;
 }
 
 .doctor-wrap .doctor .zj-list .zj-r {
@@ -761,13 +744,14 @@ a {
 .doctor-wrap .doctor .zj-list .zj-r .r-t {
     margin-bottom: 40px;
     height: 390px;
+    position: relative;
 }
 
 .doctor-wrap .doctor .zj-list .zj-r .r-t .cont {
     overflow: hidden;
     position: absolute;
     top: 40px;
-    left: 42%;
+    left: 43px;
     display: none;
 }
 
@@ -812,25 +796,25 @@ a {
 }
 
 .doctor-wrap .doctor .zj-list .zj-r .r-t .cy-list li {
-    width: 30%;
+    width: 100%;
     height: 30px;
     font-size: 14px;
     color: #a6a4a7;
     background: url(../images/cir.png) left center no-repeat;
     padding-left: 20px;
     box-sizing: border-box;
-    line-height: 30px;
-    display: block;
-    list-style: none;
-    float: left;
+    line-height: 30px
+}
+
+.doctor-wrap .doctor .zj-list .zj-r .r-t .cy-list li span {
+    font-size: 14px;
+    color: #b6894b;
 }
 
 .doctor-wrap .doctor .zj-list .zj-r .r-b-wrap {
     width: 778px;
     margin: 0 auto;
-    position: absolute;
-    bottom:0;
-    left:25%;
+    position: relative;
     height: 160px;
     overflow: hidden;
 }
@@ -882,31 +866,15 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 成功案例 */
+
+
+
+
 
 .case-wrap {
     width: 100%;
-    margin: 40px auto;
+    margin: 0 auto;
     height: auto;
 }
 
@@ -945,38 +913,91 @@ a {
     height:340px;
     float: left;
     margin: 0 auto;
-    position: relative;
 /*    position: absolute;
     top: 2%;
     left: 0;*/
 
 }
-.case-wrap .ca-list .calist .caslide_left{
-    width: 14px;
-    height: 28px;
-    background: url(../../../Public/Uploads/comm/info_tra.svg) no-repeat;
-    position: absolute;
-    left:-14px;
-    top:18%;
-    background-position: 0 0;
-    z-index: 1;
+
+.case-wrap .ca-list .calist .caslide li {
+    float: left;
+    width: 1200px;
+    height: 600px;
 }
 
-.case-wrap .ca-list .calist .caslide_right{
-    width: 14px;
-    height: 28px;
-    background: url(../../../Public/Uploads/comm/info_tra.svg) no-repeat;
+.case-wrap .ca-list .calist .caslide .li-1 {
+    width: 1200px;
+    text-align: center;
+    position: relative;
+}
+
+.case-wrap .ca-list .calist .caslide .li-1 .jump {
+    display: block;
+}
+
+.case-wrap .ca-list .calist .caslide .li-1 .btn {
     position: absolute;
-    top: 74%;
-    right: -14px;
-    background-position: 0 -51px;
-    z-index: 1;
+    bottom: 147px;
+    right: 106px;
+    z-index: 333;
+    height: 30px;
+}
+
+.case-wrap .ca-list .calist .caslide .li-1 .btn a {
+    display: inline-block;
+    border: 1px solid #b6894b;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    color: #b6894b;
+}
+
+.case-wrap .ca-list .calist .caslide .li-1 .btn a:hover {
+    display: inline-block;
+    border: 1px solid #b6894b;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 10px;
+    color: #fff;
+    background: #b6894b;
+}
+
+.case-wrap .ca-list .calist .caslide .li-1 img {
+    display: block;
+    margin: 0 auto;
+}
+
+.case-wrap .ca-list .s-s-l {
+    width: 32px;
+    height: 55px;
+    background: url(../images/case-left.png) 0 0 no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 38%;
+    left: 2%;
+}
+
+.case-wrap .ca-list .s-s-r {
+    width: 32px;
+    height: 55px;
+    background: url(../images/case-right.png) 0 0 no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 38%;
+    right: 2%;
 }
 
 
 
 
-    /* 环境设备 */
+
+
+
+
+
+
+
+/* 环境设备 */
 .huan-wrap {
     width: 100%;
     margin: 0 auto;
@@ -1019,11 +1040,10 @@ a {
 }
 
 .huan-wrap .huanjing .j-2 .j-2-l .j-text {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 30px;
     text-indent: 2em;
     margin-top: 6px;
-    color: #CDCDCD;
 }
 
 .huan-wrap .huanjing .j-2 .j-2-r {
@@ -1032,11 +1052,10 @@ a {
 }
 
 .huan-wrap .huanjing .j-1 .j-1-r .j-text {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 30px;
     text-indent: 2em;
     margin-top: 6px;
-    color: #CDCDCD;
 }
 
 .huan-wrap .huan-list {
@@ -1308,8 +1327,7 @@ a {
 }
 
 .footer-wrap .footer .f-m .f-nav li .f-n-list dd a {
-    font-size: 13px;
-    color: #CDCDCD;
+    font-size: 12px;
 }
 
 .footer-wrap .footer .f-m .f-nav li .f-n-list dd a:hover {

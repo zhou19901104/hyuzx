@@ -7,12 +7,22 @@
 /*专家团队轮播*/
 $(function() {
 // 交流框
-$('#online').click(function(event) {
+$('#online_1').click(function(event) {
 	$('.online').css('display', 'block');
 });
 $('.online .close').click(function(event) {
 	$('.online').css('display', 'none');
 });
+
+	$('#online_2').click(function(event) {
+		$('.online_2').css('display', 'block');
+	});
+	$('.online_2 .close').click(function(event) {
+		$('.online_2').css('display', 'none');
+	});
+
+
+
 
 // VIP弹出框
  var aa=close;
@@ -232,7 +242,7 @@ $('.zj-list .zjslide>li a,.huan-list .hjslide>li').hover(function() {
 });
 
 /*专家头像点击的时候*/
-$('.zjslide>li').click(function(event) {
+$('.zjslide>li').mouseover(function(event) {
 	var zjIndex=$(this).index();
 	/*$('.zj-l img').attr('src', 'images/zj-list-'+zjIndex+'.png');*/
 	$('.zj-l .big-img').eq(zjIndex).fadeIn(1).siblings('.big-img').fadeOut(1);//相对应的index的左边大图淡入

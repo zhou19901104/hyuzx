@@ -19,20 +19,35 @@
 <!-- 在线联系 -->
 <!-- 浮动 -->
 <div class="talk">
+
   <div class="online">
     <ul>
       <li class="li-1">在线咨询<span class="close"></span></li>
-      <li class="li-2"><a href="javascript:void(0)">xxxxxxxx</a></li>
-      <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>
+      <li class="li-2"><a href="javascript:void(0)">123456789</a></li>
+    <!--  <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>-->
     </ul>
+
   </div>
+
+  <div class="online_2">
+    <ul>
+      <li class="li-1">电话咨询<span class="close"></span></li>
+      <!--<li class="li-2"><a href="javascript:void(0)">123456789</a></li>-->
+        <li class="li-2"><a href="javascript:void(0)">010-57290660</a></li>
+    </ul>
+
+  </div>
+
+
   <div class="ewm"></div>
   <ul class="flo-list">
-    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="/Public/index/images/serve-img.png" alt=""></a></li>
-    <li id="online"><a href="javascript:void(0)"><img src="/Public/index/images/talk-img.png" alt=""></a></li>
-    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="/Public/index/images/VIP-img.png" alt=""></a></li>
-    <li class="top"><img src="/Public/index/images/top-img.png" alt=""></li>
+    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/01.png" alt=""></a></li>
+    <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/02.png" alt=""></a></li>
+    <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/03.png" alt=""></a></li>
+    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
+    <li class="top"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/05.png" alt=""></li>
   </ul>
+
 </div>
 <!-- nav -->
 <div class="nav-wrap">
@@ -150,10 +165,15 @@
   </div>
 </div>
 
+
+<div class="special_doctor">
+  <p class="zj-tit"><img src="/Public/index/images/zj-tit.png" alt=""></p>
+</div>
+
+
 <!-- 专家团队 -->
 <div class="doctor-wrap">
   <div class="doctor">
-    <p class="zj-tit"><img src="/Public/index/images/zj-tit.png" alt=""></p>
     <div class="zj-list">
       <div class="zj-l">
         <?php if(is_array($doctor_list)): $i = 0; $__LIST__ = $doctor_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$img_list): $mod = ($i % 2 );++$i; if($key == 0): ?><div class="big-img"><img src="/Public/Uploads/doctor/index_<?php echo ($img_list["index_url"]); ?>" alt=""></div>
@@ -165,60 +185,108 @@
           <?php if(is_array($doctor_list)): $i = 0; $__LIST__ = $doctor_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d_list): $mod = ($i % 2 );++$i; if($key == 0): ?><div class="cont cy-none">
                 <?php else: ?>
                 <div class="cont"><?php endif; ?>
+
             <p class="name"><?php echo ($d_list["name"]); ?>/<span class="job"><?php echo ($d_list["zhicheng"]); ?></span></p>
             <p class="lan"><?php echo ($d_list["index_message"]); ?></p>
             <p class="p-3"><?php echo ($d_list["jianjie"]); ?></p>
             <p class="cy-tit">主打方向 Main Direction</p>
+
             <ul class="cy-list">
               <?php if(is_array($d_list["jingli"])): $i = 0; $__LIST__ = $d_list["jingli"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$j_list): $mod = ($i % 2 );++$i;?><li><?php echo ($j_list); ?></li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
+
         </div><?php endforeach; endif; else: echo "" ;endif; ?>
+
       </div>
+
       <div class="r-b-wrap">
         <div class="r-b">
           <ul class="zjslide">
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/6"><img src="/Public/index/images/z-0.png" alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/12"><img src="/Public/index/images/z-4.png" alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/15"><img src="/Public/index/images/z-12.png" alt=""></a></li>
+            <!-- <li><a href="javascript:void(0);"><img src="/Public/index/images/z-1.png" alt=""></a></li> -->
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/14"><img src="/Public/index/images/z-6.png" alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/11"><img src="/Public/index/images/z-2.png" alt=""></a></li>
+            <!-- <li><a href="javascript:void(0);"><img src="/Public/index/images/z-3.png" alt=""></a></li> -->
 
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-4.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-0.png" alt=""></a></li>
-            <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-1.png" alt=""></a></li>-->
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-6.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-2.png" alt=""></a></li>
-            <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-3.png" alt=""></a></li>-->
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-12.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-5.png" alt=""></a></li>
-            <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-7.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-8.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-9.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-10.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-11.png" alt=""></a></li>-->
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/13"><img src="/Public/index/images/z-5.png" alt=""></a></li>
+
           </ul>
         </div>
         <span class="s-s-l"></span>
         <span class="s-s-r"></span>
       </div>
+
     </div>
   </div>
 </div>
 </div>
+
 
 <!-- 成功案例 -->
 <div class="case-wrap">
   <p class="case-tit"><img src="/Public/index/images/case-tit.png" alt=""></p>
   <div class="ca-list">
     <div class="calist">
-      <ul class="caslide">
-        <?php if(is_array($anli_list)): $i = 0; $__LIST__ = $anli_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$a_list): $mod = ($i % 2 );++$i;?><li class="li-1">
-            <a href="<?php echo U('Home/Index/case_info',array('id'=>$a_list['id']));?>" class="jump">
-              <img src="/Public/Uploads/anli/info_<?php echo ($a_list["img_url"]); ?>" alt="">
-            </a>
-            <p class="btn"><a target='_blank' href="http://pkt.zoosnet.net/LR/Chatpre.aspx?id=PKT67204838&cid=1469000068684805339274&lng=cn&sid=1469000068684805339274&p=http%3A//hyuzx.com/&rf1=&rf2=&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&bid=&d=1469000257113">在线了解体验过程&nbsp;>></a></p>
-          </li><?php endforeach; endif; else: echo "" ;endif; ?>
-      </ul>
+
+
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/calist_1.jpg" alt="">
+      </div>
+      <div class="caslide">
+        123
+        <div class="caslide_left">
+
+        </div>
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/calist_1.jpg" alt="">
+      </div>
+      <div class="caslide">
+        <div class="caslide_left">
+
+        </div>
+      </div>
+      <div class="caslide">
+        <div class="caslide_right">
+
+        </div>
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/calist_1.jpg" alt="">
+      </div>
+      <div class="caslide">
+        <div class="caslide_right">
+
+        </div>
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/calist_1.jpg" alt="">
+      </div>
+
+
+
+
     </div>
-    <span class="s-s-l"></span>
-    <span class="s-s-r"></span>
+
+
+
+   <!-- <span class="s-s-l"></span>
+    <span class="s-s-r"></span>-->
+
+
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 <!-- 环境设备 -->
 <div class="huan-wrap">
   <div class="huanjing">
@@ -293,6 +361,7 @@
     <div class="f-l">
       <p><img src="/Public/index/images/fot-logo.jpg" alt=""></p>
     </div>
+
     <div class="f-m">
       <ul class="f-nav">
         <?php if(is_array($foot_list)): $i = 0; $__LIST__ = $foot_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$f_list): $mod = ($i % 2 );++$i;?><li>
@@ -305,6 +374,7 @@
           </li><?php endforeach; endif; else: echo "" ;endif; ?>
       </ul>
     </div>
+
     <div class="f-r">
       <dl>
         <dt><img src="/Public/index/images/f-ewm.jpg" alt=""></dt>
@@ -328,5 +398,5 @@
   var LiveAutoInvite1='来自首页的对话';
   var LiveAutoInvite2=' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通</b>';
 </script>
-<script language="javascript" src="http://pkt.zoosnet.net/JS/LsJS.aspx?siteid=PKT67204838&float=1&lng=cn"></script>
+<script language="javascript" src="<?php echo C('SHANG_WU');?>"></script>
 </html>
