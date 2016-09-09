@@ -790,6 +790,7 @@ a {
     font-size: 18px;
     color: #fff;
     margin-bottom: 5px;
+    margin-right:80px;
 }
 
 .doctor-wrap .doctor .zj-list .zj-r .r-t .p-3 {
@@ -810,6 +811,33 @@ a {
     padding-left: 18px;
     line-height: 38px;
 }
+
+.doctor-wrap .doctor .zj-list .zj-r .r-t .cy-tupian {
+
+    width: 100%;
+    height: 38px;
+    background: url(../../../Public/Uploads/comm/cy_anli.png) left center no-repeat;
+    margin-top: 100px;
+    color: #b6894b;
+    font-size: 17px;
+    padding-left: 18px;
+    line-height: 38px;
+
+}
+.doctor-wrap .doctor .zj-list .zj-r .r-t .cy-anli {
+    height:135px;
+    width:480px;
+    margin-top: 50px;
+}
+
+.doctor-wrap .doctor .zj-list .zj-r .r-t .cy-anli .anli-img img
+{
+    display: block;
+    float: left;
+}
+
+
+
 
 .doctor-wrap .doctor .zj-list .zj-r .r-t .cy-list li {
     width: 30%;
