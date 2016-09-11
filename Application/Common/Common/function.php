@@ -16,7 +16,7 @@
 function sendMail($touser, $title, $content, $fromuser)
 {
    //引入发送类phpmailer.php
-   require_once './Common/Plugins/PHPMailer/class.phpmailer.php';
+   //require_once './Common/Plugins/PHPMailer/class.phpmailer.php';
    //实列化对象
    $mail = new PHPMailer();
    /*服务器相关信息*/

@@ -6,16 +6,18 @@
   <title>北京焕誉医疗美容官方网站_北京医疗整形_北京医疗美容</title>
   <meta content="整形美容,北京焕誉,北京焕誉医疗美容,北京整形美容" name="keywords"/>
   <meta
-      content="北京焕誉医疗美容以“良心、诚心、精心”为核心价值观，遵循“用科技与美丽邂逅，以信誉让生命焕彩”的服务宗旨，开设美容皮肤科、美容外科、注射微整形、美容牙科四大整形美容项目，全方位打造中国整形美容旗舰品牌。美丽热线 : 010-57290660 400-7667-000"
-      name="description"/>
+          content="北京焕誉医疗美容以“良心、诚心、精心”为核心价值观，遵循“用科技与美丽邂逅，以信誉让生命焕彩”的服务宗旨，开设美容皮肤科、美容外科、注射微整形、美容牙科四大整形美容项目，全方位打造中国整形美容旗舰品牌。美丽热线 : 010-57290660 400-7667-000"
+          name="description"/>
   <meta name="renderer" content="webkit"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <link rel="stylesheet" type="text/css" href="/Public/index/css/all.css">
   <link rel="stylesheet" type="text/css" href="/Public/index/css/style.css">
   <link rel="stylesheet" href="/Public/index/css/zoom.css" media="all"/>
+
   <script type="text/javascript" src="/Public/index/js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="/Public/index/js/all.js"></script>
   <script type="text/javascript" src="/Public/index/js/zoom.min.js"></script>
+
 </head>
 <body>
 <!-- 在线联系 -->
@@ -39,22 +41,17 @@
     </ul>
 
   </div>
-
-
   <div class="ewm"></div>
   <ul class="flo-list">
-    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/01.png" alt=""></a>
-    </li>
-    <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/02.png" alt=""></a>
-    </li>
-    <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img
-        src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/03.png" alt=""></a></li>
-    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img
-        src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
+    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/01.png" alt=""></a></li>
+    <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/02.png" alt=""></a></li>
+    <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/03.png" alt=""></a></li>
+    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
     <li class="top"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/05.png" alt=""></li>
   </ul>
 
 </div>
+
 <!-- nav -->
 <div class="nav-wrap">
   <div class="nav">
@@ -68,7 +65,7 @@
             <?php if($p_class['class_name'] == '医疗团队'): ?><a href="<?php echo U('Home/Index/doctor_list');?>"><span class="s-1"><?php echo ($p_class["class_name"]); ?></span><span class="s-2"><?php echo ($p_class["class_e_name"]); ?></span></a>
               <?php elseif($p_class['class_name'] == '新闻动态'): ?>
               <a href="<?php echo U('Home/Index/band_info',array('id'=>157));?>"><span
-                  class="s-1"><?php echo ($p_class["class_name"]); ?></span><span class="s-2"><?php echo ($p_class["class_e_name"]); ?></span></a>
+                      class="s-1"><?php echo ($p_class["class_name"]); ?></span><span class="s-2"><?php echo ($p_class["class_e_name"]); ?></span></a>
               <?php elseif($p_class['class_name'] == '品牌中心'): ?>
               <a href=""><span class="s-1"><?php echo ($p_class["class_name"]); ?></span><span class="s-2"><?php echo ($p_class["class_e_name"]); ?></span></a>
               <?php elseif($p_class['class_name'] == '焕誉案例'): ?>
@@ -108,7 +105,7 @@
                           <ul class="hot">
                             <li>热门项目</li>
                             <li><a href="<?php echo U('Home/Index/new_info',array('id'=>$hot_info['id']));?>"><img
-                                src="<?php echo ($hot_info["img_url"]); ?>" alt=""></a></li>
+                                    src="<?php echo ($hot_info["img_url"]); ?>" alt=""></a></li>
                           </ul>
                         </div>
                       </li>
@@ -417,10 +414,12 @@
   </div>
 </div>
 </body>
+
 <script language=javascript>
   var LiveAutoInvite0 = '您好，来自%IP%的朋友';
   var LiveAutoInvite1 = '来自首页的对话';
-  var LiveAutoInvite2 = ' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通</b>';
+  var LiveAutoInvite2 = ' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通<\/b>';
 </script>
-<script language="javascript" src="<?php echo C('SHANG_WU');?>"></script>
+<script language="javascript" src="http://pkt.zoosnet.net/JS/LsJS.aspx?siteid=PKT67204838&float=1&lng=cn"></script>
+
 </html>

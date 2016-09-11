@@ -9,6 +9,7 @@ class IndexController extends CommonController
    //主页
    public function index()
    {
+
       $class_list = M('Class')->where('pid = 0')->order('sort desc')->select();
 
       //dump($class_list);die();
@@ -17,7 +18,7 @@ class IndexController extends CommonController
       //dump($p_list);die();
       $p_list = M('class')->where('pid = "' . $p_list['id'] . '"')->select();
 
-      //dump($p_list);die();
+
 
       for ($i = 0; $i < count($class_list); $i++) {
          $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
@@ -34,10 +35,6 @@ class IndexController extends CommonController
          }
       }
 
-
-      //dump($class_list);die();
-
-
       $hot_info = M('content')->where('hot = 1')->order('createtime desc')->find();
 
       $this->assign('hot_info', $hot_info);
@@ -47,7 +44,6 @@ class IndexController extends CommonController
          $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
       }
       $this->assign('foot_list', $foot_list);
-
 
       $doctor_list = M('doctor')->order('sort desc')->select();
       for ($i = 0; $i < count($doctor_list); $i++) {
@@ -62,6 +58,8 @@ class IndexController extends CommonController
       $this->assign('class_list', $class_list);
 
       $this->assign('p_list', $p_list);
+
+      //dump($class_list);die();
 
       $this->display();
    }
