@@ -23,7 +23,7 @@ return array(
    //配置站点绝对路径
   'SITE_URL' => 'http://www.huanyu.com',
 
-  //'URL_MODEL'             =>  1,       // URL访问模式,可选参数0、1、2、3,代表以下四种模式：
+  //'URL_MODEL'             =>  2,       // URL访问模式,可选参数0、1、2、3,代表以下四种模式：
   //'URL_PATHINFO_DEPR'     =>  '-',	// PATHINFO模式下，各参数之间的分割符号
   'UPLOAD_MAX_FILESIZE'=>'2M',//设置允许上传单个文件的大小
   'UPLOAD_ALLOW_EXT'=>array('jpg','jpeg','bmp','gif','png'),//设置允许上传文件的类型
