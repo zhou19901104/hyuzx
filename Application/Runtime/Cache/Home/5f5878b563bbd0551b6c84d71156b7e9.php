@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" href="/Public/index/images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/Public/index/images/favicon.ico" type="image/x-icon"/>
   <title>北京焕誉医疗美容官方网站_北京医疗整形_北京医疗美容</title>
-  <meta content="整形美容,北京焕誉,北京焕誉医疗美容,北京整形美容" name="keywords" />
-  <meta content="北京焕誉医疗美容以“良心、诚心、精心”为核心价值观，遵循“用科技与美丽邂逅，以信誉让生命焕彩”的服务宗旨，开设美容皮肤科、美容外科、注射微整形、美容牙科四大整形美容项目，全方位打造中国整形美容旗舰品牌。美丽热线 : 010-57290660 400-7667-000" name="description" />
-  <meta name="renderer" content="webkit" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+  <meta content="整形美容,北京焕誉,北京焕誉医疗美容,北京整形美容" name="keywords"/>
+  <meta
+      content="北京焕誉医疗美容以“良心、诚心、精心”为核心价值观，遵循“用科技与美丽邂逅，以信誉让生命焕彩”的服务宗旨，开设美容皮肤科、美容外科、注射微整形、美容牙科四大整形美容项目，全方位打造中国整形美容旗舰品牌。美丽热线 : 010-57290660 400-7667-000"
+      name="description"/>
+  <meta name="renderer" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <link rel="stylesheet" type="text/css" href="/Public/index/css/all.css">
   <link rel="stylesheet" type="text/css" href="/Public/index/css/style.css">
-  <link rel="stylesheet"  href="/Public/index/css/zoom.css" media="all" />
+  <link rel="stylesheet" href="/Public/index/css/zoom.css" media="all"/>
   <script type="text/javascript" src="/Public/index/js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="/Public/index/js/all.js"></script>
   <script type="text/javascript" src="/Public/index/js/zoom.min.js"></script>
@@ -19,20 +21,39 @@
 <!-- 在线联系 -->
 <!-- 浮动 -->
 <div class="talk">
+
   <div class="online">
     <ul>
       <li class="li-1">在线咨询<span class="close"></span></li>
-      <li class="li-2"><a href="javascript:void(0)">xxxxxxxx</a></li>
-      <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>
+      <li class="li-2"><a href="javascript:void(0)">123456789</a></li>
+      <!--  <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>-->
     </ul>
+
   </div>
+
+  <div class="online_2">
+    <ul>
+      <li class="li-1">电话咨询<span class="close"></span></li>
+      <!--<li class="li-2"><a href="javascript:void(0)">123456789</a></li>-->
+      <li class="li-2"><a href="javascript:void(0)">010-57290660</a></li>
+    </ul>
+
+  </div>
+
+
   <div class="ewm"></div>
   <ul class="flo-list">
-    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="/Public/index/images/serve-img.png" alt=""></a></li>
-    <li id="online"><a href="javascript:void(0)"><img src="/Public/index/images/talk-img.png" alt=""></a></li>
-    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="/Public/index/images/VIP-img.png" alt=""></a></li>
-    <li class="top"><img src="/Public/index/images/top-img.png" alt=""></li>
+    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/01.png" alt=""></a>
+    </li>
+    <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/02.png" alt=""></a>
+    </li>
+    <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img
+        src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/03.png" alt=""></a></li>
+    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img
+        src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
+    <li class="top"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/05.png" alt=""></li>
   </ul>
+
 </div>
 <!-- nav -->
 <div class="nav-wrap">
@@ -46,7 +67,8 @@
         <?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_class): $mod = ($i % 2 );++$i;?><li class="n-li">
             <?php if($p_class['class_name'] == '医疗团队'): ?><a href="<?php echo U('Home/Index/doctor_list');?>"><span class="s-1"><?php echo ($p_class["class_name"]); ?></span><span class="s-2"><?php echo ($p_class["class_e_name"]); ?></span></a>
               <?php elseif($p_class['class_name'] == '新闻动态'): ?>
-              <a href="<?php echo U('Home/Index/band_info',array('id'=>157));?>"><span class="s-1"><?php echo ($p_class["class_name"]); ?></span><span class="s-2"><?php echo ($p_class["class_e_name"]); ?></span></a>
+              <a href="<?php echo U('Home/Index/band_info',array('id'=>157));?>"><span
+                  class="s-1"><?php echo ($p_class["class_name"]); ?></span><span class="s-2"><?php echo ($p_class["class_e_name"]); ?></span></a>
               <?php elseif($p_class['class_name'] == '品牌中心'): ?>
               <a href=""><span class="s-1"><?php echo ($p_class["class_name"]); ?></span><span class="s-2"><?php echo ($p_class["class_e_name"]); ?></span></a>
               <?php elseif($p_class['class_name'] == '焕誉案例'): ?>
@@ -71,17 +93,22 @@
                         <div class="guide-li">
                           <div class="f-l">
                             <?php if(is_array($k_class["k_class"])): $i = 0; $__LIST__ = $k_class["k_class"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$c_class): $mod = ($i % 2 );++$i;?><dl>
-                                <?php if($c_class['tid'] != NULL): ?><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_class['tid']['id']));?>"><dt><?php echo ($c_class["class_name"]); ?></dt></a>
+                                <?php if($c_class['tid'] != NULL): ?><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_class['tid']['id']));?>">
+                                    <dt><?php echo ($c_class["class_name"]); ?></dt>
+                                  </a>
                                   <?php else: ?>
                                   <dt><?php echo ($c_class["class_name"]); ?></dt><?php endif; ?>
-                                <?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd>
+                                <?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>
+                                    </dd>
                                     <?php else: ?>
-                                    <dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd><?php endif; endforeach; endif; ?>
+                                    <dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>
+                                    </dd><?php endif; endforeach; endif; ?>
                               </dl><?php endforeach; endif; else: echo "" ;endif; ?>
                           </div>
                           <ul class="hot">
                             <li>热门项目</li>
-                            <li><a href="<?php echo U('Home/Index/new_info',array('id'=>$hot_info['id']));?>"><img src="<?php echo ($hot_info["img_url"]); ?>" alt=""></a></li>
+                            <li><a href="<?php echo U('Home/Index/new_info',array('id'=>$hot_info['id']));?>"><img
+                                src="<?php echo ($hot_info["img_url"]); ?>" alt=""></a></li>
                           </ul>
                         </div>
                       </li>
@@ -150,15 +177,21 @@
   </div>
 </div>
 
+
+<div class="special_doctor">
+  <p class="zj-tit"><img src="/Public/index/images/zj-tit.png" alt=""></p>
+</div>
+
+
 <!-- 专家团队 -->
 <div class="doctor-wrap">
   <div class="doctor">
-    <p class="zj-tit"><img src="/Public/index/images/zj-tit.png" alt=""></p>
     <div class="zj-list">
       <div class="zj-l">
         <?php if(is_array($doctor_list)): $i = 0; $__LIST__ = $doctor_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$img_list): $mod = ($i % 2 );++$i; if($key == 0): ?><div class="big-img"><img src="/Public/Uploads/doctor/index_<?php echo ($img_list["index_url"]); ?>" alt=""></div>
             <?php else: ?>
-            <div class="big-img" style="display:none;"><img src="/Public/Uploads/doctor/index_<?php echo ($img_list["index_url"]); ?>" alt=""></div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+            <div class="big-img" style="display:none;"><img src="/Public/Uploads/doctor/index_<?php echo ($img_list["index_url"]); ?>"
+                                                            alt=""></div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
       </div>
       <div class="zj-r">
         <div class="r-t">
@@ -169,68 +202,101 @@
             <p class="lan"><?php echo ($d_list["index_message"]); ?></p>
             <p class="p-3"><?php echo ($d_list["jianjie"]); ?></p>
             <p class="cy-tit">主打方向 Main Direction</p>
+
             <ul class="cy-list">
               <?php if(is_array($d_list["jingli"])): $i = 0; $__LIST__ = $d_list["jingli"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$j_list): $mod = ($i % 2 );++$i;?><li><?php echo ($j_list); ?></li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
+
+            <p class="cy-tupian"></p>
+
+            <div class="cy-anli">
+              <div class="anli-img">
+                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_tu1.jpg">
+                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_tu2.jpg">
+                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_tu3.jpg">
+                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_tu4.jpg">
+              </div>
+
+            </div>
         </div><?php endforeach; endif; else: echo "" ;endif; ?>
+
       </div>
+
       <div class="r-b-wrap">
         <div class="r-b">
           <ul class="zjslide">
-
-<!--            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-4.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-0.png" alt=""></a></li>-->
-            <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-1.png" alt=""></a></li>-->
-        <!--    <li><a href="javascript:void(0);"><img src="/Public/index/images/z-6.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-2.png" alt=""></a></li>-->
-            <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-3.png" alt=""></a></li>-->
-          <!--  <li><a href="javascript:void(0);"><img src="/Public/index/images/z-12.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-5.png" alt=""></a></li>-->
-            <!--<li><a href="javascript:void(0);"><img src="/Public/index/images/z-7.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-8.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-9.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-10.png" alt=""></a></li>
-            <li><a href="javascript:void(0);"><img src="/Public/index/images/z-11.png" alt=""></a></li>-->
-
-            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/12"><img src="/Public/index/images/z-4.png" alt=""></a></li>
-            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/6"><img src="/Public/index/images/z-0.png" alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/6"><img src="/Public/index/images/z-0.png"
+                                                                                 alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/12"><img src="/Public/index/images/z-4.png"
+                                                                                  alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/15"><img src="/Public/index/images/z-12.png"
+                                                                                  alt=""></a></li>
             <!-- <li><a href="javascript:void(0);"><img src="/Public/index/images/z-1.png" alt=""></a></li> -->
-            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/14"><img src="/Public/index/images/z-6.png" alt=""></a></li>
-            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/11"><img src="/Public/index/images/z-2.png" alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/14"><img src="/Public/index/images/z-6.png"
+                                                                                  alt=""></a></li>
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/11"><img src="/Public/index/images/z-2.png"
+                                                                                  alt=""></a></li>
             <!-- <li><a href="javascript:void(0);"><img src="/Public/index/images/z-3.png" alt=""></a></li> -->
-            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/15"><img src="/Public/index/images/z-12.png" alt=""></a></li>
-            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/13"><img src="/Public/index/images/z-5.png" alt=""></a></li>
 
-
+            <li><a href="http://www.hyuzx.com/Index/Index/doctor_info/id/13"><img src="/Public/index/images/z-5.png"
+                                                                                  alt=""></a></li>
 
           </ul>
         </div>
         <span class="s-s-l"></span>
         <span class="s-s-r"></span>
       </div>
+
     </div>
   </div>
 </div>
 </div>
 
+
 <!-- 成功案例 -->
 <div class="case-wrap">
   <p class="case-tit"><img src="/Public/index/images/case-tit.png" alt=""></p>
+
   <div class="ca-list">
+
     <div class="calist">
-      <ul class="caslide">
-        <?php if(is_array($anli_list)): $i = 0; $__LIST__ = $anli_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$a_list): $mod = ($i % 2 );++$i;?><li class="li-1">
-            <a href="<?php echo U('Home/Index/case_info',array('id'=>$a_list['id']));?>" class="jump">
-              <img src="/Public/Uploads/anli/info_<?php echo ($a_list["img_url"]); ?>" alt="">
-            </a>
-            <p class="btn"><a target='_blank' href="http://pkt.zoosnet.net/LR/Chatpre.aspx?id=PKT67204838&cid=1469000068684805339274&lng=cn&sid=1469000068684805339274&p=http%3A//hyuzx.com/&rf1=&rf2=&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&bid=&d=1469000257113">在线了解体验过程&nbsp;>></a></p>
-          </li><?php endforeach; endif; else: echo "" ;endif; ?>
-      </ul>
+
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case1.jpg" alt="">
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name1.jpg" alt="">
+        <div class="caslide_left"></div>
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case2.jpg" alt="">
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name2.jpg" alt="">
+        <div class="caslide_left"></div>
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name3.jpg" alt="">
+        <div class="caslide_right"></div>
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case3.jpg" alt="">
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name4.jpg" alt="">
+        <div class="caslide_right"></div>
+      </div>
+      <div class="caslide">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case4.jpg" alt="">
+      </div>
+
+
     </div>
-    <span class="s-s-l"></span>
-    <span class="s-s-r"></span>
+
   </div>
 </div>
+
+
 <!-- 环境设备 -->
 <div class="huan-wrap">
   <div class="huanjing">
@@ -239,13 +305,15 @@
       <p class="j-1-l"><img src="/Public/index/images/j-1.jpg" alt=""></p>
       <div class="j-1-r">
         <p><img src="/Public/index/images/j-tit1.png" alt=""></p>
-        <p class="j-text">焕誉本着一切为客户服务的初心，按照人性化尊贵定制设计标准，医院整体氛围高贵、典雅、舒适，把权威的医学团队和个性化的审美理念相结合。医院除了主流的医美设备供给顾客，同时也设有多间豪华VIP套房，色彩温馨，装修华丽，雅致的环境让您有"家"的感觉。焕誉一切从客户出发，一切为客户服务，争当行业服务标杆，为一切求美者提供完善专业的医美服务。</p>
+        <p class="j-text">
+          焕誉本着一切为客户服务的初心，按照人性化尊贵定制设计标准，医院整体氛围高贵、典雅、舒适，把权威的医学团队和个性化的审美理念相结合。医院除了主流的医美设备供给顾客，同时也设有多间豪华VIP套房，色彩温馨，装修华丽，雅致的环境让您有"家"的感觉。焕誉一切从客户出发，一切为客户服务，争当行业服务标杆，为一切求美者提供完善专业的医美服务。</p>
       </div>
     </div>
     <div class="j-2">
       <div class="j-2-l">
         <p><img src="/Public/index/images/j-tit2.png" alt=""></p>
-        <p class="j-text">北京焕誉医疗美容是由威高集团牵头注资倾力打造的专业整形美容医院，拥有经验丰富的整形专家和多样的医美设备。医院以“良心、诚心、精心”为核心价值观，遵循“用科技与美丽邂逅，以信誉让生命焕彩”的服务宗旨，倡导科学美容、规范美容、个性美容理念；始终以医学和美学原理为指导，致力于美学精髓与现代医疗美容技术的完美融合，开创适合中国人的东方式医学美学理念。医院严格按照国家的手术室建设标准，以高标准、高要求，追求精益求精的专业医疗技术与优质服务，可为求美者实施各类美容整形手术及治疗，实现安全、快速塑美。</p>
+        <p class="j-text">
+          北京焕誉医疗美容是由威高集团牵头注资倾力打造的专业整形美容医院，拥有经验丰富的整形专家和多样的医美设备。医院以“良心、诚心、精心”为核心价值观，遵循“用科技与美丽邂逅，以信誉让生命焕彩”的服务宗旨，倡导科学美容、规范美容、个性美容理念；始终以医学和美学原理为指导，致力于美学精髓与现代医疗美容技术的完美融合，开创适合中国人的东方式医学美学理念。医院严格按照国家的手术室建设标准，以高标准、高要求，追求精益求精的专业医疗技术与优质服务，可为求美者实施各类美容整形手术及治疗，实现安全、快速塑美。</p>
       </div>
       <p class="j-2-r"><img src="/Public/index/images/j-2.jpg" alt=""></p>
     </div>
@@ -274,8 +342,9 @@
       <div class="w_l">
         <ul>
           <li id='videoa'>
-            <video id='dd' poster="/Public/index/images/v-1-3.jpg" style='height:100%;width:100;%' controls="controls">
-              <source id="big_pic" src="/Public/video/video_2.mp4" type="video/mp4" />
+            <video id='dd' poster="/Public/index/images/v-1-3.jpg" style='height:100%;width:100;%'
+                   controls="controls">
+              <source id="big_pic" src="/Public/video/video_2.mp4" type="video/mp4"/>
             </video>
             <!--<img id="big_pic" src="/Public/index/images/v-1.png" alt="">-->
 
@@ -294,7 +363,7 @@
 
           </ul>
         </div>
-        <span class="s-next"><img src="/Public/index/images/next_page.png" style="margin:0 auto;"alt=""></span>
+        <span class="s-next"><img src="/Public/index/images/next_page.png" style="margin:0 auto;" alt=""></span>
       </div>
     </div>
   </div>
@@ -333,14 +402,16 @@
       <p class="f-phone">美丽专线 : 400-7667-000</p>
     </div>
   </div>
-  <div class="reg" style='height:20px;'><p style='height:20px;line-height:20px;'>copyright &#169; 2016-2026 huanyuzhengxing 北京焕誉医疗美容门诊部有限公司</p></div>
-  <div style='text-align:center;background:#1d1d1d;font-size:12px;'><p>京ICP备16017287号-1   （京）医广【2016】第07-01-0355号</p></div>
+  <div class="reg" style='height:20px;'><p style='height:20px;line-height:20px;'>copyright &#169; 2016-2026
+    huanyuzhengxing 北京焕誉医疗美容门诊部有限公司</p></div>
+  <div style='text-align:center;background:#1d1d1d;font-size:12px;'><p>京ICP备16017287号-1 （京）医广【2016】第07-01-0355号</p>
+  </div>
 </div>
 </body>
-<script language=javascript>
-  var LiveAutoInvite0='您好，来自%IP%的朋友';
-  var LiveAutoInvite1='来自首页的对话';
-  var LiveAutoInvite2=' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通</b>';
+<!--<script language=javascript>
+  var LiveAutoInvite0 = '您好，来自%IP%的朋友';
+  var LiveAutoInvite1 = '来自首页的对话';
+  var LiveAutoInvite2 = ' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通</b>';
 </script>
-<script language="javascript" src="<?php echo C('SHANG_WU');?>"></script>
+<script language="javascript" src="<?php echo C('SHANG_WU');?>"></script>-->
 </html>

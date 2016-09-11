@@ -36,8 +36,6 @@ a {
 
 /* 交流 */
 
-
-
 .talk {
     width: 40px;
     height: 130px;
@@ -81,12 +79,9 @@ a {
     background: url(../images/ewm.png) center center no-repeat;
     position: absolute;
     top: 200px;
-    right:30px;
+    right: 30px;
     display: none;
 }
-
-
-
 
 /* 在线交流 */
 .online {
@@ -95,7 +90,7 @@ a {
     background: #fff;
     z-index: 70;
     border: 1px solid #ccc;
-    border-bottom:none;
+    border-bottom: none;
     position: absolute;
     right: 50px;
     top: 80px;
@@ -166,14 +161,13 @@ a {
     background: #666 url(../images/tell2.png) 10px center no-repeat;
 }
 
-
 .online_2 {
     width: 180px;
     height: 82px;
     background: #fff;
     z-index: 70;
     border: 1px solid #ccc;
-    border-bottom:none;
+    border-bottom: none;
     position: absolute;
     right: 50px;
     top: 170px;
@@ -231,8 +225,6 @@ a {
     height: 40px;
     background: #666 url(../images/tell2.png) 10px center no-repeat;
 }
-
-
 
 /* 头部 */
 .nav-wrap {
@@ -703,22 +695,12 @@ a {
     right: 4%;
 }
 
-
-
-
-
-
-
-
-
-
 /* 专家团队 */
 
-.special_doctor{
+.special_doctor {
     text-align: center;
     margin: 20px 0 30px 0;
 }
-
 
 .doctor-wrap {
     width: 100%;
@@ -730,7 +712,7 @@ a {
 
 .doctor-wrap .doctor {
     width: 1200px;
-    height:800px;
+    height: 800px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -790,7 +772,7 @@ a {
     font-size: 18px;
     color: #fff;
     margin-bottom: 5px;
-    margin-right:80px;
+    margin-right: 80px;
 }
 
 .doctor-wrap .doctor .zj-list .zj-r .r-t .p-3 {
@@ -824,20 +806,17 @@ a {
     line-height: 38px;
 
 }
+
 .doctor-wrap .doctor .zj-list .zj-r .r-t .cy-anli {
-    height:135px;
-    width:480px;
+    height: 135px;
+    width: 480px;
     margin-top: 50px;
 }
 
-.doctor-wrap .doctor .zj-list .zj-r .r-t .cy-anli .anli-img img
-{
+.doctor-wrap .doctor .zj-list .zj-r .r-t .cy-anli .anli-img img {
     display: block;
     float: left;
 }
-
-
-
 
 .doctor-wrap .doctor .zj-list .zj-r .r-t .cy-list li {
     width: 30%;
@@ -857,8 +836,8 @@ a {
     width: 778px;
     margin: 0 auto;
     position: absolute;
-    bottom:0;
-    left:25%;
+    bottom: 0;
+    left: 25%;
     height: 160px;
     overflow: hidden;
 }
@@ -909,27 +888,6 @@ a {
     right: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 成功案例 */
 
 .case-wrap {
@@ -970,27 +928,28 @@ a {
 
 .case-wrap .ca-list .calist .caslide {
     width: 300px;
-    height:340px;
+    height: 340px;
     float: left;
     margin: 0 auto;
     position: relative;
-/*    position: absolute;
-    top: 2%;
-    left: 0;*/
+    /*    position: absolute;
+        top: 2%;
+        left: 0;*/
 
 }
-.case-wrap .ca-list .calist .caslide_left{
+
+.case-wrap .ca-list .calist .caslide_left {
     width: 14px;
     height: 28px;
     background: url(../../../Public/Uploads/comm/info_tra.svg) no-repeat;
     position: absolute;
-    left:-14px;
-    top:18%;
+    left: -14px;
+    top: 18%;
     background-position: 0 0;
     z-index: 1;
 }
 
-.case-wrap .ca-list .calist .caslide_right{
+.case-wrap .ca-list .calist .caslide_right {
     width: 14px;
     height: 28px;
     background: url(../../../Public/Uploads/comm/info_tra.svg) no-repeat;
@@ -1001,10 +960,7 @@ a {
     z-index: 1;
 }
 
-
-
-
-    /* 环境设备 */
+/* 环境设备 */
 .huan-wrap {
     width: 100%;
     margin: 0 auto;
