@@ -34,12 +34,12 @@
   </tr>
    <tr>
     <th height="35" scope="row">验证码:</th>
-    <td><input type="text" name="verify" class="linput" /><img id="verifyImg" src="/index.php/Admin/Login/verify?" onclick='this.src=this.src+"&"+Math.random()' border="0" ALT="点击刷新验证码" style="cursor:pointer" align="absmiddle"></td>
+    <td><input type="text" name="verify" class="linput" /><img id="verifyImg" src="/Admin/Login/verify?" onclick='this.src=this.src+"&"+Math.random()' border="0" ALT="点击刷新验证码" style="cursor:pointer" align="absmiddle"></td>
   </tr>
   <tr>
     <th scope="row">&nbsp;</th>
     <td>
-    <input class="lsubmit" type="submit" value="登录后台" /> <a href="/index.php" class="bh">返回首页</a>
+    <input class="lsubmit" type="submit" value="登录后台" /> <a href="" class="bh">返回首页</a>
     </td>
   </tr>  
 </table>

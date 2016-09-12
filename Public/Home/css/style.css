@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0}
+ul,ol,li{list-style:none}
+input,button{margin:0;font-size:12px;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+/* focus */
+#focus{width:1200px; margin: 0 auto;}
+#new-focus{width:1000px; margin: 0 auto;}
+.mb-wrapper{margin:0 auto;position:relative; height:450px; left:0;top:0}
+.mb-slider,.mb-scroll{width:100%;height:380px;overflow:hidden;margin:0 auto;padding:0;position:relative;left:0;top:0}
+.mb-active-slider{border-color:#333}
+.mb-slider .mb-panel{margin-top:100px;display:block;cursor:pointer;float:left;list-style:none; margin:0 5px;}
+.mb-panel a{outline:0}
+.mb-slider .mb-panel.current{cursor:auto}
+.mb-inside *{max-width:100%}
+a.mb-scrollButtons{display:block;width:45px;height:58px; position:absolute;top:40%;margin-top:-29px;cursor:pointer;text-decoration:none;}
+a.mb-scrollButtons.mb-left{width:33px;height:63px; left:-54px;background:url(../images/v-left.png) 0 0 no-repeat;}
+a.mb-scrollButtons.mb-right{width:33px;height:63px; right:-54px;background:url(../images/v-right.png) 0 0 no-repeat;}
+a.mb-scrollButtons.mb-left:hover{background-position:left bottom}
+a.mb-scrollButtons.mb-right:hover{background-position:right bottom}
+a.mb-scrollButtons.disabled{display:none}
+.mb-controls{width:100%; margin:0 auto;text-align:center;position:absolute; top:400px; z-index:30; background: url(../images/v-line.png) center center no-repeat;}
+.mb-controls a{color:#666;font:18px/2.2 Georgia, Serif;display:inline-block;text-decoration:none;padding:2px;margin:0 5px 0 0;text-align:center;outline:0} 
+.mb-panel{margin-top:90px}
+.mb-controls a:hover{color:black}
+.mb-controls a.current{color:#900}
+.main-nav{display:block; text-align:center; border-bottom:2px solid #a71700;margin:0 0 20px 0;padding:0 0 10px 0}
+.main-nav a{text-decoration:none;color:#3e63ec;font-size:18px;margin:0 8px}
+.mb-inside img{width:100%}
+.mb-links{background:#fff; padding:0 10px;}

@@ -1,7 +1,7 @@
 <?php
 return array(
    //'配置项'=>'配置值'
-   //'URL_MODEL'            => 1,		//URL兼容模式
+
   'USER_AUTH_ON'=>true,
   'USER_AUTH_TYPE' =>1, // 默认认证类型 1 登录认证 2 实时认证
   'USER_AUTH_KEY' =>'authId', // 用户认证SESSION标记
@@ -15,6 +15,9 @@ return array(
   'REQUIRE_AUTH_ACTION'=>'', // 默认需要认证操作
   'GUEST_AUTH_ON'          => false,    // 是否开启游客授权访问
   'GUEST_AUTH_ID'           =>    0,     // 游客的用户ID
+
+
+
    //'DB_LIKE_FIELDS'=>'title|remark',
   'RBAC_ROLE_TABLE'=>'sd_role',
   'RBAC_USER_TABLE' => 'sd_role_user',

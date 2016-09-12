@@ -11,6 +11,10 @@ use Think\Verify;
 class LoginController extends CommonController
 {
 
+    public function index()
+    {
+        $this->display();
+    }
 	/*
 	* 空操作
 	* 前台模块操作指定错误时调用

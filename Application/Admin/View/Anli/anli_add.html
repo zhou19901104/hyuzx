@@ -2,13 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<title>后台用户管理-{$Think.config.cms_name}</title>
-	<include file="Public/head" />
+	<include file="Public:head" />
 	
 </head>
-
-<style type="text/css">
-.file{ position:absolute; top:1; right:700px; height:24px; filter:alpha(opacity:0);opacity: 0;width:375px ;border:1px solid red;}
-</style>
 <body>
 	<div class="midder">
 <form action="{:U('/Admin/Anli/anli_add')}" method="post" name="form" id="myform" enctype="multipart/form-data">
@@ -29,37 +25,36 @@
                 <tr class="tr rt">
                     <td width="100">感言:</td>
                     <td colspan="3" class="lt">
-                       
 						<textarea name='jianyan' rows='3' cols='50'></textarea>
                     </td>
                 </tr>
-				
-                <tr class="tr rt">
-                    <td width="100">效果图：</td>
-                    <td colspan="3" class="lt">
-                        <input type="text" name="img_url" id="img_url" style="width:300px;" value="">
-						<input type='button' class='btn' value='浏览...' />
-						<input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('img_url').value=this.value" />
-                    </td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">列表图：</td>
-                    <td colspan="3" class="lt">
-                        <input type="text" name="list_url" id="list_url" style="width:300px;" value="">
-						<input type='button' class='btn' value='浏览...' />
-						<input type="file" name="list_url" class="file" id="list_url" size="28" onchange="document.getElementById('list_url').value=this.value" />
-                    </td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">推荐小图片：</td>
-                    <td colspan="3" class="lt">
-                        <input type="text" name="min_url" id="min_url" style="width:300px;" value="">
-						<input type='button' class='btn' value='浏览...' />
-						<input type="file" name="min_url" class="file" id="min_url" size="28" onchange="document.getElementById('min_url').value=this.value" />
-                    </td>
-                </tr>
+
+    <tr class="tr rt">
+        <td width="100">效果图：</td>
+        <td colspan="3" class="lt">
+            <input type="text" name="img_url" id="img_url" style="width:300px;" value="">
+            <input type='button' class='btn' value='浏览...' />
+            <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('img_url').value=this.value" />
+        </td>
+    </tr>
+
+    <tr class="tr rt">
+        <td width="100">列表图：</td>
+        <td colspan="3" class="lt">
+            <input type="text" name="list_url" id="list_url" style="width:300px;" value="">
+            <input type='button' class='btn' value='浏览...' />
+            <input type="file" name="list_url" class="file" id="list_url" size="28" onchange="document.getElementById('list_url').value=this.value" />
+        </td>
+    </tr>
+
+    <tr class="tr rt">
+        <td width="100">推荐小图片：</td>
+        <td colspan="3" class="lt">
+            <input type="text" name="min_url" id="min_url" style="width:300px;" value="">
+            <input type='button' class='btn' value='浏览...' />
+            <input type="file" name="min_url" class="file" id="min_url" size="28" onchange="document.getElementById('min_url').value=this.value" />
+        </td>
+    </tr>
 
 				<tr class="tr rt">
                     <td width="100">推荐:</td>

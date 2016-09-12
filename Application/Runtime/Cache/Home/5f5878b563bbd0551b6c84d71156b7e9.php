@@ -20,7 +20,6 @@
 
 </head>
 <body>
-<!-- 在线联系 -->
 <!-- 浮动 -->
 <div class="talk">
 
@@ -49,7 +48,6 @@
     <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
     <li class="top"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/05.png" alt=""></li>
   </ul>
-
 </div>
 
 <!-- nav -->
@@ -208,10 +206,10 @@
 
             <div class="cy-anli">
               <div class="anli-img">
-                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_img_1.jpg">
-                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_img_2.jpg">
-                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_img_3.jpg">
-                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_img_1.jpg">
+                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_tu1.jpg">
+                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_tu2.jpg">
+                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_tu3.jpg">
+                <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_tu4.jpg">
               </div>
 
             </div>
@@ -253,51 +251,42 @@
 <!-- 成功案例 -->
 <div class="case-wrap">
   <p class="case-tit"><img src="/Public/index/images/case-tit.png" alt=""></p>
+
   <div class="ca-list">
+
     <div class="calist">
 
-
       <div class="caslide">
-        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/calist_1.jpg" alt="">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case1.jpg" alt="">
       </div>
       <div class="caslide">
-        123
-        <div class="caslide_left">
-
-        </div>
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name1.jpg" alt="">
+        <div class="caslide_left"></div>
       </div>
       <div class="caslide">
-        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/calist_1.jpg" alt="">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case2.jpg" alt="">
       </div>
       <div class="caslide">
-        <div class="caslide_left">
-
-        </div>
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name2.jpg" alt="">
+        <div class="caslide_left"></div>
       </div>
       <div class="caslide">
-        <div class="caslide_right">
-
-        </div>
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name3.jpg" alt="">
+        <div class="caslide_right"></div>
       </div>
       <div class="caslide">
-        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/calist_1.jpg" alt="">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case3.jpg" alt="">
       </div>
       <div class="caslide">
-        <div class="caslide_right">
-
-        </div>
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name4.jpg" alt="">
+        <div class="caslide_right"></div>
       </div>
       <div class="caslide">
-        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/calist_1.jpg" alt="">
+        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case4.jpg" alt="">
       </div>
 
 
     </div>
-
-
-    <!-- <span class="s-s-l"></span>
-     <span class="s-s-r"></span>-->
-
 
   </div>
 </div>
@@ -420,6 +409,7 @@
   var LiveAutoInvite1 = '来自首页的对话';
   var LiveAutoInvite2 = ' 网站商务通 主要功能：<br>1、主动邀请<br>2、即时沟通<br>3、查看即时访问动态<br>4、访问轨迹跟踪<br>5、内部对话<br>6、不安装任何插件也实现双向文件传输<br><br><b>如果您有任何问题请接受此邀请以开始即时沟通<\/b>';
 </script>
+
 <script language="javascript" src="http://pkt.zoosnet.net/JS/LsJS.aspx?siteid=PKT67204838&float=1&lng=cn"></script>
 
 </html>
