@@ -1300,7 +1300,8 @@ a {
 }
 
 .footer-wrap .footer .f-m .f-nav li .f-n-list dd a {
-    font-size: 12px;
+    font-size: 13px;
+    color: #CDCDCD;
 }
 
 .footer-wrap .footer .f-m .f-nav li .f-n-list dd a:hover {

@@ -6,11 +6,12 @@ use Think\Controller;
 
 class IndexController extends CommonController
 {
-   //主页
+   /**
+    * 主页
+    */
    public function index()
    {
-
-      $class_list = M('Class')->where('pid = 0')->order('sort desc')->select();
+      //$class_list = M('Class')->where('pid = 0')->order('sort desc')->select();
 
       //dump($class_list);die();
       $p_list = M('class')->where('class_name = "项目系列"')->find();
@@ -19,31 +20,30 @@ class IndexController extends CommonController
       $p_list = M('class')->where('pid = "' . $p_list['id'] . '"')->select();
 
 
-
-      for ($i = 0; $i < count($class_list); $i++) {
-         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-
-            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-            }
-
-            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-            }
-         }
-      }
+//      for ($i = 0; $i < count($class_list); $i++) {
+//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
+//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
+//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
+//
+//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
+//            }
+//
+//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
+//            }
+//         }
+//      }
 
       $hot_info = M('content')->where('hot = 1')->order('createtime desc')->find();
 
       $this->assign('hot_info', $hot_info);
 
-      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-      for ($i = 0; $i < count($foot_list); $i++) {
-         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-      }
-      $this->assign('foot_list', $foot_list);
+//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
+//      for ($i = 0; $i < count($foot_list); $i++) {
+//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
+//      }
+//      $this->assign('foot_list', $foot_list);
 
       $doctor_list = M('doctor')->order('sort desc')->select();
       for ($i = 0; $i < count($doctor_list); $i++) {
@@ -55,7 +55,7 @@ class IndexController extends CommonController
 
       $this->assign('doctor_list', $doctor_list);
       $this->assign('anli_list', $anli_list);
-      $this->assign('class_list', $class_list);
+      //$this->assign('class_list', $class_list);
 
       $this->assign('p_list', $p_list);
 
@@ -64,31 +64,33 @@ class IndexController extends CommonController
       $this->display();
    }
 
-   //文章列表
+   /**
+    * 文章列表
+    */
    public function new_list()
    {
 
-      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-      for ($i = 0; $i < count($foot_list); $i++) {
-         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-      }
-      $this->assign('foot_list', $foot_list);
-
-      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-
-      for ($i = 0; $i < count($class_list); $i++) {
-         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->find();
-            }
-            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-            }
-         }
-      }
-      $this->assign('class_list', $class_list);
+//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
+//
+//      for ($i = 0; $i < count($foot_list); $i++) {
+//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
+//      }
+//
+//
+//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
+//
+//      for ($i = 0; $i < count($class_list); $i++) {
+//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
+//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
+//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
+//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->find();
+//            }
+//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
+//            }
+//         }
+//      }
 
 
       $id = I('get.id');
@@ -108,12 +110,18 @@ class IndexController extends CommonController
          }
       }
 
+
+//
+//      $this->assign('class_list', $class_list);
+//      $this->assign('foot_list', $foot_list);
       $this->assign('pp_class', $pp_class);
       $this->assign('class_info', $class_info);
       $this->display();
    }
 
-   //品牌详情
+   /**
+    * 品牌详情
+    */
    public function band_info()
    {
 
@@ -126,27 +134,27 @@ class IndexController extends CommonController
       $case_info = M('case')->order('sort desc')->find();
       $this->assign('case_info', $case_info);
 
-      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-      for ($i = 0; $i < count($foot_list); $i++) {
-         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-      }
-      $this->assign('foot_list', $foot_list);
-
-      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-
-      for ($i = 0; $i < count($class_list); $i++) {
-         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-            }
-            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-            }
-         }
-      }
-      $this->assign('class_list', $class_list);
+//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
+//      for ($i = 0; $i < count($foot_list); $i++) {
+//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
+//      }
+//      $this->assign('foot_list', $foot_list);
+//
+//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
+//
+//      for ($i = 0; $i < count($class_list); $i++) {
+//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
+//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
+//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
+//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
+//            }
+//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
+//            }
+//         }
+//      }
+//      $this->assign('class_list', $class_list);
 
       $id = I('get.id');
       $info = M('content')->where('id = "' . $id . '"')->find();
@@ -170,30 +178,29 @@ class IndexController extends CommonController
    public function new_info()
    {
 
-      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-      for ($i = 0; $i < count($foot_list); $i++) {
-         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-      }
-      $this->assign('foot_list', $foot_list);
-
-      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-
-      for ($i = 0; $i < count($class_list); $i++) {
-         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-            }
-            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-            }
-         }
-      }
-      $this->assign('class_list', $class_list);
+//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
+//      for ($i = 0; $i < count($foot_list); $i++) {
+//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
+//      }
+//      $this->assign('foot_list', $foot_list);
+//
+//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
+//
+//      for ($i = 0; $i < count($class_list); $i++) {
+//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
+//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
+//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
+//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
+//            }
+//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
+//            }
+//         }
+//      }
+//      $this->assign('class_list', $class_list);
 
       $id = I('get.id');
-
 
       $info = M('content')->where('id = "' . $id . '"')->find();
 
@@ -219,32 +226,37 @@ class IndexController extends CommonController
       $this->display();
    }
 
-   //视频列表
+   /**
+    * 案例列表
+    */
    public function case_info()
    {
 
-      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-      for ($i = 0; $i < count($foot_list); $i++) {
-         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-      }
-      $this->assign('foot_list', $foot_list);
+//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
+//      //dump($foot_list);
+//      for ($i = 0; $i < count($foot_list); $i++) {
+//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
+//      }
+//
+//      dump($foot_list);
+//      $class_list = $class->where('pid = 0')->order('sort desc')->select();
+//
+//      for ($i = 0; $i < count($class_list); $i++) {
+//         $class_list[$i]['p_class'] = $class->where('pid = "' . $class_list[$i]['id'] . '"')->select();
+//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
+//            $class_list[$i]['p_class'][$k]['k_class'] = $class->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
+//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
+//            }
+//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = $class->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
+//            }
+//         }
+//      }
+//
+//      $this->assign('class_list', $class_list);
 
-      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-
-      for ($i = 0; $i < count($class_list); $i++) {
-         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-            }
-            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-            }
-         }
-      }
-      $this->assign('class_list', $class_list);
-
+      $class = M('Class');
       $id = I('get.id');
 
       if ($id == '') {
@@ -263,8 +275,7 @@ class IndexController extends CommonController
          $anli_list_a[$k] = $anli_list_b[$i];
       }
 
-      $class_info = M('class')->where('class_name = "焕誉案例"')->find();
-
+      $class_info = $class->where('class_name = "焕誉案例"')->find();
 
       $this->assign('related_list', $related_list);
       $this->assign('class_info', $class_info);
@@ -277,31 +288,33 @@ class IndexController extends CommonController
       $this->display();
    }
 
-   //医生列表
+   /**
+    * 医生列表
+    */
    public function doctor_list()
    {
 
-      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-      for ($i = 0; $i < count($foot_list); $i++) {
-         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-      }
-      $this->assign('foot_list', $foot_list);
-
-      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-
-      for ($i = 0; $i < count($class_list); $i++) {
-         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-            }
-            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-            }
-         }
-      }
-      $this->assign('class_list', $class_list);
+//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
+//      for ($i = 0; $i < count($foot_list); $i++) {
+//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
+//      }
+//      $this->assign('foot_list', $foot_list);
+//
+//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
+//
+//      for ($i = 0; $i < count($class_list); $i++) {
+//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
+//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
+//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
+//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
+//            }
+//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
+//            }
+//         }
+//      }
+//      $this->assign('class_list', $class_list);
 
       $list = M('doctor')->order('sort desc')->select();
       $class_info = M('class')->where('class_name = "医疗团队"')->find();
@@ -311,32 +324,34 @@ class IndexController extends CommonController
       $this->display();
    }
 
-   //医生详情
+   /**
+    * 医生详情
+    */
    public function doctor_info()
    {
 
-      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-      for ($i = 0; $i < count($foot_list); $i++) {
-         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-      }
-      $this->assign('foot_list', $foot_list);
-
-      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-
-      for ($i = 0; $i < count($class_list); $i++) {
-         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-            }
-            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-            }
-         }
-      }
-
-      $this->assign('class_list', $class_list);
+//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
+//      for ($i = 0; $i < count($foot_list); $i++) {
+//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
+//      }
+//      $this->assign('foot_list', $foot_list);
+//
+//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
+//
+//      for ($i = 0; $i < count($class_list); $i++) {
+//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
+//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
+//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
+//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
+//            }
+//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
+//            }
+//         }
+//      }
+//
+//      $this->assign('class_list', $class_list);
 
       $id = I('get.id');
       $info = M('doctor')->where('id = "' . $id . '"')->find();
@@ -355,30 +370,34 @@ class IndexController extends CommonController
       $this->display();
    }
 
+   /**
+    * 来院路线
+    */
    public function come()
    {
-      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-      for ($i = 0; $i < count($foot_list); $i++) {
-         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-      }
-      $this->assign('foot_list', $foot_list);
-
-      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-
-      for ($i = 0; $i < count($class_list); $i++) {
-         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-            }
-            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-            }
-         }
-      }
-
-      $this->assign('class_list', $class_list);
+//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
+//
+//      for ($i = 0; $i < count($foot_list); $i++) {
+//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
+//      }
+//      $this->assign('foot_list', $foot_list);
+//
+//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
+//
+//      for ($i = 0; $i < count($class_list); $i++) {
+//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
+//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
+//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
+//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
+//            }
+//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
+//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
+//            }
+//         }
+//      }
+//
+//      $this->assign('class_list', $class_list);
 
       $related_list = M('content')->where('related = 1')->limit(6)->select();
       $this->assign('related_list', $related_list);
@@ -391,6 +410,14 @@ class IndexController extends CommonController
 
 
       $this->display();
+   }
+
+   /**
+    * 空操作方法
+    */
+   public function _empty()
+   {
+      $this->display('Empty/_empty');
    }
 
 }

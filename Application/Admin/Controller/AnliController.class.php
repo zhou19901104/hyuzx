@@ -20,7 +20,6 @@ class AnliController extends CommonController
         $this->display();
     }
 
-
     public function anli_add()
     {
         if ($_POST) {

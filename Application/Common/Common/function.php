@@ -130,17 +130,16 @@ function msubstr($str, $start=0, $length, $charset="utf-8", $suffix=true){
    }
 }
 
-//递归方法实现无限极分类
-function getTree($list,$pid=0,$level=0)
+//无限接分类实现
+function getTree($arr, $pid = 0, $level = 0)
 {
    static $tree = array();
-   foreach($list as $key=>$row) {
-      if($row['cat_pid']==$pid) {
-         $row['cat_level'] = $level;
-         $tree[] = $row;
-         getTree($list, $row['cat_id'], $level + 1);
+   foreach ($arr as $v) {
+      if ($v['pid'] == $pid) {
+         $v['level'] = $level + 1;
+         $tree[] = $v;
+         $tree = getTree($arr, $v['id'], $level + 1);
       }
    }
    return $tree;
 }
-

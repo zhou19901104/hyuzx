@@ -28,7 +28,7 @@
     <div class="online">
         <ul>
             <li class="li-1">在线咨询<span class="close"></span></li>
-            <li class="li-2"><a href="javascript:void(0)">123456789</a></li>
+            <li class="li-2"><a href="javascript:void(0)">xxxxxxxxx</a></li>
             <!--  <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>-->
         </ul>
 
@@ -38,9 +38,8 @@
         <ul>
             <li class="li-1">电话咨询<span class="close"></span></li>
             <!--<li class="li-2"><a href="javascript:void(0)">123456789</a></li>-->
-            <li class="li-2"><a href="javascript:void(0)">010-57290660</a></li>
+            <li class="li-2"><a href="javascript:void(0)">010-5729-0660</a></li>
         </ul>
-
     </div>
     <div class="ewm"></div>
     <ul class="flo-list">
@@ -198,6 +197,7 @@
         <div class="f-l">
             <p><img src="/Public/index/images/fot-logo.jpg" alt=""></p>
         </div>
+
         <div class="f-m">
             <ul class="f-nav">
                 <?php if(is_array($foot_list)): $i = 0; $__LIST__ = $foot_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$f_list): $mod = ($i % 2 );++$i;?><li>
@@ -210,6 +210,8 @@
                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
         </div>
+
+
         <div class="f-r">
             <dl>
                 <dt><img src="/Public/index/images/f-ewm.jpg" alt=""></dt>

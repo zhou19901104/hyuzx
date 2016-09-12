@@ -1,17 +1,24 @@
 <layout name="layout" />
 <!--页面css-->
 <link rel="stylesheet" type="text/css" href="{:C('CSS_URL')}/case_info.css">
+
 <!-- nav -->
 <div class="nav-wrap">
 	<div class="nav">
+		<!--焕誉logo-->
 		<div class="logo"><img src="__PUBLIC__/index/images/logo.png" alt=""></div>
+		<!--导航-->
 		<div class="nav-list">
 			<ul class="nav-li">
+				<!--焕誉首页-->
 				<li class="n-li">
 					<a href="/"><span class="s-1">焕誉首页</span><span class="s-2">HOME</span></a>
 				</li>
+
 				<volist name='class_list' id='p_class'>
 					<li class="n-li">
+
+						<!--医疗团队-->
 						<if condition="$p_class['class_name'] eq '医疗团队'">
 							<a href="{:U('Home/Index/doctor_list')}"><span class="s-1">{$p_class.class_name}</span><span class="s-2">{$p_class.class_e_name}</span></a>
 							<elseif condition="$p_class['class_name'] eq '新闻动态'"/>
@@ -24,6 +31,7 @@
 							<a href="#"><span class="s-1">{$p_class.class_name}</span><span class="s-2">{$p_class.class_e_name}</span></a>
 						</if>
 
+						<!--品牌中心-->
 						<if condition="$p_class['class_name'] eq '品牌中心'">
 							<div class="list">
 								<ul class="li-ul">
@@ -40,6 +48,7 @@
 							</div>
 						</if>
 
+						<!--项目系列-->
 						<if condition="$p_class['class_name'] eq '项目系列'">
 							<div class="list">
 								<ul class="li-ul">
@@ -66,12 +75,14 @@
 															</dl>
 														</volist>
 													</div>
+
 													<ul class="hot">
 														<li>热门项目</li>
 														<li><a href=""><img src="__PUBLIC__/index/images/nav-img-1.png" alt=""></a></li>
 													</ul>
 												</div>
 											</li>
+
 											<else />
 
 										</if>
