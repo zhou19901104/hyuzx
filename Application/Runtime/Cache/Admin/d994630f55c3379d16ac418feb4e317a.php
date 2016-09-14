@@ -30,21 +30,21 @@
 
 </tr>
             <tr class="Toolbar_inbox ct">
-                <td align='center' width='100'>姓名</td>
+                <td align='center' width='50'>姓名</td>
                 <td align='center' width='50'>所属类别</td>
                 <td align='center' width='50'>职称</td>
                 <td align='center' width='50'>管理操作</td>
             </tr>
         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr class='ol'>
                 <td align='center'><?php echo ($vo["name"]); ?></td>
-                <td align='center'><?php echo ($vo["type_name"]); ?></a></td>
+                <td align='center'><?php echo ($vo["class_name"]); ?></a></td>
                 <td align='center'><?php echo ($vo["zhicheng"]); ?></a></td>
 				<td align='center'>
-                    <a href="<?php echo U('/Admin/Doctor/doctor_edit/',array('id'=>$vo['id']));?>">修改</a>
-                    | <a href="javascript:void(0)" onclick="return confirmurl('<?php echo U('/Admin/Doctor/doctor_del/',array('id'=>$vo['id']));?>','确定删除该医生吗?')">删除</a>
+                    <a href="<?php echo U('/Admin/Doctor/doctor_edit/',array('id'=>$vo['did']));?>">修改</a>
+                    | <a href="javascript:void(0)" onclick="return confirmurl('<?php echo U('/Admin/Doctor/doctor_del/',array('id'=>$vo['did']));?>','确定删除该医生吗?')">删除</a>
                 </td>
             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-		
+
 </table>
 </div>
 </body>

@@ -18,7 +18,7 @@
 
 </tr>
             <tr class="Toolbar_inbox ct">
-                <td align='center' width='100'>姓名</td>
+                <td align='center' width='50'>姓名</td>
                 <td align='center' width='50'>所属类别</td>
                 <td align='center' width='50'>职称</td>
                 <td align='center' width='50'>管理操作</td>
@@ -26,15 +26,15 @@
         <volist name="list" id="vo">
             <tr class='ol'>
                 <td align='center'>{$vo.name}</td>
-                <td align='center'>{$vo.type_name}</a></td>
+                <td align='center'>{$vo.class_name}</a></td>
                 <td align='center'>{$vo.zhicheng}</a></td>
 				<td align='center'>
-                    <a href="{:U('/Admin/Doctor/doctor_edit/',array('id'=>$vo['id']))}">修改</a>
-                    | <a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/Doctor/doctor_del/',array('id'=>$vo['id']))}','确定删除该医生吗?')">删除</a>
+                    <a href="{:U('/Admin/Doctor/doctor_edit/',array('id'=>$vo['did']))}">修改</a>
+                    | <a href="javascript:void(0)" onclick="return confirmurl('{:U('/Admin/Doctor/doctor_del/',array('id'=>$vo['did']))}','确定删除该医生吗?')">删除</a>
                 </td>
             </tr>
         </volist>
-		
+
 </table>
 </div>
 </body>

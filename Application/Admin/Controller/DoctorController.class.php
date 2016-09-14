@@ -8,6 +8,8 @@
 
 namespace Admin\Controller;
 
+use Think\Upload;
+
 class DoctorController extends CommonController
 {
 
@@ -16,39 +18,40 @@ class DoctorController extends CommonController
      */
     public function doctor_list()
     {
-        $list = M('doctor')->select();
-        for ($i = 0; $i < count($list); $i++) {
-            $class = M('doctor_class')->where('id = "' . $list[$i]['type'] . '"')->find();
-            $list[$i]['type_name'] = $class['class_name'];
-        }
+        $list = D('doctor')
+                    ->alias('d')
+                    ->field('d.id as did,d.name,d.type,d.zhicheng,c.id,c.class_name')
+                    ->join('__DOCTOR_CLASS__ as  c on d.type=c.id')
+                    ->select();
         $this->assign('list', $list);
         $this->display();
     }
 
-    //添加医生信息
+    /**
+     * 添加医生信息
+     */
     public function doctor_add()
     {
-        if ($_POST) {
-            $data = $_POST;
-            if (!$data['related']) {
-                $data['related'] = 0;
-            }
-            if ($data['type'] == 0) {
-                $this->error('请选择医生类别');
-                exit();
-            }
+        $doctor = D('Doctor');
 
-            //判断是否有图片上传
-            if ($data['img_url'] !== '' || $data['index_url'] !== '') {
-                $upload_info = $this->upload();
-                $data['img_url'] = $upload_info[0]['savename'];
-                $data['index_url'] = $upload_info[1]['savename'];
-            } else {
-                $data['img_url'] = '';
-                $data['index_url'] = '';
-            }
+        if (IS_POST) {
+            $data = $doctor->create();
 
-            $re = M('doctor')->add($data);
+            if($_FILES['img_url']['name'] != ''){
+                $config = array(
+                    'colnum' => 'img_url',
+                    'path' => 'doctor',
+                );
+                $this->up_image($data, $config);
+            }
+            if($_FILES['index_url']['name'] != ''){
+                $config = array(
+                    'colnum' => 'index_url',
+                    'path' => 'doctor',
+                );
+                $this->up_image($data, $config);
+            }
+            $re = $doctor->add($data);
             if ($re) {
                 $this->success('添加成功!', U('Admin/Doctor/doctor_list'));
             } else {
@@ -65,44 +68,63 @@ class DoctorController extends CommonController
     //修改医生信息
     public function doctor_edit()
     {
-        if ($_POST) {
-            $data = $_POST;
-            if (!$data['related']) {
-                $data['related'] = 0;
-            }
-            $doctor_re = M('doctor')->where('id = "' . $data['id'] . '"')->find();
+        $doctor = D('Doctor');
 
-            if ($data['index_url'] !== $doctor_re['index_url']) {
-                $upload_info = $this->upload();
-                $data['index_url'] = $upload_info[0]['savename'];
-                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['index_url']);
-                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['index_url']);
-                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['index_url']);
-            }
+        if (IS_POST) {
+            $data = $doctor->create();
 
-            //判断是否有新图片上传
-            if ($data['img_url'] !== $doctor_re['img_url']) {
-                $upload_info = $this->upload();
-                $data['img_url'] = $upload_info[0]['savename'];
-                //删除之前的原图
-                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['img_url']);
-                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['img_url']);
-                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['img_url']);
-            }
+            $info = $doctor->field('index_url,img_url,id')->find($data['id']);
 
-            if ($data['index_url'] !== $doctor_re['index_url'] && $data['img_url'] !== $doctor_re['img_url']) {
-                $upload_info = $this->upload();
-                $data['img_url'] = $upload_info[0]['savename'];
-                $data['index_url'] = $upload_info[1]['savename'];
-                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['index_url']);
-                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['index_url']);
-                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['index_url']);
-                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['img_url']);
-                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['img_url']);
-                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['img_url']);
+            if ($_FILES['img_url']['name'] != '') {
+                $config = array(
+                    'colnum' => 'img_url',
+                    'path' => 'doctor'
+                );
+                $this->up_image($data, $config);
+                @unlink($info['img_url']);
+            }
+            if($_FILES['index_url']['name'] != ''){
+                $config = array(
+                    'path' => 'doctor',
+                    'colnum' => 'index_url'
+                );
+                $this->up_image($data, $config);
+                @unlink($info['index_url']);
             }
 
-            $re = M('doctor')->where('id = "' . $data['id'] . '"')->save($data);
+//            $doctor_re = $doctor->where('id = "' . $data['id'] . '"')->find();
+//
+//            if ($data['index_url'] !== $doctor_re['index_url']) {
+//                $upload_info = $this->upload();
+//                $data['index_url'] = $upload_info[0]['savename'];
+//                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['index_url']);
+//                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['index_url']);
+//                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['index_url']);
+//            }
+//
+//            //判断是否有新图片上传
+//            if ($data['img_url'] !== $doctor_re['img_url']) {
+//                $upload_info = $this->upload();
+//                $data['img_url'] = $upload_info[0]['savename'];
+//                //删除之前的原图
+//                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['img_url']);
+//                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['img_url']);
+//                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['img_url']);
+//            }
+//
+//            if ($data['index_url'] !== $doctor_re['index_url'] && $data['img_url'] !== $doctor_re['img_url']) {
+//                $upload_info = $this->upload();
+//                $data['img_url'] = $upload_info[0]['savename'];
+//                $data['index_url'] = $upload_info[1]['savename'];
+//                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['index_url']);
+//                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['index_url']);
+//                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['index_url']);
+//                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['img_url']);
+//                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['img_url']);
+//                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['img_url']);
+//            }
+
+            $re = $doctor->where('id = "' . $data['id'] . '"')->save($data);
             if ($re) {
                 $this->success('修改成功!', U('Admin/Doctor/doctor_list'));
             } else {
@@ -111,7 +133,7 @@ class DoctorController extends CommonController
 
         } else {
             $id = I('get.id');
-            $info = M('doctor')->where('id = "' . $id . '"')->find();
+            $info = $doctor->where('id = "' . $id . '"')->find();
             $class_list = M('doctor_class')->select();
             $this->assign('class_list', $class_list);
             $this->assign('info', $info);
@@ -122,15 +144,10 @@ class DoctorController extends CommonController
     //删除医生信息
     public function doctor_del()
     {
+        $doctor = D('Doctor');
         $id = I('get.id');
-        $re = M('doctor')->where('id = "' . $id . '"')->find();
-        @unlink('./Public/Uploads/doctor/list_' . $re['img_url']);
-        @unlink('./Public/Uploads/doctor/info_' . $re['img_url']);
-        @unlink('./Public/Uploads/doctor/index_' . $re['img_url']);
-        @unlink('./Public/Uploads/doctor/list_' . $re['index_url']);
-        @unlink('./Public/Uploads/doctor/info_' . $re['index_url']);
-        @unlink('./Public/Uploads/doctor/index_' . $re['index_url']);
-        $re = M('doctor')->where('id = "' . $id . '"')->delete();
+
+        $re = $doctor->where(array('id' => $id))->delete();
         if ($re) {
             $this->success('删除成功!', U('Admin/Doctor/doctor_list'));
         } else {
@@ -138,7 +155,9 @@ class DoctorController extends CommonController
         }
     }
 
-    //医生类别列表
+    /**
+     * 医生类别列表
+     */
     public function doctor_class_list()
     {
         $list = M('doctor_class')->select();
@@ -146,7 +165,9 @@ class DoctorController extends CommonController
         $this->display();
     }
 
-    //添加医生类别
+    /**
+     * 添加医生类别
+     */
     public function doctor_class_add()
     {
         if ($_POST) {
@@ -167,7 +188,9 @@ class DoctorController extends CommonController
         }
     }
 
-    //修改医生类别
+    /**
+     * 修改医生类别
+     */
     public function doctor_class_edit()
     {
         if ($_POST) {
@@ -238,4 +261,34 @@ class DoctorController extends CommonController
             return $upload->getUploadFileInfo();
         }
     }
+    /**
+     * @param $data   接收的数据;
+     * @param $width  缩略图的宽度;
+     * @param $height 缩略图的高度;
+     * @param $path  图片上传的子路径;
+     */
+    private function up_image(&$data, $config)
+    {
+
+        $path = isset($config['path']) ? $config['path'] : 'comm';
+        $colnum = isset($config['colnum']) ? $config['colnum'] : 'img_url';
+
+        //判断上传的附件没有问题才进行处理
+        if ($_FILES[$colnum]['error'] === 0) {
+            $cfg = array(
+                'rootPath' => './Public/Uploads/' . $path . '/'  //保存根路径
+            );
+            $upload = new Upload($cfg);
+            echo $upload->getError();
+
+            $info = $upload->uploadOne($_FILES[$colnum]);
+            //附件上传后的信息保存在数据库中
+            if ($info) {
+                $img_url = $upload->rootPath . $info['savepath'] . $info['savename'];
+                $data[$colnum] = $img_url;
+            }
+        }
+
+    }
+
 }
