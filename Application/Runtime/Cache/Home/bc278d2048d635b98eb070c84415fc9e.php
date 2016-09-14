@@ -31,7 +31,6 @@
             <li class="li-2"><a href="javascript:void(0)">xxxxxxxxx</a></li>
             <!--  <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>-->
         </ul>
-
     </div>
 
     <div class="online_2">
@@ -137,6 +136,8 @@
 		<span class="next"></span>
 	</div>
 </div>
+
+
 <!--新闻详情-->
 <div class="new-cont-wrap map-width">
 	<ul class="pro-text">
@@ -210,7 +211,6 @@
                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>
         </div>
-
 
         <div class="f-r">
             <dl>

@@ -11,6 +11,7 @@ class IndexController extends CommonController
     */
    public function index()
    {
+
       //$class_list = M('Class')->where('pid = 0')->order('sort desc')->select();
 
       //dump($class_list);die();
@@ -18,7 +19,6 @@ class IndexController extends CommonController
 
       //dump($p_list);die();
       $p_list = M('class')->where('pid = "' . $p_list['id'] . '"')->select();
-
 
 //      for ($i = 0; $i < count($class_list); $i++) {
 //         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
@@ -62,6 +62,7 @@ class IndexController extends CommonController
       //dump($class_list);die();
 
       $this->display();
+      echo 12;die();
    }
 
    /**
@@ -120,7 +121,7 @@ class IndexController extends CommonController
    }
 
    /**
-    * 品牌详情
+    * 新闻详情
     */
    public function band_info()
    {
@@ -155,6 +156,9 @@ class IndexController extends CommonController
 //         }
 //      }
 //      $this->assign('class_list', $class_list);
+
+
+
 
       $id = I('get.id');
       $info = M('content')->where('id = "' . $id . '"')->find();

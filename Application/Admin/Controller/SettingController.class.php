@@ -29,7 +29,6 @@ class SettingController extends CommonController
          }
       }
 
-
       $this->assign('class_list', $class_list);
       $this->display();
    }

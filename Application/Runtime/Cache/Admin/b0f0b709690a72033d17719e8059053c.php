@@ -5,16 +5,17 @@
 <meta name="Copyright" content="<?php echo ($ikphp["ikphp_site_name"]); ?>" />
 <title>管理中心-<?php echo (C("cms_name")); ?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link type="text/css" rel="stylesheet" href="/Public/css/style.css?333"/>
-<script src="/Public/js/jquery.js" type="text/javascript"></script>
-<script type="text/javascript" src="/Public/js/function.js"></script>
-<script type="text/javascript" src="/Public/js/artDialog/jquery.artDialog.js?skin=default"></script>
-<script type="text/javascript" src="/Public/js/artDialog/plugins/iframeTools.js"></script>
-<script type="text/javascript" src="/Public/js/jquery.js"></script>
-<script type="text/javascript" src="/Public/js/common.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Public/js/ue/ueditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Public/js/ue/ueditor.all.min.js"> </script>
-<script type="text/javascript" charset="utf-8" src="/Public/js/ue/lang/zh-cn/zh-cn.js"></script>
+<link type="text/css" rel="stylesheet" href="<?php echo C('CSS_URL');?>/style.css"/>
+
+<script type="text/javascript" src="<?php echo C('JS_URL');?>/jquery.js"></script>
+<script type="text/javascript" src="<?php echo C('JS_URL');?>/function.js"></script>
+<script type="text/javascript" src="<?php echo C('JS_URL');?>/artDialog/jquery.artDialog.js?skin=default"></script>
+<script type="text/javascript" src="<?php echo C('JS_URL');?>/artDialog/plugins/iframeTools.js"></script>
+<script type="text/javascript" src="<?php echo C('JS_URL');?>/common.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="<?php echo C('JS_URL');?>/ue/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo C('JS_URL');?>/ue/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="<?php echo C('JS_URL');?>/ue/lang/zh-cn/zh-cn.js"></script>
 
 <style>.fbox{float:left;width:45%;margin-right:10px;}</style>
 </head>

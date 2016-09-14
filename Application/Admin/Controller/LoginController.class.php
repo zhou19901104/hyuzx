@@ -42,8 +42,6 @@ class LoginController extends CommonController
 
     }
 
-    //验证码
-
     //登陆验证
      public function checklogin()
      {

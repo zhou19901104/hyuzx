@@ -19,7 +19,7 @@ class CommonController extends Controller
 
       $class = M('Class');
 
-      if(S('foot_list') == ''){
+      if(F('foot_list') == ''){
          //footer页面底部
          $foot_list = $class
              ->field('id,pid,class_name,sort')
@@ -30,16 +30,17 @@ class CommonController extends Controller
             $foot_list[$key]['zi_list'] = $class->where(array('pid' => $foot_list[$key]['id']))->select();
          }
 
-         S('foot_list', $foot_list, 24*3600);
-
+         F('foot_list', $foot_list);
 
       }
-      $foot_list = S('foot_list');
+
+      $foot_list = F('foot_list');
+
       $this->assign('foot_list', $foot_list);
 
       //nav导航栏
 
-      if(S('class_list') == ''){
+      if(F('class_list') == ''){
 
          $class_list = $class->where('pid = 0')->order('sort desc')->select();
 
@@ -56,11 +57,13 @@ class CommonController extends Controller
             }
          }
 
-         S('class_list', $class_list, 24*3600);
+         F('class_list', $class_list);
       }
 
-      $class_list = S('class_list');
+      $class_list = F('class_list');
+
       $this->assign('class_list', $class_list);
+
 //      foreach($class_list as $k => $val){
 //
 //         $class_list[$k]['p_class'] = $class->where(array('pid' => $class[$k]['id']))->select();

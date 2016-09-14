@@ -1,0 +1,2435 @@
+[ 2016-09-14T06:26:17+08:00 ] 42.156.251.188 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT `id`,`pid`,`class_name`,`sort` FROM `sd_class` WHERE `pid` = 12 AND `id` <> 98  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 13  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 64  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "13" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "14" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "20" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "27" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "31" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "14" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "20" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "27" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "31" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "39" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "40" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "46" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "53" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "60" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "61" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "62" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "63" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "40" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "46" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "53" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "60" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "61" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "62" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "63" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "64" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "65" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "69" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "77" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "78" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "79" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "80" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "81" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "65" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "69" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "77" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "78" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "79" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "80" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "81" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "98" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "101" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "102" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "103" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "104" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "100" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "99" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "105" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "106" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "107" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "108" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "101" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "102" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "103" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "104" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "100" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "99" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "105" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "106" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "107" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "108" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "109" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "113" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "114" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "112" )  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T08:50:56+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT `id`,`pid`,`class_name`,`sort` FROM `sd_class` WHERE `pid` = 12 AND `id` <> 98  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 13  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 64  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "13" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "14" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "20" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "27" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "31" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "14" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "20" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "27" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "31" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "39" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "40" ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "46" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "53" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "60" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "61" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "62" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "63" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "40" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "46" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "53" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "60" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "61" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "62" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "63" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "64" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "65" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "69" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "77" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "78" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "79" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "80" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "81" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "65" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "69" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "77" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "78" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "79" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "80" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "81" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "98" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "101" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "102" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "103" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "104" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "100" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "99" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "105" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "106" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "107" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "108" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "101" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "102" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "103" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "104" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "100" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "99" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "105" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "106" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "107" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "108" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "109" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "113" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "114" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "112" )  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:09:33+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT `id`,`pid`,`class_name`,`sort` FROM `sd_class` WHERE `pid` = 12 AND `id` <> 98  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 13  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 64  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "13" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "14" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "20" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "27" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "31" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "14" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "20" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "27" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "31" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "39" )  [ RunTime:0.0156s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "40" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "46" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "53" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "60" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "61" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "62" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "63" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "40" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "46" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "53" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "60" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "61" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "62" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "63" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "64" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "65" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "69" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "77" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "78" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "79" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "80" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "81" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "65" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "69" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "77" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "78" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "79" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "80" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "81" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "98" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "101" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "102" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "103" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "104" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "100" ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "99" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "105" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "106" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "107" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "108" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "101" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "102" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "103" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "104" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "100" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "99" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "105" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "106" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "107" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "108" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "109" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "113" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "114" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "112" )  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:10:13+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT `id`,`pid`,`class_name`,`sort` FROM `sd_class` WHERE `pid` = 12 AND `id` <> 98  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 13  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 64  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+
+[ 2016-09-14T09:13:54+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT `id`,`pid`,`class_name`,`sort` FROM `sd_class` WHERE `pid` = 12 AND `id` <> 98  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 13  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 64  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/7be28b12a8a8af7a9a8c352ad296a42a.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort desc  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "13" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0625s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "14" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "20" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "27" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "31" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "14" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "20" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "27" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "31" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "39" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "40" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "46" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "53" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "60" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "61" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "62" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "63" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "40" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "46" )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "53" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "60" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "61" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "62" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "63" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "64" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "65" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "69" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "77" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "78" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "79" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "80" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "81" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "65" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "69" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "77" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "78" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "79" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "80" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "81" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "98" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "101" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "102" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "103" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "104" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "100" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "99" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "105" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "106" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "107" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "108" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "101" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "102" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "103" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "104" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "100" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "99" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "105" )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "106" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "107" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "108" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "109" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "113" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "114" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "112" )  [ RunTime:0.0000s ]
+NOTIC: [2] file_put_contents(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): failed to open stream: Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 137 行.
+NOTIC: [2] unlink(./Application/Runtime/Temp/72affb16e698d4a4d1cfe2fab91b6134.php): Permission denied C:\www\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 88 行.
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:14:52+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`class_name`,`sort` FROM `sd_class` WHERE `pid` = 12 AND `id` <> 98  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 13  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 39  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE `pid` = 64  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "13" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "14" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "20" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "27" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "31" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "14" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "20" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "27" )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "31" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "39" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "40" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "46" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "53" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "60" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "61" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "62" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "63" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "40" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "46" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "53" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "60" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "61" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "62" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "63" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "64" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "65" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "69" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "77" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "78" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "79" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "80" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "81" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "65" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "69" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "77" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "78" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "79" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "80" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "81" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "98" )  [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "101" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "102" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "103" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "104" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "100" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "99" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "105" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "106" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "107" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `sd_content` WHERE ( cid = "108" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "101" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "102" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "103" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "104" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "100" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "99" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "105" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "106" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "107" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "108" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "109" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "113" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "114" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "112" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:16:26+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:19:55+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:20:06+08:00 ] 61.50.106.246 /Home/Index/new_list/id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( id = "69" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "69" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "70" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "71" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "72" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "73" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "74" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "75" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "76" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "70" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "71" )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "72" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "73" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "74" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "75" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "76" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:21:12+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:23:32+08:00 ] 180.163.2.117 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:23:32+08:00 ] 117.185.27.115 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:24:07+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:24:51+08:00 ] 101.226.51.229 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:25:05+08:00 ] 61.50.106.246 /Home/Index/band_info/id/157.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "157" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "新闻动态" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='421' WHERE ( id = "157" ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:25:08+08:00 ] 180.153.214.191 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:25:16+08:00 ] 61.50.106.246 /Public/Admin/js/artDialog/skins/icons/question.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:25:19+08:00 ] 61.151.226.189 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:28:12+08:00 ] 61.151.226.199 /Home/Index/band_info/id/157.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "157" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "新闻动态" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='422' WHERE ( id = "157" ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:31:24+08:00 ] 61.50.106.246 /Home/Index/band_info/id/155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "155" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='655' WHERE ( id = "155" ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:31:32+08:00 ] 61.50.106.246 /Home/Index/come.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\4e7e3ea8c5e282bbdf51a173cc1ccf6e.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:31:34+08:00 ] 61.50.106.246 /Home/Index/band_info/id/155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "155" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='656' WHERE ( id = "155" ) [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:31:39+08:00 ] 61.50.106.246 /Home/Index/doctor_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "医疗团队" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:32:26+08:00 ] 61.50.106.246 /Home/Index/doctor_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "医疗团队" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+
+[ 2016-09-14T09:34:29+08:00 ] 101.226.89.115 /Home/Index/band_info/id/155.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "155" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='657' WHERE ( id = "155" ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:34:41+08:00 ] 180.153.81.203 /Home/Index/come.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\4e7e3ea8c5e282bbdf51a173cc1ccf6e.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:35:08+08:00 ] 112.65.193.13 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:35:15+08:00 ] 140.207.185.111 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:35:26+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:35:53+08:00 ] 61.50.106.246 /Home/Index/new_info/id/77.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "77" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "77" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='59' WHERE ( id = "142" ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\0c2b5ac594521f7bbb8ef863bbea221b.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:36:06+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:36:46+08:00 ] 101.226.125.103 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:37:31+08:00 ] 180.153.214.178 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015626s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:37:44+08:00 ] 61.50.106.246 /Home/Index/band_info/id/157.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "157" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "新闻动态" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='423' WHERE ( id = "157" ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:37:49+08:00 ] 61.50.106.246 /Home/Index/doctor_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "医疗团队" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:38:04+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:39:02+08:00 ] 180.153.201.79 /Home/Index/new_info/id/77.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "77" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "77" ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: UPDATE `sd_content` SET `read_num`='60' WHERE ( id = "142" ) [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\0c2b5ac594521f7bbb8ef863bbea221b.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:39:56+08:00 ] 117.185.27.115 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:42:21+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-14T09:50:01+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:50:13+08:00 ] 61.50.106.246 /hyuzx/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:50:57+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:51:13+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:51:23+08:00 ] 61.50.106.246 /hyuzx/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T09:51:37+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T09:53:55+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T09:54:10+08:00 ] 61.50.106.246 /hyuzx/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T09:54:28+08:00 ] 101.226.33.227 /hyuzx/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-14T09:59:00+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T10:01:39+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T10:01:42+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:05:38+08:00 ] 61.50.106.246 /Admind/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:05:45+08:00 ] 61.50.106.246 /Admind/Ldogin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:05:51+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:05:55+08:00 ] 61.50.106.246 /sdf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:05:59+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:06:42+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:06:47+08:00 ] 61.50.106.246 /Home/Index/band_info/id/157.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "157" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "新闻动态" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='424' WHERE ( id = "157" ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T10:06:52+08:00 ] 61.50.106.246 /Home/Index/doctor_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "医疗团队" ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:08:43+08:00 ] 101.226.65.106 /Admind/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-14T10:30:32+08:00 ] 180.153.205.252 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:30:41+08:00 ] 61.50.106.246 /Public/Admin/js/artDialog/skins/icons/question.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-14T10:33:45+08:00 ] 101.226.89.120 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T10:34:57+08:00 ] 101.226.125.105 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T10:34:58+08:00 ] 101.226.89.121 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T14:16:00+08:00 ] 101.226.79.182 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-14T14:17:37+08:00 ] 61.50.106.246 /Public/Admin/js/artDialog/skins/icons/question.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T14:19:34+08:00 ] 101.226.68.197 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T14:30:14+08:00 ] 101.226.66.174 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T14:34:14+08:00 ] 61.151.218.119 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T14:38:42+08:00 ] 61.151.226.199 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T14:43:59+08:00 ] 180.153.201.79 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T14:44:19+08:00 ] 101.226.125.111 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T14:46:57+08:00 ] 101.226.66.180 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T14:46:57+08:00 ] 101.226.66.174 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-14T14:48:22+08:00 ] 101.226.65.104 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000977s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027345s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-14T15:26:19+08:00 ] 180.153.205.254 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-14T15:29:49+08:00 ] 101.226.51.226 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+

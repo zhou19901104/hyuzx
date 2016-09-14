@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>后台用户管理-{$Think.config.cms_name}</title>
+    <include file="Public:head"/>
+    <style>
+        td {
+            height: 22px;
+            line-height: 22px
+        }
+    </style>
+</head>
+<body>
+<div class="midder">
+
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <td colspan="10" class="table_title">
+                新闻管理<span class="fr">
+                    <a href="{:U('/Admin/News/news_add')}">添加新闻</a>
+                </span>
+            </td>
+
+        </tr>
+        <tr class="Toolbar_inbox ct">
+            <td align='center' width='10'>ID</td>
+            <td align='center' width='20'>新闻标题</td>
+            <td align='center' width='30'>新闻简介</td>
+            <td align='center' width='10'>时间</td>
+            <td align='center' width='30'>管理操作</td>
+        </tr>
+
+        <volist name="new_data" id="vo">
+            <tr class='ol'>
+                <td align='center'>{$vo.id}</td>
+                <td align='center'>{$vo.title}</a></td>
+                <td >{$vo.intro|msubstr=###,0,35}</a></td>
+                <td align='center'>{$vo.time|date='Y-m-d',###}</a></td>
+                <td align='center'>
+                    <a href="{:U('/Admin/News/news_edit/',array('id'=>$vo['id']))}">修改</a>
+                    | <a href="javascript:void(0)"
+                         onclick="return confirmurl('{:U('/Admin/News/news_del/',array('id'=>$vo['id']))}','确定删除该新闻吗?')">删除</a>
+                </td>
+            </tr>
+        </volist>
+
+    </table>
+</div>
+</body>
+</html>
