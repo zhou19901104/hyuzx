@@ -65,7 +65,9 @@ class DoctorController extends CommonController
         }
     }
 
-    //修改医生信息
+    /**
+     * 修改医生信息
+     */
     public function doctor_edit()
     {
         $doctor = D('Doctor');
@@ -92,38 +94,6 @@ class DoctorController extends CommonController
                 @unlink($info['index_url']);
             }
 
-//            $doctor_re = $doctor->where('id = "' . $data['id'] . '"')->find();
-//
-//            if ($data['index_url'] !== $doctor_re['index_url']) {
-//                $upload_info = $this->upload();
-//                $data['index_url'] = $upload_info[0]['savename'];
-//                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['index_url']);
-//                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['index_url']);
-//                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['index_url']);
-//            }
-//
-//            //判断是否有新图片上传
-//            if ($data['img_url'] !== $doctor_re['img_url']) {
-//                $upload_info = $this->upload();
-//                $data['img_url'] = $upload_info[0]['savename'];
-//                //删除之前的原图
-//                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['img_url']);
-//                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['img_url']);
-//                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['img_url']);
-//            }
-//
-//            if ($data['index_url'] !== $doctor_re['index_url'] && $data['img_url'] !== $doctor_re['img_url']) {
-//                $upload_info = $this->upload();
-//                $data['img_url'] = $upload_info[0]['savename'];
-//                $data['index_url'] = $upload_info[1]['savename'];
-//                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['index_url']);
-//                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['index_url']);
-//                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['index_url']);
-//                @unlink('./Public/Uploads/doctor/list_' . $doctor_re['img_url']);
-//                @unlink('./Public/Uploads/doctor/info_' . $doctor_re['img_url']);
-//                @unlink('./Public/Uploads/doctor/index_' . $doctor_re['img_url']);
-//            }
-
             $re = $doctor->where('id = "' . $data['id'] . '"')->save($data);
             if ($re) {
                 $this->success('修改成功!', U('Admin/Doctor/doctor_list'));
@@ -141,7 +111,9 @@ class DoctorController extends CommonController
         }
     }
 
-    //删除医生信息
+    /**
+     * 删除医生信息
+     */
     public function doctor_del()
     {
         $doctor = D('Doctor');
@@ -193,7 +165,7 @@ class DoctorController extends CommonController
      */
     public function doctor_class_edit()
     {
-        if ($_POST) {
+        if (IS_POST) {
             $data = $_POST;
             $check = M('doctor_class')->where('class_name = "' . $data['class_name'] . '"')->find();
             if (!$check) {
@@ -215,7 +187,9 @@ class DoctorController extends CommonController
     }
 
 
-    //删除医生类别
+    /**
+     * 删除医生类别
+     */
     public function doctor_class_del()
     {
         $id = I('get.id');

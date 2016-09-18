@@ -29,17 +29,17 @@
                 <tr class="tr rt">
                     <td width="100">简介:</td>
                     <td colspan="3" class="lt">
-                       
-						<textarea name='description' rows='3' cols='50'>{$info.description}</textarea>
+						<textarea name='description' rows='8' cols='70'>{$info.description}</textarea>
                     </td>
                 </tr>
 				
                 <tr class="tr rt">
                     <td width="100">图片：</td>
                     <td colspan="3" class="lt">
-                        <input type="text" name="img_url" id="img_url" style="width:300px;" value="{$info.img_url}">
-						<input type='button' class='btn' value='浏览...' />
-						<input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('img_url').value=this.value" />
+						<input type="file" name="img_url" size="28" value='浏览...' />
+                        <notempty name="info.img_url">
+                        <img src="{:C('SITE_URL')}/{$info.img_url|substr=1}" />
+                        </notempty>
                     </td>
                 </tr>
 				
@@ -70,18 +70,25 @@
                     <td colspan="3" class="lt">
                        <select name="cid" style='width:400px;'>
 							<option value="0">请选择</option>
-							<volist name='class_list' id='p_c'>
+
+                           <foreach name="class_list" item="val">
+                               <option value="{$val['id']}">{$val['level']|str_repeat='--',###}{$val['class_name']}</option>
+                           </foreach>
+
+
+
+				<!--			<volist name='class_list' id='p_c'>
 								<option value="{$p_c.id}" <eq name="p_c.id" value="$info.cid">selected = "selected"</eq>>{$p_c.class_name}</option>
 								<volist name="p_c.p_class" id="p_class">
-									<option value="{$p_class.id}" <eq name="p_class.id" value="$info.cid">selected = "selected"</eq>>+---{$p_class.class_name}</option>
+									<option value="{$p_class.id}" <eq name="p_class.id" value="$info.cid">selected = "selected"</eq>>+-&#45;&#45;{$p_class.class_name}</option>
 									<volist name="p_class.k_class" id="k_class">
-										<option value="{$k_class.id}" <eq name="k_class.id" value="$info.cid">selected = "selected"</eq>>+------{$k_class.class_name}</option>
+										<option value="{$k_class.id}" <eq name="k_class.id" value="$info.cid">selected = "selected"</eq>>+&#45;&#45;&#45;&#45;&#45;&#45;{$k_class.class_name}</option>
 										<foreach name="k_class['c_class']" item="c_vo">
-											<option value="{$c_vo.id}" <eq name="c_vo.id" value="$info.cid">selected = "selected"</eq>>+---------{$c_vo.class_name}</option>
+											<option value="{$c_vo.id}" <eq name="c_vo.id" value="$info.cid">selected = "selected"</eq>>+-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;{$c_vo.class_name}</option>
 										</foreach>
 									</volist>
 								</volist>
-							</volist>
+							</volist>-->
 						</select>
                     </td>
                 </tr>

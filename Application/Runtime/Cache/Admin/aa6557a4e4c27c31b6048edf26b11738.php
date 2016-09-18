@@ -28,8 +28,6 @@
 </tr>
           
             <form action="<?php echo U('/Admin/Doctor/doctor_class_edit');?>" method="post" name="form" id="myform">
-    
-            
 
                 <tr class="tr rt">
                     <td width="100">类别名称：</td>

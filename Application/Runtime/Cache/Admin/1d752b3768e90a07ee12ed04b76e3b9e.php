@@ -26,6 +26,8 @@
 	<tr class="Toolbar_inbox ct">
 		<td>文章类别</td>
 	</tr>
+
+
 	<?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$class_list): $mod = ($i % 2 );++$i;?><tr>
 			<?php if($id == $class_list["id"]): ?><td style='border: 1px solid #C6DCF2;background:#999;'>
 				<a style='color:#fff;' href="<?php echo U('/Admin/Content/content_list',array('id'=>$class_list['id']));?>"><?php echo ($class_list["class_name"]); ?></td>
@@ -33,6 +35,7 @@
 				<td style='border: 1px solid #C6DCF2;'>
 				<a href="<?php echo U('/Admin/Content/content_list',array('id'=>$class_list['id']));?>"><?php echo ($class_list["class_name"]); ?></td><?php endif; ?>
 		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+
 	<?php if(is_array($class_afer)): $i = 0; $__LIST__ = $class_afer;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$c_afer): $mod = ($i % 2 );++$i;?><tr>
 			<?php if($id == $c_afer["id"]): ?><td style='border: 1px solid #C6DCF2;background:#999;'>
 				<a style='color:#fff;' href="<?php echo U('/Admin/Content/content_list',array('id'=>$c_afer['id']));?>"><?php echo ($c_afer["class_name"]); ?></td>
@@ -40,6 +43,8 @@
 				<td style='border: 1px solid #C6DCF2;'>
 				<a href="<?php echo U('/Admin/Content/content_list',array('id'=>$c_afer['id']));?>"><?php echo ($c_afer["class_name"]); ?></td><?php endif; ?>
 		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+
+
 </table>
 <table  cellpadding="0" cellspacing="0" style='float:right;width:80%;'>
 <tr>

@@ -43,6 +43,7 @@ class NewsController extends CommonController
                     );
                     $this->up_image($data, $config);
                 }
+                $data['content'] = html_entity_decode($data['content']);
                 $data['time'] = time();
                 if ($new->add($data)) {
                     $this->success('新闻添加成功', U('News/news_list'), 2);
@@ -94,7 +95,7 @@ class NewsController extends CommonController
                     );
                     $this->up_image($data, $config);
                 }
-
+                $data['content'] = html_entity_decode($data['content']);
                 if($new->save()){
                     $this->success('新闻修改成功', U('News/news_list'), 2);
                 }else{

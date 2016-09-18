@@ -19,4 +19,5 @@ class DoctorModel extends Model
         @unlink($info['index_url']);
         @unlink($info['img_url']);
     }
+
 }

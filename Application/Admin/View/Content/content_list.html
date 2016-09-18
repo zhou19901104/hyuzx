@@ -14,6 +14,8 @@
 	<tr class="Toolbar_inbox ct">
 		<td>文章类别</td>
 	</tr>
+
+
 	<volist name='class_list' id='class_list'>
 		<tr>
 			<if condition='$id eq $class_list["id"]'>
@@ -25,6 +27,7 @@
 			</if>
 		</tr>
 	</volist>
+
 	<volist name='class_afer' id="c_afer">
 		<tr>
 			<if condition='$id eq $c_afer["id"]'>
@@ -36,6 +39,8 @@
 			</if>
 		</tr>
 	</volist>
+
+
 </table>
 <table  cellpadding="0" cellspacing="0" style='float:right;width:80%;'>
 <tr>

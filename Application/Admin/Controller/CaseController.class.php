@@ -7,7 +7,6 @@
 
 namespace Admin\Controller;
 
-use Think\Image;
 use Think\Upload;
 
 class CaseController extends CommonController
