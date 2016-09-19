@@ -3,7 +3,7 @@
 <!-- nav -->
 <div class="nav-wrap">
 	<div class="nav">
-		<div class="logo"><img src="__PUBLIC__/index/images/logo.png" alt=""></div>
+		<div class="logo"><img src="{:C('IMG_URL')}/logo.png" alt=""></div>
 		<div class="nav-list">
 			<ul class="nav-li">
 				<li class="n-li">
@@ -67,7 +67,7 @@
 													</div>
 													<ul class="hot">
 														<li>热门项目</li>
-														<li><a href=""><img src="__PUBLIC__/index/images/nav-img-1.png" alt=""></a></li>
+														<li><a href=""><img src="{:C('IMG_URL')}/nav-img-1.png" alt=""></a></li>
 													</ul>
 												</div>
 											</li>
@@ -90,13 +90,13 @@
 		<ul class="slide-wrap">
 			<li style="z-index:10;" class="b-l-1">
 				<div class="b-box">
-					<img src="__PUBLIC__/index/images/b1-font1.png" alt="" class="img-1">
-					<img src="__PUBLIC__/index/images/b1-font2.png" alt="" class="img-2">
+					<img src="{:C('IMG_URL')}/b1-font1.png" alt="" class="img-1">
+					<img src="{:C('IMG_URL')}/b1-font2.png" alt="" class="img-2">
 				</div>
 			</li>
 			<li class="b-l-2">
 				<div class="b-box">
-					<img src="__PUBLIC__/index/images/b2-font.png" alt="" class="img-3">
+					<img src="{:C('IMG_URL')}/b2-font.png" alt="" class="img-3">
 				</div>
 			</li>
 		</ul>
@@ -125,7 +125,7 @@
 			<if condition='$p_l["tid"] neq NULL'>
 				<li>
 					<a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['id']))}">
-						<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['id']))}"><img src="{$p_l.tid.img_url}" alt=""></a></p>
+						<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['id']))}"><img src="{$p_l.tid.img_url|substr=1}" alt=""></a></p>
 						<p class="new-tit">{$p_l.tid.title}</p>
 						<p class="new-tit-m">{$p_l.tid.description}</p>
 						<p class="interact"><span class="date">{$p_l.tid.createtime|date="Y-m-d",###}</span><span class="read">{$p_l.tid.read_num}阅读</span></p>
@@ -148,14 +148,14 @@
 
 			<li class="page-wrap">
 						<span class="page-list">
-							<!--<span class="left"><img src="__PUBLIC__/index/images/narr-l.png" alt=""></span>
+							<!--<span class="left"><img src="{:C('IMG_URL')}/narr-l.png" alt=""></span>
 							<span class="prev"><a href="">上一页</a></span>
 							<span class="number"><a href="">1</a></span>
 							<span class="number"><a href="">2</a></span>
 							<span class="number"><a href="">3</a></span>
 							<span class="number"><a href="">4</a></span>
 							<span class="next"><a href="">下一页</a></span>
-							<span class="right"><img src="__PUBLIC__/index/images/narr-r.png" alt=""></span>-->
+							<span class="right"><img src="{:C('IMG_URL')}/narr-r.png" alt=""></span>-->
 						</span>
 			</li>
 

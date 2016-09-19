@@ -2552,9 +2552,10 @@ a {
 }
 
 .new-cont-wrap .pro-text .p-l p {
-    color: #666;
+    color: #000000;
     font-size: 14px;
     line-height: 24px;
+    padding-top:5px;
 }
 
 .new-cont-wrap .pro-text .p-l .btn-wrap {

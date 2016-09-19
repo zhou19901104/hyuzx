@@ -54,7 +54,7 @@
 <!-- nav -->
 <div class="nav-wrap">
 	<div class="nav">
-		<div class="logo"><img src="/Public/index/images/logo.png" alt=""></div>
+		<div class="logo"><img src="<?php echo C('IMG_URL');?>/logo.png" alt=""></div>
 		<div class="nav-list">
 			<ul class="nav-li">
 				<li class="n-li">
@@ -98,7 +98,7 @@
 													</div>
 													<ul class="hot">
 														<li>热门项目</li>
-														<li><a href=""><img src="/Public/index/images/nav-img-1.png" alt=""></a></li>
+														<li><a href=""><img src="<?php echo C('IMG_URL');?>/nav-img-1.png" alt=""></a></li>
 													</ul>
 												</div>
 											</li>
@@ -116,13 +116,13 @@
 		<ul class="slide-wrap">
 			<li style="z-index:10;" class="b-l-1">
 				<div class="b-box">
-					<img src="/Public/index/images/b1-font1.png" alt="" class="img-1">
-					<img src="/Public/index/images/b1-font2.png" alt="" class="img-2">
+					<img src="<?php echo C('IMG_URL');?>/b1-font1.png" alt="" class="img-1">
+					<img src="<?php echo C('IMG_URL');?>/b1-font2.png" alt="" class="img-2">
 				</div>
 			</li>
 			<li class="b-l-2">
 				<div class="b-box">
-					<img src="/Public/index/images/b2-font.png" alt="" class="img-3">
+					<img src="<?php echo C('IMG_URL');?>/b2-font.png" alt="" class="img-3">
 				</div>
 			</li>
 		</ul>
@@ -147,7 +147,7 @@
 							<ul class="new-list"><?php endif; ?>
 			<?php if($p_l["tid"] != NULL): ?><li>
 					<a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['id']));?>">
-						<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['id']));?>"><img src="<?php echo ($p_l["tid"]["img_url"]); ?>" alt=""></a></p>
+						<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['id']));?>"><img src="<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>
 						<p class="new-tit"><?php echo ($p_l["tid"]["title"]); ?></p>
 						<p class="new-tit-m"><?php echo ($p_l["tid"]["description"]); ?></p>
 						<p class="interact"><span class="date"><?php echo (date("Y-m-d",$p_l["tid"]["createtime"])); ?></span><span class="read"><?php echo ($p_l["tid"]["read_num"]); ?>阅读</span></p>
@@ -165,14 +165,14 @@
 
 			<li class="page-wrap">
 						<span class="page-list">
-							<!--<span class="left"><img src="/Public/index/images/narr-l.png" alt=""></span>
+							<!--<span class="left"><img src="<?php echo C('IMG_URL');?>/narr-l.png" alt=""></span>
 							<span class="prev"><a href="">上一页</a></span>
 							<span class="number"><a href="">1</a></span>
 							<span class="number"><a href="">2</a></span>
 							<span class="number"><a href="">3</a></span>
 							<span class="number"><a href="">4</a></span>
 							<span class="next"><a href="">下一页</a></span>
-							<span class="right"><img src="/Public/index/images/narr-r.png" alt=""></span>-->
+							<span class="right"><img src="<?php echo C('IMG_URL');?>/narr-r.png" alt=""></span>-->
 						</span>
 			</li>
 
@@ -210,7 +210,7 @@
 <div class="footer-wrap">
     <div class="footer">
         <div class="f-l">
-            <p><img src="/Public/index/images/fot-logo.jpg" alt=""></p>
+            <p><img src="<?php echo C('IMG_URL');?>/fot-logo.jpg" alt=""></p>
         </div>
 
         <div class="f-m">
@@ -228,7 +228,7 @@
 
         <div class="f-r">
             <dl>
-                <dt><img src="/Public/index/images/f-ewm.jpg" alt=""></dt>
+                <dt><img src="<?php echo C('IMG_URL');?>/f-ewm.jpg" alt=""></dt>
                 <dd>
                     <p class="p-y">焕誉美容官方微信</p>
                     <p class="p-w">公众号：bjhyylzx</p>

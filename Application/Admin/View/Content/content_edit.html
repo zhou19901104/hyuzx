@@ -72,12 +72,13 @@
 							<option value="0">请选择</option>
 
                            <foreach name="class_list" item="val">
-                               <option value="{$val['id']}">{$val['level']|str_repeat='--',###}{$val['class_name']}</option>
+
+                               <option value="{$val['id']}" <if condition="$val['id'] eq $info['id']">selected</if> >{$val['level']|str_repeat='--',###}{$val['class_name']}</option>
+
                            </foreach>
 
 
-
-				<!--			<volist name='class_list' id='p_c'>
+				<!--<volist name='class_list' id='p_c'>
 								<option value="{$p_c.id}" <eq name="p_c.id" value="$info.cid">selected = "selected"</eq>>{$p_c.class_name}</option>
 								<volist name="p_c.p_class" id="p_class">
 									<option value="{$p_class.id}" <eq name="p_class.id" value="$info.cid">selected = "selected"</eq>>+-&#45;&#45;{$p_class.class_name}</option>
@@ -89,6 +90,8 @@
 									</volist>
 								</volist>
 							</volist>-->
+
+
 						</select>
                     </td>
                 </tr>

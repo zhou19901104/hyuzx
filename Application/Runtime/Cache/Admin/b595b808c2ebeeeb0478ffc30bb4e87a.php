@@ -16,7 +16,7 @@
 <script type="text/javascript" charset="utf-8" src="<?php echo C('JS_URL');?>/ue/ueditor.all.min.js"> </script>
 <script type="text/javascript" charset="utf-8" src="<?php echo C('JS_URL');?>/ue/lang/zh-cn/zh-cn.js"></script>
 
-<link type="text/css" rel="stylesheet" href="/Public/css/main.css"/>
+<link type="text/css" rel="stylesheet" href="<?php echo C('CSS_URL');?>/main.css"/>
 <script language="javascript">
 $(function(){
 	//窗口

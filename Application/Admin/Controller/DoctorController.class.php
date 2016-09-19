@@ -201,40 +201,6 @@ class DoctorController extends CommonController
         }
     }
 
-
-    //上传图片方法
-    function upload()
-    {
-        //引入UploadFile类
-        import('ORG.Net.UploadFile');
-        //实例化UploadFile类
-        $upload = new UploadFile();
-        //设置文件大小
-        $upload->maxSize = -1;
-        //设置文件保存规则唯一
-        $upload->saveRule = 'uniqid';
-        //设置上传文件的格式
-        $upload->allowExts = array('jpg', 'png', 'jpeg');
-        //保存路径
-        $upload->savePath = './Public/Uploads/doctor/';
-        //设置需要生成缩略图，仅对图像文件有效
-        $upload->thumb = true;
-        //设置需要生成缩略图的文件前缀
-        $upload->thumbPrefix = 'list_,info_,index_';  //生产缩略图也可以根据需要生成1张或多张，2张：'m_,s_'
-        //设置缩略图最大宽度
-        $upload->thumbMaxWidth = '372,600,422';//2张的不同设置：'150,200'
-        //设置缩略图最大高度
-        $upload->thumbMaxHeight = '372,600,612';
-        //删除原图
-        $upload->thumbRemoveOrigin = true;
-        //上传失败返回错误信息
-        if (!$upload->upload()) {
-            return $upload->getErrorMsg();
-        } else {
-            //返回上传文件的信息
-            return $upload->getUploadFileInfo();
-        }
-    }
     /**
      * @param $data   接收的数据;
      * @param $width  缩略图的宽度;

@@ -77,14 +77,15 @@
                        <select name="cid" style='width:400px;'>
 							<option value="0">请选择</option>
 
-                           <?php if(is_array($class_list)): foreach($class_list as $key=>$val): ?><option value="<?php echo ($val['id']); ?>"><?php echo (str_repeat('--',$val['level'])); echo ($val['class_name']); ?></option><?php endforeach; endif; ?>
+                           <?php if(is_array($class_list)): foreach($class_list as $key=>$val): ?><option value="<?php echo ($val['id']); ?>" <?php if($val['id'] == $info['id']): ?>selected<?php endif; ?> ><?php echo (str_repeat('--',$val['level'])); echo ($val['class_name']); ?></option><?php endforeach; endif; ?>
 
 
-
-				<!--			<?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_c): $mod = ($i % 2 );++$i;?><option value="<?php echo ($p_c["id"]); ?>" <?php if(($p_c["id"]) == $info["cid"]): ?>selected = "selected"<?php endif; ?>><?php echo ($p_c["class_name"]); ?></option>
+				<!--<?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_c): $mod = ($i % 2 );++$i;?><option value="<?php echo ($p_c["id"]); ?>" <?php if(($p_c["id"]) == $info["cid"]): ?>selected = "selected"<?php endif; ?>><?php echo ($p_c["class_name"]); ?></option>
 								<?php if(is_array($p_c["p_class"])): $i = 0; $__LIST__ = $p_c["p_class"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_class): $mod = ($i % 2 );++$i;?><option value="<?php echo ($p_class["id"]); ?>" <?php if(($p_class["id"]) == $info["cid"]): ?>selected = "selected"<?php endif; ?>>+-&#45;&#45;<?php echo ($p_class["class_name"]); ?></option>
 									<?php if(is_array($p_class["k_class"])): $i = 0; $__LIST__ = $p_class["k_class"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$k_class): $mod = ($i % 2 );++$i;?><option value="<?php echo ($k_class["id"]); ?>" <?php if(($k_class["id"]) == $info["cid"]): ?>selected = "selected"<?php endif; ?>>+&#45;&#45;&#45;&#45;&#45;&#45;<?php echo ($k_class["class_name"]); ?></option>
 										<?php if(is_array($k_class['c_class'])): foreach($k_class['c_class'] as $key=>$c_vo): ?><option value="<?php echo ($c_vo["id"]); ?>" <?php if(($c_vo["id"]) == $info["cid"]): ?>selected = "selected"<?php endif; ?>>+-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;<?php echo ($c_vo["class_name"]); ?></option><?php endforeach; endif; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>-->
+
+
 						</select>
                     </td>
                 </tr>

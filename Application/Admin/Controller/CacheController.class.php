@@ -2,31 +2,31 @@
 /**
  * @name    缓存模块
  *
- *
  */
 
 namespace Admin\Controller;
 
+
 class CacheController extends CommonController
 {
 
-    public function _initialize()
-    {
-        parent::_initialize();    //RBAC 验证接口初始化
-    }
-
     public function index()
     {
-        $caches = array(
-            "HomeCache" => array("name" => "网站前台缓存文件", "path" => WEB_ROOT . "Temp/Cache/Home/"),
-            "AdminCache" => array("name" => "网站后台缓存文件", "path" => WEB_ROOT . "Temp/Cache/Admin/"),
-            "WebData" => array("name" => "网站数据库字段缓存文件", "path" => WEB_ROOT . "Temp/Data/"),
-            "LogTemp" => array("name" => "日志缓存文件", "path" => WEB_ROOT . "Temp/Logs/"),
-            "AdminTemp" => array("name" => "网站后台临时缓存文件", "path" => WEB_ROOT . "Temp/Temp"),
-            "CronTemp" => array("name" => "计划任务~crons.php缓存文件", "path" => WEB_ROOT . "Temp/~crons.php")
-        );
-        $this->assign("caches", $caches);
-        $this->display();
+
+//        $caches = array(
+//
+//            "HomeCache" => array("name" => "网站前台缓存文件", "path" => WEB_ROOT . "/Cache/Home/"),
+//            "AdminCache" => array("name" => "网站后台缓存文件", "path" => WEB_ROOT . "/Cache/Admin/"),
+//            "WebData" => array("name" => "网站数据库字段缓存文件", "path" => WEB_ROOT . "/Data/"),
+//            "LogTemp" => array("name" => "日志缓存文件", "path" => WEB_ROOT . "/Logs/"),
+//            "AdminTemp" => array("name" => "网站后台临时缓存文件", "path" => WEB_ROOT . "/Temp"),
+//            "CronTemp" => array("name" => "计划任务~crons.php缓存文件", "path" => WEB_ROOT . "/~crons.php")
+//
+//        );
+//
+//        $this->assign("caches", $caches);
+
+        //$this->display();
     }
 
     // 删除全部核心缓存

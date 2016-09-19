@@ -9,6 +9,7 @@ namespace Admin\Controller;
 
 use Think\Upload;
 use Think\Page;
+use Think\Image;
 
 class ContentController extends CommonController
 {
@@ -16,62 +17,82 @@ class ContentController extends CommonController
     //文章列表
     public function content_list()
     {
-        $class_list = M('class')->where('pid = "12"')->select();
-        $class_afer = M('class')->where('id <> "12" and id = "11"')->select();
+//        $class_list = M('class')->where('pid = "12"')->select();
+//        $class_afer = M('class')->where('id <> "12" and id = "11"')->select();
+//
+//        $id = I('get.id');
+//
+//        if ($id == '') {
+//            $id = '13';
+//        }
+//        if ($id == 98) {
+//            $where = M('class')->where('pid = "' . $id . '"')->select();
+//            for ($i = 0; $i < count($where); $i++) {
+//                $list = M('content')->where('cid = "' . $where[$i]['id'] . '"')->select();
+//                for ($k = 0; $k < count($list); $k++) {
+//                    $content_list[] = $list[$k];
+//                }
+//            }
+//        } else {
+//
+//            $where = M('class')->where('pid = "' . $id . '"')->select();
+//            for ($i = 0; $i < count($where); $i++) {
+//                $list_class = M('class')->where('pid = "' . $where[$i]['id'] . '"')->select();
+//                // dump($list_class);
+//                if ($list_class == NULL) {
+//                    $c_list = M('content')->where('cid = "' . $where[$i]['id'] . '"')->select();
+//                    for ($c = 0; $c < count($c_list); $c++) {
+//                        $content_list[] = $c_list[$c];
+//                    }
+//                }
+//                for ($k = 0; $k < count($list_class); $k++) {
+//                    $list = M('content')->where('cid = "' . $list_class[$k]['id'] . '"')->order('sort desc')->select();
+//
+//                    for ($c = 0; $c < count($list); $c++) {
+//                        $content_list[] = $list[$c];
+//                    }
+//                }
+//            }
+//
+//            if ($id == 11) {
+//                $content_list = M('content')->where('cid = "' . $id . '"')->select();
+//            }
+//
+//        }
+//
+//        for ($i = 0; $i < count($list); $i++) {
+//            $re = M('keyword')->where('content_id = "' . $list[$i]['id'] . '"')->find();
+//            $list[$i]['keyword'] = $re['keyword'];
+//        }
+//
+//        $this->assign('class_list', $class_list);
+//        $this->assign('class_afer', $class_afer);
 
-        $id = I('get.id');
+        $content = D('Content');
 
-        if ($id == '') {
-            $id = '13';
-        }
-        if ($id == 98) {
-            $where = M('class')->where('pid = "' . $id . '"')->select();
-            for ($i = 0; $i < count($where); $i++) {
-                $list = M('content')->where('cid = "' . $where[$i]['id'] . '"')->select();
-                for ($k = 0; $k < count($list); $k++) {
-                    $content_list[] = $list[$k];
-                }
-            }
-        } else {
+        $count = $content->count('id');
+        $page = new Page($count, 17);
+        $show = $page->show();
 
-            $where = M('class')->where('pid = "' . $id . '"')->select();
-            for ($i = 0; $i < count($where); $i++) {
-                $list_class = M('class')->where('pid = "' . $where[$i]['id'] . '"')->select();
-                // dump($list_class);
-                if ($list_class == NULL) {
-                    $c_list = M('content')->where('cid = "' . $where[$i]['id'] . '"')->select();
-                    for ($c = 0; $c < count($c_list); $c++) {
-                        $content_list[] = $c_list[$c];
-                    }
-                }
-                for ($k = 0; $k < count($list_class); $k++) {
-                    $list = M('content')->where('cid = "' . $list_class[$k]['id'] . '"')->order('sort desc')->select();
+//        $content_list = $content
+//                        ->alias('d')
+//                        ->field('d.id as did,d.cid,d.title,d.description,d.createtime,c.id,c.pid,a.id,a.class_name')
+//                        ->join('__CLASS__ as c on d.cid=c.id')
+//                        ->join('__CLASS__ as a on a.id=c.pid')
+//                        ->where('d.cid=c.id')
+//                        ->limit($page->firstRow,$page->listRows)
+//                        ->select();
 
-                    for ($c = 0; $c < count($list); $c++) {
-                        $content_list[] = $list[$c];
-                    }
-                }
-            }
-
-            if ($id == 11) {
-                $content_list = M('content')->where('cid = "' . $id . '"')->select();
-            }
-
-        }
-
-        for ($i = 0; $i < count($list); $i++) {
-            $re = M('keyword')->where('content_id = "' . $list[$i]['id'] . '"')->find();
-            $list[$i]['keyword'] = $re['keyword'];
-        }
-
-        $this->assign('class_list', $class_list);
-        $this->assign('class_afer', $class_afer);
+                $content_list = $content
+                        ->alias('d')
+                        ->field('d.id,d.cid,d.title,d.description,d.createtime')
+                        ->limit($page->firstRow,$page->listRows)
+                        ->order('d.id ASC')
+                        ->select();
 
         $this->assign('content_list', $content_list);
-        $this->display();
-
-
-
+        $this->assign('show', $show);
+        $this->display('content_list1');
 
     }
 
@@ -91,6 +112,8 @@ class ContentController extends CommonController
                 }
                 if($_FILES['img_url']['name'] != ''){
                     $config = array(
+                        'width' => 380,
+                        'height' => 284,
                         'colnum' => 'img_url',
                         'path' => 'content'
                     );
@@ -119,12 +142,13 @@ class ContentController extends CommonController
         }
     }
 
-    //修改文章
+    /**
+     * 修改文章
+     */
     public function content_edit()
     {
         $content = D('Content');
         if (IS_POST) {
-
 
             if(!$data = $content->create()){
                 exit($content->getError());
@@ -135,6 +159,8 @@ class ContentController extends CommonController
 
                 if($_FILES['img_url']['name'] != ''){
                     $config = array(
+                        'width' => 380,
+                        'height' => 284,
                         'colnum' => 'img_url',
                         'path' => 'content'
                     );
@@ -150,57 +176,6 @@ class ContentController extends CommonController
 
             }
 
-//            $content_re = $content->where('id = "' . $data['id'] . '"')->find();
-//            //基本信息为空验证
-//            if ($data['title'] == '' || $data['description'] == '' || $data['cid'] == 0 || $data['content'] == '') {
-//                $this->error('文章标题，简介，栏目，内容全不能为空，请输入！');
-//                exit();
-//            }
-//
-//            //更新关键字
-//            $keyword_up_re = M('keyword')->where('id = "' . $keyword_data['id'] . '"')->save($keyword_data);
-//
-//            //更新文章数据
-//            $content_data = $data;
-//
-//            if (!$_POST['recommend']) {
-//                $content_data['recommend'] = 0;
-//            }
-//
-//            if (!$_POST['hot']) {
-//                $content_data['hot'] = 0;
-//            }
-//
-//            //判断是否有新图片上传
-//            if ($content_data['img_url'] !== $content_re['img_url']) {
-//                $upload_info = $this->upload();
-//                $path = str_replace('.', '', $upload_info[0]['savepath']);
-//                $content_data['img_url'] = $path . 'pc_' . $upload_info[0]['savename'];
-//
-//                //删除之前的原图
-//                @unlink('.' . $content_re['img_url']);
-//            }
-//
-//            //更新文章
-//            $content_up_re = $content->where('id = "' . $content_data['id'] . '"')->save($content_data);
-//
-//            //判断关键字是否修改
-//            if ($content_data['keyword'] !== $keyword_re['keyword'] || $content_data['target_url'] !== $keyword_re['target_url']) {
-//                $replace_content_re = M('content')->where("content LIKE '%" . $keyword_re['according'] . "%'")->select();
-//                for ($i = 0; $i < count($replace_content_re); $i++) {
-//                    $replace_data['content'] = str_replace($keyword_re['according'], $keyword_data['according'], $replace_content_re[$i]['content']);
-//                    $cre[] = M('content')->where('id = "' . $replace_content_re[$i]['id'] . '"')->save($replace_data);
-//                }
-//            }
-//
-//
-//            if ($keyword_up_re !== NULL || $content_up_re !== NULL && count($cre) == count($replace_content_re)) {
-//                $this->success('更新成功！', U('Admin/Content/content_list'));
-//            } else {
-//                $this->error('更新失败！');
-//                exit();
-//            }
-
         } else {
 
             $id = I('get.id');
@@ -210,25 +185,6 @@ class ContentController extends CommonController
                     ->where(array('id' => $id))
                     ->find();
 
-            //$keyword_re = M('keyword')->where('content_id = "' . $id . '"')->find();
-            //$info['keyword'] = $keyword_re['keyword'];
-            //$info['target_url'] = $keyword_re['target_url'];
-            //$info['kid'] = $keyword_re['id'];
-
-//            $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-//
-//            for ($i = 0; $i < count($class_list); $i++) {
-//                $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-//                for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-//                    $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-//                    for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-//                        $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-//                    }
-//                }
-//            }
-
-            //$keyword_list = M('keyword_re')->select();
-            //$this->assign('keyword_list', $keyword_list);
             $class_list = getTree(D('Class')->field('id,pid,class_name')->select());
 
             $this->assign('class_list', $class_list);
@@ -253,40 +209,6 @@ class ContentController extends CommonController
         }
     }
 
-    //上传图片方法
-    function upload()
-    {
-        //引入UploadFile类
-        import('ORG.Net.UploadFile');
-        //实例化UploadFile类
-        $upload = new UploadFile();
-        //设置文件大小
-        $upload->maxSize = -1;
-        //设置文件保存规则唯一
-        $upload->saveRule = 'uniqid';
-        //设置上传文件的格式
-        $upload->allowExts = array('jpg', 'png', 'jpeg');
-        //保存路径
-        $upload->savePath = './Public/Uploads/' . date('Y-m-d', time()) . '/';
-        //设置需要生成缩略图，仅对图像文件有效
-        $upload->thumb = true;
-        //设置需要生成缩略图的文件前缀
-        $upload->thumbPrefix = 'pc_';  //生产缩略图也可以根据需要生成1张或多张，2张：'m_,s_'
-        //设置缩略图最大宽度
-        $upload->thumbMaxWidth = '380';//2张的不同设置：'150,200'
-        //设置缩略图最大高度
-        $upload->thumbMaxHeight = '284';
-        //删除原图
-        $upload->thumbRemoveOrigin = true;
-        //上传失败返回错误信息
-        if (!$upload->upload()) {
-            return $upload->getErrorMsg();
-        } else {
-            //返回上传文件的信息
-            return $upload->getUploadFileInfo();
-        }
-    }
-
     /**
      * @param $data   接收的数据;
      * @param $width  缩略图的宽度;
@@ -295,8 +217,12 @@ class ContentController extends CommonController
      */
     private function up_image(&$data, $config)
     {
+
         $path = isset($config['path']) ? $config['path'] : 'comm';
+        $width = isset($config['width']) ? $config['width'] : 200;
+        $height = isset($config['height']) ? $config['height'] : 200;
         $colnum = isset($config['colnum']) ? $config['colnum'] : 'img_url';
+        $type = isset($config['type']) ? $config['type'] : 6;
 
         //判断上传的附件没有问题才进行处理
         if ($_FILES[$colnum]['error'] === 0) {
@@ -309,8 +235,17 @@ class ContentController extends CommonController
             //附件上传后的信息保存在数据库中
             if ($info) {
                 $img_url = $upload->rootPath . $info['savepath'] . $info['savename'];
-                $data[$colnum] = $img_url;
             }
+
+            //给图片做缩略图
+            $img = new Image();
+            $img->open($img_url); //打开原图
+            $img->thumb($width, $height, $type);
+            //输出保存缩略图
+            $th_img_url = $upload->rootPath . $info['savepath'] . 'th_' . $info['savename'];
+            $img->save($th_img_url);
+            $data['img_url'] = $th_img_url;
+
         }
 
     }

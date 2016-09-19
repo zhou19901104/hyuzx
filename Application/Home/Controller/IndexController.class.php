@@ -12,38 +12,13 @@ class IndexController extends CommonController
    public function index()
    {
 
-      //$class_list = M('Class')->where('pid = 0')->order('sort desc')->select();
-
-      //dump($class_list);die();
       $p_list = M('class')->where('class_name = "项目系列"')->find();
 
-      //dump($p_list);die();
       $p_list = M('class')->where('pid = "' . $p_list['id'] . '"')->select();
-
-//      for ($i = 0; $i < count($class_list); $i++) {
-//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-//
-//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-//            }
-//
-//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-//            }
-//         }
-//      }
 
       $hot_info = M('content')->where('hot = 1')->order('createtime desc')->find();
 
       $this->assign('hot_info', $hot_info);
-
-//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-//      for ($i = 0; $i < count($foot_list); $i++) {
-//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-//      }
-//      $this->assign('foot_list', $foot_list);
 
       $doctor_list = M('doctor')->order('sort desc')->select();
       for ($i = 0; $i < count($doctor_list); $i++) {
@@ -55,14 +30,10 @@ class IndexController extends CommonController
 
       $this->assign('doctor_list', $doctor_list);
       $this->assign('anli_list', $anli_list);
-      //$this->assign('class_list', $class_list);
 
       $this->assign('p_list', $p_list);
+      $this->display('index2');
 
-      //dump($class_list);die();
-
-      $this->display();
-      echo 12;die();
    }
 
    /**

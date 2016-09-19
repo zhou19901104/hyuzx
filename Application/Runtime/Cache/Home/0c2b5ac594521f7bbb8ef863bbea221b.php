@@ -50,13 +50,21 @@
     </ul>
 </div>
 
+<style>
+	.new-cont-wrap .pro-text .p-l p {
+		font-size: 14px;
+		line-height: 24px;
+		padding-top: 5px;
+		color: #000000;
+	}
+</style>
 <link rel="stylesheet" type="text/css" href="<?php echo C('CSS_URL');?>/all.css">
 <script type="text/javascript" src="<?php echo C('JS_URL');?>/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="<?php echo C('JS_URL');?>/jquery.carousel-1.1.js"></script>
 <!-- nav -->
 <div class="nav-wrap">
 	<div class="nav">
-		<div class="logo"><img src="/Public/index/images/logo.png" alt=""></div>
+		<div class="logo"><img src="<?php echo C('IMG_URL');?>/logo.png" alt=""></div>
 		<div class="nav-list">
 			<ul class="nav-li">
 				<li class="n-li">
@@ -100,7 +108,7 @@
 													</div>
 													<ul class="hot">
 														<li>热门项目</li>
-														<li><a href=""><img src="/Public/index/images/nav-img-1.png" alt=""></a></li>
+														<li><a href=""><img src="<?php echo C('IMG_URL');?>/nav-img-1.png" alt=""></a></li>
 													</ul>
 												</div>
 											</li>
@@ -118,13 +126,13 @@
 		<ul class="slide-wrap">
 			<li style="z-index:10;" class="b-l-1">
 				<div class="b-box">
-					<img src="/Public/index/images/b1-font1.png" alt="" class="img-1">
-					<img src="/Public/index/images/b1-font2.png" alt="" class="img-2">
+					<img src="<?php echo C('IMG_URL');?>/b1-font1.png" alt="" class="img-1">
+					<img src="<?php echo C('IMG_URL');?>/b1-font2.png" alt="" class="img-2">
 				</div>
 			</li>
 			<li class="b-l-2">
 				<div class="b-box">
-					<img src="/Public/index/images/b2-font.png" alt="" class="img-3">
+					<img src="<?php echo C('IMG_URL');?>/b2-font.png" alt="" class="img-3">
 				</div>
 			</li>
 		</ul>
@@ -194,7 +202,7 @@
 <div class="footer-wrap">
     <div class="footer">
         <div class="f-l">
-            <p><img src="/Public/index/images/fot-logo.jpg" alt=""></p>
+            <p><img src="<?php echo C('IMG_URL');?>/fot-logo.jpg" alt=""></p>
         </div>
 
         <div class="f-m">
@@ -212,7 +220,7 @@
 
         <div class="f-r">
             <dl>
-                <dt><img src="/Public/index/images/f-ewm.jpg" alt=""></dt>
+                <dt><img src="<?php echo C('IMG_URL');?>/f-ewm.jpg" alt=""></dt>
                 <dd>
                     <p class="p-y">焕誉美容官方微信</p>
                     <p class="p-w">公众号：bjhyylzx</p>
