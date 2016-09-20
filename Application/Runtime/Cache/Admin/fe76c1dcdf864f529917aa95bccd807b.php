@@ -49,7 +49,7 @@
                     <td width="100">图片：</td>
                     <td colspan="3" class="lt">
 						<input type="file" name="img_url" size="28" value='浏览...' />
-                        <?php if(!empty($info["img_url"])): ?><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($info["img_url"],1)); ?>" /><?php endif; ?>
+                        <?php if(!empty($info["img_url"])): ?><img src="<?php echo C('SITE_URL'); echo (substr($info["img_url"],1)); ?>" /><?php endif; ?>
                     </td>
                 </tr>
 				
@@ -77,7 +77,7 @@
                        <select name="cid" style='width:400px;'>
 							<option value="0">请选择</option>
 
-                           <?php if(is_array($class_list)): foreach($class_list as $key=>$val): ?><option value="<?php echo ($val['id']); ?>" <?php if($val['id'] == $info['id']): ?>selected<?php endif; ?> ><?php echo (str_repeat('--',$val['level'])); echo ($val['class_name']); ?></option><?php endforeach; endif; ?>
+                           <?php if(is_array($class_list)): foreach($class_list as $key=>$val): ?><option value="<?php echo ($val['id']); ?>" <?php if($val['id'] == $info['cid']): ?>selected<?php endif; ?> ><?php echo (str_repeat('--',$val['level'])); echo ($val['class_name']); ?></option><?php endforeach; endif; ?>
 
 
 				<!--<?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_c): $mod = ($i % 2 );++$i;?><option value="<?php echo ($p_c["id"]); ?>" <?php if(($p_c["id"]) == $info["cid"]): ?>selected = "selected"<?php endif; ?>><?php echo ($p_c["class_name"]); ?></option>

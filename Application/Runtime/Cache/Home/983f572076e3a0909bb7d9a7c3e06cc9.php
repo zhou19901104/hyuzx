@@ -42,11 +42,11 @@
   </div>
   <div class="ewm"></div>
   <ul class="flo-list">
-    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/01.png" alt=""></a></li>
-    <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/02.png" alt=""></a></li>
-    <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/03.png" alt=""></a></li>
-    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
-    <li class="top"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/05.png" alt=""></li>
+    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('IMG_URL');?>/zhuye_01.jpg" alt=""></a></li>
+    <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_02.jpg" alt=""></a></li>
+    <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_03.jpg" alt=""></a></li>
+    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_04.jpg" alt=""></a></li>
+    <li class="top"><img src="<?php echo C('IMG_URL');?>/zhuye_05.jpg" alt=""></li>
   </ul>
 </div>
 
@@ -100,11 +100,11 @@
                                     </dd><?php endif; endforeach; endif; ?>
                               </dl><?php endforeach; endif; else: echo "" ;endif; ?>
                           </div>
-                          <ul class="hot">
+                  <!--        <ul class="hot">
                             <li>热门项目</li>
                             <li><a href="<?php echo U('Home/Index/new_info',array('id'=>$hot_info['id']));?>"><img
                                     src="<?php echo ($hot_info["img_url"]); ?>" alt=""></a></li>
-                          </ul>
+                          </ul>-->
                         </div>
                       </li>
                       <?php else: endif; endforeach; endif; else: echo "" ;endif; ?>
@@ -144,7 +144,7 @@
 <div class="project-wrap">
   <p class="pro-tit"><img src="<?php echo C('IMG_URL');?>/pro-tit.png" alt=""></p>
   <div class="pro-list">
-    <div class="prolist" style="height: 520px;;">
+    <div class="prolist" style="height: 520px;">
       <ul class="prslide">
         <?php if(is_array($p_list)): $i = 0; $__LIST__ = $p_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_l): $mod = ($i % 2 );++$i; if($p_l['id'] != 98): ?><li class="bd">
               <img src="<?php echo C('IMG_URL');?>/p-<?php echo ($key); ?>.png" alt="">
@@ -156,7 +156,7 @@
               </div>
             </li>
             <?php else: ?>
-            <li class="bd">
+    <!--        <li class="bd">
               <img src="<?php echo C('IMG_URL');?>/p-<?php echo ($key); ?>.png" alt="">
               <p class="p-1"><?php echo ($p_l["class_name"]); ?></p>
               <p class="p-2"><?php echo ($p_l["class_e_name"]); ?></p>
@@ -164,7 +164,7 @@
                 <p class="p-3"><?php echo ($p_l["introduction"]); ?></p>
                 <p class="p-4"><a href="/">更多</a></p>
               </div>
-            </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+            </li>--><?php endif; endforeach; endif; else: echo "" ;endif; ?>
       </ul>
     </div>
     <!--<span class="s-s-l"></span>

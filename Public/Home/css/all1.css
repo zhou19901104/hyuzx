@@ -80,7 +80,7 @@ a {
     height: 200px;
     background: url(../images/ewm.png) center center no-repeat;
     position: absolute;
-    top: 200px;
+    top: 180px;
     right:30px;
     display: none;
 }
@@ -306,7 +306,7 @@ a {
 
 .nav-wrap .nav-li .n-li .list .li-ul .nav-list-li .guide-li {
     display: none;
-    width: 600px;
+    width: 700px;
     border-right: 2px solid #000;
     border-bottom: 2px solid #000;
     background: #e5ceb0;
@@ -318,7 +318,7 @@ a {
 
 .nav-wrap .nav-li .n-li .list .li-ul .nav-list-li .guide-li .f-l {
     float: left;
-    width: 77%;
+    width: 100%;
 }
 
 .nav-wrap .nav-li .n-li .list .li-ul .nav-list-li .guide-li dl {
@@ -1315,7 +1315,7 @@ a {
     color: #fff;
     font-size: 14px;
     height: 30px;
-    width: 80px;
+    width: 85px;
     border-bottom: 1px solid #858585;
     margin-bottom: 12px;
     text-align: center;

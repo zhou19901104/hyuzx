@@ -38,7 +38,7 @@
                     <td colspan="3" class="lt">
 						<input type="file" name="img_url" size="28" value='浏览...' />
                         <notempty name="info.img_url">
-                        <img src="{:C('SITE_URL')}/{$info.img_url|substr=1}" />
+                        <img src="{:C('SITE_URL')}{$info.img_url|substr=1}" />
                         </notempty>
                     </td>
                 </tr>
@@ -73,7 +73,7 @@
 
                            <foreach name="class_list" item="val">
 
-                               <option value="{$val['id']}" <if condition="$val['id'] eq $info['id']">selected</if> >{$val['level']|str_repeat='--',###}{$val['class_name']}</option>
+                               <option value="{$val['id']}" <if condition="$val['id'] eq $info['cid']">selected</if> >{$val['level']|str_repeat='--',###}{$val['class_name']}</option>
 
                            </foreach>
 

@@ -42,11 +42,11 @@
   </div>
   <div class="ewm"></div>
   <ul class="flo-list">
-    <li><a target='_blank' href="{:C('SHANG_WU')}"><img src="{:C('SITE_URL')}/Public/Uploads/comm/01.png" alt=""></a></li>
-    <li id="online_1"><a href="javascript:void(0)"><img src="{:C('SITE_URL')}/Public/Uploads/comm/02.png" alt=""></a></li>
-    <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="{:C('SITE_URL')}/Public/Uploads/comm/03.png" alt=""></a></li>
-    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="{:C('SITE_URL')}/Public/Uploads/comm/04.png" alt=""></a></li>
-    <li class="top"><img src="{:C('SITE_URL')}/Public/Uploads/comm/05.png" alt=""></li>
+    <li><a target='_blank' href="{:C('SHANG_WU')}"><img src="{:C('IMG_URL')}/zhuye_01.jpg" alt=""></a></li>
+    <li id="online_1"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_02.jpg" alt=""></a></li>
+    <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_03.jpg" alt=""></a></li>
+    <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_04.jpg" alt=""></a></li>
+    <li class="top"><img src="{:C('IMG_URL')}/zhuye_05.jpg" alt=""></li>
   </ul>
 </div>
 
@@ -120,11 +120,11 @@
                               </dl>
                             </volist>
                           </div>
-                          <ul class="hot">
+                  <!--        <ul class="hot">
                             <li>热门项目</li>
                             <li><a href="{:U('Home/Index/new_info',array('id'=>$hot_info['id']))}"><img
                                     src="{$hot_info.img_url}" alt=""></a></li>
-                          </ul>
+                          </ul>-->
                         </div>
                       </li>
                       <else/>
@@ -169,7 +169,7 @@
 <div class="project-wrap">
   <p class="pro-tit"><img src="{:C('IMG_URL')}/pro-tit.png" alt=""></p>
   <div class="pro-list">
-    <div class="prolist" style="height: 520px;;">
+    <div class="prolist" style="height: 520px;">
       <ul class="prslide">
         <volist name='p_list' id='p_l'>
           <if condition="$p_l['id'] neq 98">
@@ -183,7 +183,7 @@
               </div>
             </li>
             <else/>
-            <li class="bd">
+    <!--        <li class="bd">
               <img src="{:C('IMG_URL')}/p-{$key}.png" alt="">
               <p class="p-1">{$p_l.class_name}</p>
               <p class="p-2">{$p_l.class_e_name}</p>
@@ -191,7 +191,7 @@
                 <p class="p-3">{$p_l.introduction}</p>
                 <p class="p-4"><a href="/">更多</a></p>
               </div>
-            </li>
+            </li>-->
           </if>
         </volist>
       </ul>

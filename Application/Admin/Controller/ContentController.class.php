@@ -90,6 +90,14 @@ class ContentController extends CommonController
                         ->order('d.id ASC')
                         ->select();
 
+//
+//        $content_list = $content
+//                        ->alias('c')
+//                        ->field('c.id as con_id,c.cid,c.title,c.createtime,a.id,a.class_name')
+//                        ->join('__CLASS__ as a on c.cid=a.id')
+//                        ->limit($page->firstRow,$page->listRows)
+//                        ->select();
+
         $this->assign('content_list', $content_list);
         $this->assign('show', $show);
         $this->display('content_list1');
@@ -107,7 +115,7 @@ class ContentController extends CommonController
 
             if($data = $content->create()){
                 if($data['cid'] == 0){
-                    $this->error('请选择文章类别', U('Content/content_list'), 2);
+                    $this->error('请选择文章类别', U('Content/content_add'), 2);
                     exit();
                 }
                 if($_FILES['img_url']['name'] != ''){

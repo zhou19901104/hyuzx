@@ -70,8 +70,6 @@
 
                             <?php if(is_array($class_list)): foreach($class_list as $key=>$val): ?><option value="<?php echo ($val['id']); ?>"><?php echo (str_repeat('-',$val['level']*2)); echo ($val['class_name']); ?></option><?php endforeach; endif; ?>
 
-
-
 							<!--<?php if(is_array($class_list)): $i = 0; $__LIST__ = $class_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_c): $mod = ($i % 2 );++$i;?>-->
 								<!--<option value="<?php echo ($p_c["id"]); ?>"><?php echo ($p_c["class_name"]); ?></option>-->
 								<!--<?php if(is_array($p_c["p_class"])): $i = 0; $__LIST__ = $p_c["p_class"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_class): $mod = ($i % 2 );++$i;?>-->

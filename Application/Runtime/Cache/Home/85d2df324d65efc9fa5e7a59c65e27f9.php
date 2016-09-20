@@ -42,11 +42,11 @@
     </div>
     <div class="ewm"></div>
     <ul class="flo-list">
-        <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/01.png" alt=""></a></li>
-        <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/02.png" alt=""></a></li>
-        <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/03.png" alt=""></a></li>
-        <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
-        <li class="top"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/05.png" alt=""></li>
+        <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('IMG_URL');?>/zhuye_01.jpg" alt=""></a></li>
+        <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_02.jpg" alt=""></a></li>
+        <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_03.jpg" alt=""></a></li>
+        <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_04.jpg" alt=""></a></li>
+        <li class="top"><img src="<?php echo C('IMG_URL');?>/zhuye_05.jpg" alt=""></li>
     </ul>
 </div>
 
@@ -96,10 +96,10 @@
 																		<dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd><?php endif; endforeach; endif; ?>
 															</dl><?php endforeach; endif; else: echo "" ;endif; ?>
 													</div>
-													<ul class="hot">
+											<!--		<ul class="hot">
 														<li>热门项目</li>
 														<li><a href=""><img src="<?php echo C('IMG_URL');?>/nav-img-1.png" alt=""></a></li>
-													</ul>
+													</ul>-->
 												</div>
 											</li>
 											<?php else: endif; endforeach; endif; else: echo "" ;endif; ?>
@@ -147,7 +147,7 @@
 							<ul class="new-list"><?php endif; ?>
 			<?php if($p_l["tid"] != NULL): ?><li>
 					<a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['id']));?>">
-						<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['id']));?>"><img src="<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>
+						<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['id']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>
 						<p class="new-tit"><?php echo ($p_l["tid"]["title"]); ?></p>
 						<p class="new-tit-m"><?php echo ($p_l["tid"]["description"]); ?></p>
 						<p class="interact"><span class="date"><?php echo (date("Y-m-d",$p_l["tid"]["createtime"])); ?></span><span class="read"><?php echo ($p_l["tid"]["read_num"]); ?>阅读</span></p>
@@ -156,7 +156,7 @@
 				<?php else: ?>
 				<?php if(is_array($p_l["content"])): $i = 0; $__LIST__ = $p_l["content"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$content): $mod = ($i % 2 );++$i; if(is_array($content)): $i = 0; $__LIST__ = $content;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$content_list): $mod = ($i % 2 );++$i;?><li>
 							<a href="<?php echo U('Home/Index/new_info',array('id'=>$content_list['id']));?>">
-								<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$content_list['id']));?>"><img src="<?php echo ($content_list["img_url"]); ?>" alt=""></a></p>
+								<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$content_list['id']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($content_list["img_url"],1)); ?>" alt=""></a></p>
 								<p class="new-tit"><?php echo ($content_list["title"]); ?></p>
 								<p class="new-tit-m"><?php echo ($content_list["description"]); ?></p>
 								<p class="interact"><span class="date"><?php echo (date("Y-m-d",$content_list["createtime"])); ?></span><span class="read"><?php echo ($content_list["read_num"]); ?>阅读</span></p>
