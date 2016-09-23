@@ -18,8 +18,8 @@ class CommonController extends Controller
       parent::__construct();
 
       $class = M('Class');
-     F('foot_list',null);
-     F('class_list',null);
+//     F('foot_list',null);
+//     F('class_list',null);
       if(F('foot_list') == ''){
          //footer页面底部
          $foot_list = $class
@@ -30,9 +30,7 @@ class CommonController extends Controller
          foreach($foot_list as $key => $val){ //遍历追加到数组中
             $foot_list[$key]['zi_list'] = $class->where(array('pid' => $foot_list[$key]['id']))->select();
          }
-
          F('foot_list', $foot_list);
-
       }
 
       $foot_list = F('foot_list');

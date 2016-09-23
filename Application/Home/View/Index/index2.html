@@ -183,7 +183,9 @@
               <p class="p-2">{$p_l.class_e_name}</p>
               <div class="none block">
                 <p class="p-3">{$p_l.introduction}</p>
-                <p class="p-4"><a href="{:U('Home/Index/new_list',array('id'=>$p_l['id']))}">更多</a></p>
+                <!--<p class="p-4"><a href="{:U('Home/Index/new_list',array('id'=>$p_l['id']))}">更多</a></p>-->
+
+                <p class="p-4"><a href="{:C('SITE_URL')}/xm/{$p_l['abbob']}">更多</a></p>
               </div>
             </li>
             <else/>
@@ -206,13 +208,14 @@
 </div>
 
 
-<div class="special_doctor">
-  <p class="zj-tit"><img src="{:C('IMG_URL')}/zj-tit.png" alt=""></p>
-</div>
+
 
 
 <!-- 专家团队 -->
 <div class="doctor-wrap">
+  <div class="special_doctor">
+    <p class="zj-tit"><img src="{:C('IMG_URL')}/zj-tit.png" alt=""></p>
+  </div>
   <div class="doctor">
     <div class="zj-list">
       <div class="zj-l">
@@ -415,9 +418,11 @@
               <dt>{$f_list.class_name}</dt>
               <volist name='f_list["zi_list"]' id='z_list'>
                 <if condition="$z_list['id'] eq 60 or $z_list['id'] eq 61 or $z_list['id'] eq 62 or $z_list['id'] eq 63 or $z_list['id'] eq 77 or $z_list['id'] eq 78 or $z_list['id'] eq 79 or $z_list['id'] eq 80">
-                  <dd><a href="{:U('Home/Index/new_info',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>
+                  <!--<dd><a href="{:U('Home/Index/new_info',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>-->
+                  <dd><a href="{:C('SITE_URL')}/xm/{$z_list['abbob']}">{$z_list.class_name}</a></dd>
                   <else/>
-                  <dd><a href="{:U('Home/Index/new_list',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>
+                  <!--<dd><a href="{:U('Home/Index/new_list',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>-->
+                  <dd><a href="{:C('SITE_URL')}/xm/{$z_list['abbob']}">{$z_list.class_name}</a></dd>
                 </if>
               </volist>
             </dl>

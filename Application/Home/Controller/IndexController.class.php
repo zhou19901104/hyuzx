@@ -169,8 +169,10 @@ class IndexController extends CommonController
       $data['read_num'] = $info['read_num'] + 1;
       M('content')->where('id = "' . $info['id'] . '"')->save($data);
 
-      $related_list = M('content')->where('related = 1')->limit(6)->select();
+      $s = rand(0, 50);
+      $related_list = M('content')->alias('m')->field('m.title,m.cid,m.related,c.id,c.abbob')->join('__CLASS__ as c on m.cid=c.id')->where('related=1')->limit($s, 6)->select();
 
+      //dump($related_list);die();
 
       $doctor_list = M('doctor')->limit(3)->order('sort desc')->select();
       $this->assign('doctor_list', $doctor_list);
@@ -190,30 +192,6 @@ class IndexController extends CommonController
    public function case_info()
    {
 
-//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-//      //dump($foot_list);
-//      for ($i = 0; $i < count($foot_list); $i++) {
-//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-//      }
-//
-//      dump($foot_list);
-//      $class_list = $class->where('pid = 0')->order('sort desc')->select();
-//
-//      for ($i = 0; $i < count($class_list); $i++) {
-//         $class_list[$i]['p_class'] = $class->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-//            $class_list[$i]['p_class'][$k]['k_class'] = $class->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-//            }
-//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = $class->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-//            }
-//         }
-//      }
-//
-//      $this->assign('class_list', $class_list);
-
       $class = M('Class');
       $id = I('get.id');
 
@@ -222,7 +200,9 @@ class IndexController extends CommonController
       }
 
       $info = M('case')->where('id = "' . $id . '"')->find();
-      $related_list = M('content')->where('related = 1')->order('sort desc')->limit(6)->select();
+      $s = rand(0, 50);
+      $related_list = M('content')->alias('m')->field('m.title,m.cid,m.related,c.id,c.abbob')->join('__CLASS__ as c on m.cid=c.id')->where('related=1')->limit($s, 6)->select();
+
       $doctor_list = M('doctor')->where('related = 1')->order('sort desc')->limit(5)->select();
       $anli_list = M('case')->where('related = 1 and id <> "' . $id . '"')->order('sort desc')->limit(3)->select();
 
@@ -239,6 +219,7 @@ class IndexController extends CommonController
       $this->assign('class_info', $class_info);
       $this->assign('doctor_list', $doctor_list);
       $this->assign('anli_list', $anli_list);
+
       $this->assign('anli_list_a', $anli_list_a);
 
       $this->assign('info', $info);

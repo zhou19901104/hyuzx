@@ -170,7 +170,8 @@
 		<p class="tit">相关推荐<span>related suggestion</span></p>
 		<ul class="text-list">
 			<volist name='related_list' id='r_list'>
-				<li><a href="{:U('Home/Index/new_info',array('id'=>$r_list['id']))}">{$r_list.title}</a></li>
+				<!--<li><a href="{:U('Home/Index/new_info',array('id'=>$r_list['id']))}">{$r_list.title}</a></li>-->
+				<li><a href="{:C('SITE_URL')}/xm/{$r_list['abbob']}">{$r_list.title}</a></li>
 			</volist>
 		</ul>
 	</div>

@@ -713,7 +713,7 @@ a {
 
 .doctor-wrap .doctor {
     width: 1200px;
-    height: 700px;
+    height: 650px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -733,7 +733,7 @@ a {
 
 .doctor-wrap .doctor .zj-list .zj-l .big-img {
     position: absolute;
-    top: 0;
+    top: 23%;
     left: 17%;
 }
 
@@ -749,7 +749,7 @@ a {
 .doctor-wrap .doctor .zj-list .zj-r .r-t .cont {
     overflow: hidden;
     position: absolute;
-    top: 40px;
+    top: 28%;
     left: 42%;
     display: none;
 }
@@ -864,7 +864,7 @@ a {
     width: 778px;
     margin: 0 auto;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 40%;
     height: 160px;
     overflow: hidden;

@@ -149,7 +149,7 @@
 		<p class="tit ptit">相关推荐<span>related suggestion</span></p>
 		<ul class="text-list">
 			<volist name='related_list' id='related_list'>
-				<li><a href="{:U('Home/Index/new_info',array('id'=>$related_list['id'],'cid'=>$related_list['cid']))}">{$related_list.title}</a></li>
+				<li><a href="{:C('SITE_URL')}/xm/{$related_list['abbob']}">{$related_list.title}</a></li>
 			</volist>
 		</ul>
 	</div>
@@ -173,6 +173,7 @@
 	<div class='con-list-wrap'>
 		<p class="tit ptit">相关推荐<span>related suggestion</span></p>
 		<ul class="diary-list">
+
 			<volist name='anli_list' id="a_list">
 				<li class="bd">
 					<a href="{:U('Home/Index/case_info',array('id'=>$a_list['id']))}">
@@ -188,6 +189,7 @@
 					</a>
 				</li>
 			</volist>
+
 		</ul>
 	</div>
 </div>

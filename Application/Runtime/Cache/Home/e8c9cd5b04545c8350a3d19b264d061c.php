@@ -172,7 +172,7 @@
 	<div class='con-list-wrap prcont'>
 		<p class="tit ptit">相关推荐<span>related suggestion</span></p>
 		<ul class="text-list">
-			<?php if(is_array($related_list)): $i = 0; $__LIST__ = $related_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$related_list): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Home/Index/new_info',array('id'=>$related_list['id'],'cid'=>$related_list['cid']));?>"><?php echo ($related_list["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+			<?php if(is_array($related_list)): $i = 0; $__LIST__ = $related_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$related_list): $mod = ($i % 2 );++$i;?><li><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($related_list['abbob']); ?>"><?php echo ($related_list["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 		</ul>
 	</div>
 	<!-- 相关专家推荐 -->
@@ -193,6 +193,7 @@
 	<div class='con-list-wrap'>
 		<p class="tit ptit">相关推荐<span>related suggestion</span></p>
 		<ul class="diary-list">
+
 			<?php if(is_array($anli_list)): $i = 0; $__LIST__ = $anli_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$a_list): $mod = ($i % 2 );++$i;?><li class="bd">
 					<a href="<?php echo U('Home/Index/case_info',array('id'=>$a_list['id']));?>">
 						<img src="/Public/Uploads/anli/list_<?php echo ($a_list["list_url"]); ?>" alt="">
@@ -206,6 +207,7 @@
 						</ul>
 					</a>
 				</li><?php endforeach; endif; else: echo "" ;endif; ?>
+
 		</ul>
 	</div>
 </div>

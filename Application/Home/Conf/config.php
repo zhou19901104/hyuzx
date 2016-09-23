@@ -10,6 +10,12 @@ return array(
 	'URL_ROUTER_ON'   => true,
 	'URL_ROUTE_RULES' => array(
 
+		'xm/mrhfzx' => array('Index/new_list', array('id' => 13)),
+		'xm/zxmrzx' => array('Index/new_list', array('id' => 39)),
+		'xm/wcmrzx' => array('Index/new_list', array('id' => 64)),
+
+
+
 		'xm/mfqb' => array('Index/new_list', array('id' => 14)),
 		'xm/mbnf' => array('Index/new_list', array('id' => 20)),
 		'xm/wmjf' => array('Index/new_list', array('id' => 27)),

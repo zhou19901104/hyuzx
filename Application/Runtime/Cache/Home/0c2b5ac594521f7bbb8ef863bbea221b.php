@@ -193,7 +193,8 @@
 	<div class='con-list-wrap'>
 		<p class="tit">相关推荐<span>related suggestion</span></p>
 		<ul class="text-list">
-			<?php if(is_array($related_list)): $i = 0; $__LIST__ = $related_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r_list): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Home/Index/new_info',array('id'=>$r_list['id']));?>"><?php echo ($r_list["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+			<?php if(is_array($related_list)): $i = 0; $__LIST__ = $related_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r_list): $mod = ($i % 2 );++$i;?><!--<li><a href="<?php echo U('Home/Index/new_info',array('id'=>$r_list['id']));?>"><?php echo ($r_list["title"]); ?></a></li>-->
+				<li><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($r_list['abbob']); ?>"><?php echo ($r_list["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 		</ul>
 	</div>
 </div>

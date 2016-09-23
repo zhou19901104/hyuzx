@@ -126,11 +126,11 @@
 			</if>
 			<if condition='$p_l["tid"] neq NULL'>
 				<li>
-					<a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']))}">
-						<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']))}"><img src="{:C('SITE_URL')}/{$p_l.tid.img_url|substr=1}" alt=""></a></p>
+					<a href="{:C('SITE_URL')}/xm/{$p_l['abbob']}">
+						<!--<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']))}"><img src="{:C('SITE_URL')}/{$p_l.tid.img_url|substr=1}" alt=""></a></p>-->
 
-						<!--<p class="new-photo"><a href="{:C('SITE_URL')}/xm/{$sp_l['tid']['abbob']}"><img src="{:C('SITE_URL')}/{$p_l.tid.img_url|substr=1}" alt=""></a></p>-->
-						<!---->
+						<p class="new-photo"><a href="{:C('SITE_URL')}/xm/{$p_l['abbob']}"><img src="{:C('SITE_URL')}/{$p_l.tid.img_url|substr=1}" alt=""></a></p>
+
 						<p class="new-tit">{$p_l.tid.title}</p>
 						<p class="new-tit-m">{$p_l.tid.description}</p>
 						<p class="interact"><span class="date">{$p_l.tid.createtime|date="Y-m-d",###}</span><span class="read">{$p_l.tid.read_num}阅读</span></p>
@@ -140,7 +140,7 @@
 				<volist name='p_l.content' id='content'>
 					<volist name='content' id='content_list'>
 						<li>
-							<a href="{:U('Home/Index/new_info',array('id'=>$content_list['id']))}">
+							<a href="{:C('SITE_URL')}/xm/{$content_list['abbob']}">
 								<!--<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$content_list['cid']))}"><img src="{:C('SITE_URL')}/{$content_list.img_url|substr=1}" alt=""></a></p>-->
 
 								<p class="new-photo"><a href="{:C('SITE_URL')}/xm/{$content_list['abbob']}"><img src="{:C('SITE_URL')}/{$content_list.img_url|substr=1}" alt=""></a></p>

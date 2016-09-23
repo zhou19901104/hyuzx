@@ -148,11 +148,11 @@
 							<span><?php echo ($p_l["class_name"]); ?></span>
 							<ul class="new-list"><?php endif; ?>
 			<?php if($p_l["tid"] != NULL): ?><li>
-					<a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']));?>">
-						<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>
+					<a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($p_l['abbob']); ?>">
+						<!--<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>-->
 
-						<!--<p class="new-photo"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($sp_l['tid']['abbob']); ?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>-->
-						<!---->
+						<p class="new-photo"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($p_l['abbob']); ?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>
+
 						<p class="new-tit"><?php echo ($p_l["tid"]["title"]); ?></p>
 						<p class="new-tit-m"><?php echo ($p_l["tid"]["description"]); ?></p>
 						<p class="interact"><span class="date"><?php echo (date("Y-m-d",$p_l["tid"]["createtime"])); ?></span><span class="read"><?php echo ($p_l["tid"]["read_num"]); ?>阅读</span></p>
@@ -160,7 +160,7 @@
 				</li>
 				<?php else: ?>
 				<?php if(is_array($p_l["content"])): $i = 0; $__LIST__ = $p_l["content"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$content): $mod = ($i % 2 );++$i; if(is_array($content)): $i = 0; $__LIST__ = $content;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$content_list): $mod = ($i % 2 );++$i;?><li>
-							<a href="<?php echo U('Home/Index/new_info',array('id'=>$content_list['id']));?>">
+							<a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($content_list['abbob']); ?>">
 								<!--<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$content_list['cid']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($content_list["img_url"],1)); ?>" alt=""></a></p>-->
 
 								<p class="new-photo"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($content_list['abbob']); ?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($content_list["img_url"],1)); ?>" alt=""></a></p>

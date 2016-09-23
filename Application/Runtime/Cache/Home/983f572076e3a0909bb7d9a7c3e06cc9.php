@@ -153,7 +153,9 @@
               <p class="p-2"><?php echo ($p_l["class_e_name"]); ?></p>
               <div class="none block">
                 <p class="p-3"><?php echo ($p_l["introduction"]); ?></p>
-                <p class="p-4"><a href="<?php echo U('Home/Index/new_list',array('id'=>$p_l['id']));?>">更多</a></p>
+                <!--<p class="p-4"><a href="<?php echo U('Home/Index/new_list',array('id'=>$p_l['id']));?>">更多</a></p>-->
+
+                <p class="p-4"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($p_l['abbob']); ?>">更多</a></p>
               </div>
             </li>
             <?php else: ?>
@@ -174,13 +176,14 @@
 </div>
 
 
-<div class="special_doctor">
-  <p class="zj-tit"><img src="<?php echo C('IMG_URL');?>/zj-tit.png" alt=""></p>
-</div>
+
 
 
 <!-- 专家团队 -->
 <div class="doctor-wrap">
+  <div class="special_doctor">
+    <p class="zj-tit"><img src="<?php echo C('IMG_URL');?>/zj-tit.png" alt=""></p>
+  </div>
   <div class="doctor">
     <div class="zj-list">
       <div class="zj-l">
@@ -368,9 +371,11 @@
         <?php if(is_array($foot_list)): $i = 0; $__LIST__ = $foot_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$f_list): $mod = ($i % 2 );++$i;?><li>
             <dl class="f-n-list">
               <dt><?php echo ($f_list["class_name"]); ?></dt>
-              <?php if(is_array($f_list["zi_list"])): $i = 0; $__LIST__ = $f_list["zi_list"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$z_list): $mod = ($i % 2 );++$i; if($z_list['id'] == 60 or $z_list['id'] == 61 or $z_list['id'] == 62 or $z_list['id'] == 63 or $z_list['id'] == 77 or $z_list['id'] == 78 or $z_list['id'] == 79 or $z_list['id'] == 80): ?><dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$z_list['id']));?>"><?php echo ($z_list["class_name"]); ?></a></dd>
+              <?php if(is_array($f_list["zi_list"])): $i = 0; $__LIST__ = $f_list["zi_list"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$z_list): $mod = ($i % 2 );++$i; if($z_list['id'] == 60 or $z_list['id'] == 61 or $z_list['id'] == 62 or $z_list['id'] == 63 or $z_list['id'] == 77 or $z_list['id'] == 78 or $z_list['id'] == 79 or $z_list['id'] == 80): ?><!--<dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$z_list['id']));?>"><?php echo ($z_list["class_name"]); ?></a></dd>-->
+                  <dd><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($z_list['abbob']); ?>"><?php echo ($z_list["class_name"]); ?></a></dd>
                   <?php else: ?>
-                  <dd><a href="<?php echo U('Home/Index/new_list',array('id'=>$z_list['id']));?>"><?php echo ($z_list["class_name"]); ?></a></dd><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                  <!--<dd><a href="<?php echo U('Home/Index/new_list',array('id'=>$z_list['id']));?>"><?php echo ($z_list["class_name"]); ?></a></dd>-->
+                  <dd><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($z_list['abbob']); ?>"><?php echo ($z_list["class_name"]); ?></a></dd><?php endif; endforeach; endif; else: echo "" ;endif; ?>
             </dl>
           </li><?php endforeach; endif; else: echo "" ;endif; ?>
       </ul>
