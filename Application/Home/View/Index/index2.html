@@ -111,10 +111,12 @@
                             <foreach name="c_class['c_class']" item="c_vo">
 
                                 <if condition="$key eq 0">
-                                    <dd class="dd-bg"><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a>
+                                   <!-- <dd class="dd-bg"><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a>-->
+                                    <dd class="dd-bg"><a href="{:C('SITE_URL')}/xm/{$c_vo['abbob']}">{$c_vo.class_name}</a>
                                     </dd>
                                     <else/>
-                                    <dd>                            <a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a>
+                                <!--<dd><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a>-->
+                                <dd><a href="{:C('SITE_URL')}/xm/{$c_vo['abbob']}">{$c_vo.class_name}</a>
                                     </dd>
                                   </if>
 
@@ -292,14 +294,14 @@
     <div class="calist">
 
       <div class="caslide">
-        <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_case1.jpg" alt="">
+        <a href="Index/case_info"><img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_case1.jpg" alt=""></a>
       </div>
       <div class="caslide">
         <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_name1.jpg" alt="">
         <div class="caslide_left"></div>
       </div>
       <div class="caslide">
-        <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_case2.jpg" alt="">
+        <a href="Index/case_info"><img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_case2.jpg" alt=""></a>
       </div>
       <div class="caslide">
         <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_name2.jpg" alt="">
@@ -310,14 +312,14 @@
         <div class="caslide_right"></div>
       </div>
       <div class="caslide">
-        <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_case3.jpg" alt="">
+        <a href="Index/case_info"> <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_case3.jpg" alt=""></a>
       </div>
       <div class="caslide">
         <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_name4.jpg" alt="">
         <div class="caslide_right"></div>
       </div>
       <div class="caslide">
-        <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_case4.jpg" alt="">
+        <a href="Index/case_info"> <img src="{:C('SITE_URL')}/Public/Uploads/comm/anli_case4.jpg" alt=""></a>
       </div>
 
 

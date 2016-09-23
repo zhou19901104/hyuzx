@@ -77,11 +77,15 @@ class IndexController extends CommonController
       for ($i = 0; $i < count($pp_class); $i++) {
          $list[$i] = M('class')->where('pid = "' . $pp_class[$i]['id'] . '"')->select();
          for ($k = 0; $k < count($list[$i]); $k++) {
-            $pp_class[$i]['content'][] = M('content')->where('cid = "' . $list[$i][$k]['id'] . '"')->select();
+            $pp_class[$i]['content'][] = M('content')->alias('m')->field('m.*,c.id,c.pid,c.abbob')->join('__CLASS__ as c on m.cid=c.id')->where('m.cid = "' . $list[$i][$k]['id'] . '"')->select();
 
+            //echo M('content')->_sql();die();
          }
       }
 
+//      dump($pp_class);
+//      echo 1;
+//      dump($class_info);die();
 
 //
 //      $this->assign('class_list', $class_list);

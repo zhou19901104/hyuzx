@@ -57,9 +57,11 @@
 																</if>
 																<foreach name="c_class['c_class']" item="c_vo">
 																	<if condition="$key eq 0">
-																		<dd class="dd-bg"><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>
+																		<dd class="dd-bg"><a href="{:C('SITE_URL')}/xm/{$c_vo['abbob']}">{$c_vo.class_name}</a></dd>
+																		<!--<dd class="dd-bg"><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>-->
 																		<else />
-																		<dd><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>
+																		<dd><a href="{:C('SITE_URL')}/xm/{$c_vo['abbob']}">{$c_vo.class_name}</a></dd>
+																		<!--<dd><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>-->
 																	</if>
 																</foreach>
 															</dl>
@@ -124,8 +126,11 @@
 			</if>
 			<if condition='$p_l["tid"] neq NULL'>
 				<li>
-					<a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['id']))}">
-						<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['id']))}"><img src="{:C('SITE_URL')}/{$p_l.tid.img_url|substr=1}" alt=""></a></p>
+					<a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']))}">
+						<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']))}"><img src="{:C('SITE_URL')}/{$p_l.tid.img_url|substr=1}" alt=""></a></p>
+
+						<!--<p class="new-photo"><a href="{:C('SITE_URL')}/xm/{$sp_l['tid']['abbob']}"><img src="{:C('SITE_URL')}/{$p_l.tid.img_url|substr=1}" alt=""></a></p>-->
+						<!---->
 						<p class="new-tit">{$p_l.tid.title}</p>
 						<p class="new-tit-m">{$p_l.tid.description}</p>
 						<p class="interact"><span class="date">{$p_l.tid.createtime|date="Y-m-d",###}</span><span class="read">{$p_l.tid.read_num}阅读</span></p>
@@ -136,7 +141,10 @@
 					<volist name='content' id='content_list'>
 						<li>
 							<a href="{:U('Home/Index/new_info',array('id'=>$content_list['id']))}">
-								<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$content_list['cid']))}"><img src="{:C('SITE_URL')}/{$content_list.img_url|substr=1}" alt=""></a></p>
+								<!--<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$content_list['cid']))}"><img src="{:C('SITE_URL')}/{$content_list.img_url|substr=1}" alt=""></a></p>-->
+
+								<p class="new-photo"><a href="{:C('SITE_URL')}/xm/{$content_list['abbob']}"><img src="{:C('SITE_URL')}/{$content_list.img_url|substr=1}" alt=""></a></p>
+
 								<p class="new-tit">{$content_list.title}</p>
 								<p class="new-tit-m">{$content_list.description}</p>
 								<p class="interact"><span class="date">{$content_list.createtime|date="Y-m-d",###}</span><span class="read">{$content_list.read_num}阅读</span></p>

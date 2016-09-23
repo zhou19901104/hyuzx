@@ -67,9 +67,13 @@
                             <dt>{$f_list.class_name}</dt>
                             <volist name='f_list["zi_list"]' id='z_list'>
                                 <if condition="$z_list['id'] eq 60 or $z_list['id'] eq 61 or $z_list['id'] eq 62 or $z_list['id'] eq 63 or $z_list['id'] eq 77 or $z_list['id'] eq 78 or $z_list['id'] eq 79 or $z_list['id'] eq 80">
-                                    <dd><a href="{:U('Home/Index/new_info',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>
+                                    <!--<dd><a href="{:U('Home/Index/new_info',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>-->
+
+                                    <dd><a href="{:C('SITE_URL')}/xm/{$z_list['abbob']}">{$z_list.class_name}</a></dd>
                                     <else />
-                                    <dd><a href="{:U('Home/Index/new_list',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>
+                                    <!--<dd><a href="{:U('Home/Index/new_list',array('id'=>$z_list['id']))}">{$z_list.class_name}</a></dd>-->
+                                    <dd><a href="{:C('SITE_URL')}/xm/{$z_list['abbob']}">{$z_list.class_name}</a></dd>
+
                                 </if>
                             </volist>
                         </dl>

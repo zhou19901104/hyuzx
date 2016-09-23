@@ -92,10 +92,12 @@
                                   </a>
                                   <?php else: ?>
                                   <dt><?php echo ($c_class["class_name"]); ?></dt><?php endif; ?>
-                            <?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>
+                            <?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><!-- <dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>-->
+                                    <dd class="dd-bg"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($c_vo['abbob']); ?>"><?php echo ($c_vo["class_name"]); ?></a>
                                     </dd>
                                     <?php else: ?>
-                                    <dd>                            <a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>
+                                <!--<dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>-->
+                                <dd><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($c_vo['abbob']); ?>"><?php echo ($c_vo["class_name"]); ?></a>
                                     </dd><?php endif; endforeach; endif; ?>
                               </dl><?php endforeach; endif; else: echo "" ;endif; ?>
                           </div>
@@ -248,14 +250,14 @@
     <div class="calist">
 
       <div class="caslide">
-        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case1.jpg" alt="">
+        <a href="Index/case_info"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case1.jpg" alt=""></a>
       </div>
       <div class="caslide">
         <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name1.jpg" alt="">
         <div class="caslide_left"></div>
       </div>
       <div class="caslide">
-        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case2.jpg" alt="">
+        <a href="Index/case_info"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case2.jpg" alt=""></a>
       </div>
       <div class="caslide">
         <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name2.jpg" alt="">
@@ -266,14 +268,14 @@
         <div class="caslide_right"></div>
       </div>
       <div class="caslide">
-        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case3.jpg" alt="">
+        <a href="Index/case_info"> <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case3.jpg" alt=""></a>
       </div>
       <div class="caslide">
         <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_name4.jpg" alt="">
         <div class="caslide_right"></div>
       </div>
       <div class="caslide">
-        <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case4.jpg" alt="">
+        <a href="Index/case_info"> <img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/anli_case4.jpg" alt=""></a>
       </div>
 
 

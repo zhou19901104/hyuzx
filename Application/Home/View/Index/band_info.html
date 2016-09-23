@@ -59,9 +59,11 @@
 																</if>
 																<foreach name="c_class['c_class']" item="c_vo">
 																	<if condition="$key eq 0">
-																		<dd class="dd-bg"><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>
+																		<dd class="dd-bg"><a href="{:C('SITE_URL')}/xm/{$c_vo['abbob']}">{$c_vo.class_name}</a></dd>
+																		<!--<dd class="dd-bg"><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>-->
 																		<else />
-																		<dd><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>
+																		<dd><a href="{:C('SITE_URL')}/xm/{$c_vo['abbob']}">{$c_vo.class_name}</a></dd>
+																		<!--<dd><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a></dd>-->
 																	</if>
 																</foreach>
 															</dl>

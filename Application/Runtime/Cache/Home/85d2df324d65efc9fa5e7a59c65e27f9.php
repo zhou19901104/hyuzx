@@ -91,9 +91,11 @@
 																<?php if($c_class['tid'] != NULL): ?><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_class['tid']['id']));?>"><dt><?php echo ($c_class["class_name"]); ?></dt></a>
 																	<?php else: ?>
 																	<dt><?php echo ($c_class["class_name"]); ?></dt><?php endif; ?>
-																<?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd>
+																<?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($c_vo['abbob']); ?>"><?php echo ($c_vo["class_name"]); ?></a></dd>
+																		<!--<dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd>-->
 																		<?php else: ?>
-																		<dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd><?php endif; endforeach; endif; ?>
+																		<dd><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($c_vo['abbob']); ?>"><?php echo ($c_vo["class_name"]); ?></a></dd>
+																		<!--<dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd>--><?php endif; endforeach; endif; ?>
 															</dl><?php endforeach; endif; else: echo "" ;endif; ?>
 													</div>
 											<!--		<ul class="hot">
@@ -146,8 +148,11 @@
 							<span><?php echo ($p_l["class_name"]); ?></span>
 							<ul class="new-list"><?php endif; ?>
 			<?php if($p_l["tid"] != NULL): ?><li>
-					<a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['id']));?>">
-						<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['id']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>
+					<a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']));?>">
+						<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$p_l['tid']['cid']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>
+
+						<!--<p class="new-photo"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($sp_l['tid']['abbob']); ?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($p_l["tid"]["img_url"],1)); ?>" alt=""></a></p>-->
+						<!---->
 						<p class="new-tit"><?php echo ($p_l["tid"]["title"]); ?></p>
 						<p class="new-tit-m"><?php echo ($p_l["tid"]["description"]); ?></p>
 						<p class="interact"><span class="date"><?php echo (date("Y-m-d",$p_l["tid"]["createtime"])); ?></span><span class="read"><?php echo ($p_l["tid"]["read_num"]); ?>阅读</span></p>
@@ -156,7 +161,10 @@
 				<?php else: ?>
 				<?php if(is_array($p_l["content"])): $i = 0; $__LIST__ = $p_l["content"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$content): $mod = ($i % 2 );++$i; if(is_array($content)): $i = 0; $__LIST__ = $content;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$content_list): $mod = ($i % 2 );++$i;?><li>
 							<a href="<?php echo U('Home/Index/new_info',array('id'=>$content_list['id']));?>">
-								<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$content_list['cid']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($content_list["img_url"],1)); ?>" alt=""></a></p>
+								<!--<p class="new-photo"><a href="<?php echo U('Home/Index/new_info',array('id'=>$content_list['cid']));?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($content_list["img_url"],1)); ?>" alt=""></a></p>-->
+
+								<p class="new-photo"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($content_list['abbob']); ?>"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($content_list["img_url"],1)); ?>" alt=""></a></p>
+
 								<p class="new-tit"><?php echo ($content_list["title"]); ?></p>
 								<p class="new-tit-m"><?php echo ($content_list["description"]); ?></p>
 								<p class="interact"><span class="date"><?php echo (date("Y-m-d",$content_list["createtime"])); ?></span><span class="read"><?php echo ($content_list["read_num"]); ?>阅读</span></p>
@@ -218,9 +226,12 @@
                 <?php if(is_array($foot_list)): $i = 0; $__LIST__ = $foot_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$f_list): $mod = ($i % 2 );++$i;?><li>
                         <dl class="f-n-list">
                             <dt><?php echo ($f_list["class_name"]); ?></dt>
-                            <?php if(is_array($f_list["zi_list"])): $i = 0; $__LIST__ = $f_list["zi_list"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$z_list): $mod = ($i % 2 );++$i; if($z_list['id'] == 60 or $z_list['id'] == 61 or $z_list['id'] == 62 or $z_list['id'] == 63 or $z_list['id'] == 77 or $z_list['id'] == 78 or $z_list['id'] == 79 or $z_list['id'] == 80): ?><dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$z_list['id']));?>"><?php echo ($z_list["class_name"]); ?></a></dd>
+                            <?php if(is_array($f_list["zi_list"])): $i = 0; $__LIST__ = $f_list["zi_list"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$z_list): $mod = ($i % 2 );++$i; if($z_list['id'] == 60 or $z_list['id'] == 61 or $z_list['id'] == 62 or $z_list['id'] == 63 or $z_list['id'] == 77 or $z_list['id'] == 78 or $z_list['id'] == 79 or $z_list['id'] == 80): ?><!--<dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$z_list['id']));?>"><?php echo ($z_list["class_name"]); ?></a></dd>-->
+
+                                    <dd><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($z_list['abbob']); ?>"><?php echo ($z_list["class_name"]); ?></a></dd>
                                     <?php else: ?>
-                                    <dd><a href="<?php echo U('Home/Index/new_list',array('id'=>$z_list['id']));?>"><?php echo ($z_list["class_name"]); ?></a></dd><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                                    <!--<dd><a href="<?php echo U('Home/Index/new_list',array('id'=>$z_list['id']));?>"><?php echo ($z_list["class_name"]); ?></a></dd>-->
+                                    <dd><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($z_list['abbob']); ?>"><?php echo ($z_list["class_name"]); ?></a></dd><?php endif; endforeach; endif; else: echo "" ;endif; ?>
                         </dl>
                     </li><?php endforeach; endif; else: echo "" ;endif; ?>
             </ul>

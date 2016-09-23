@@ -97,15 +97,15 @@
                                                                 <?php if($c_class['tid'] != NULL): ?><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_class['tid']['id']));?>"><dt><?php echo ($c_class["class_name"]); ?></dt></a>
                                                                     <?php else: ?>
                                                                     <dt><?php echo ($c_class["class_name"]); ?></dt><?php endif; ?>
-                                                                <?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd>
+                                                                <?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($c_vo['abbob']); ?>"><?php echo ($c_vo["class_name"]); ?></a></dd>
                                                                         <?php else: ?>
-                                                                        <dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd><?php endif; endforeach; endif; ?>
+                                                                        <dd><a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($c_vo['abbob']); ?>"><?php echo ($c_vo["class_name"]); ?></a></dd><?php endif; endforeach; endif; ?>
                                                             </dl><?php endforeach; endif; else: echo "" ;endif; ?>
                                                     </div>
-                                                    <ul class="hot">
+                                               <!--     <ul class="hot">
                                                         <li>热门项目</li>
                                                         <li><a href=""><img src="<?php echo C('IMG_URL');?>/nav-img-1.png" alt=""></a></li>
-                                                    </ul>
+                                                    </ul>-->
                                                 </div>
                                             </li>
                                             <?php else: endif; endforeach; endif; else: echo "" ;endif; ?>
