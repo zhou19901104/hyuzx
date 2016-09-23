@@ -18,8 +18,8 @@ class CommonController extends Controller
       parent::__construct();
 
       $class = M('Class');
-//      F('foot_list',null);
-//      F('class_list',null);
+     F('foot_list',null);
+     F('class_list',null);
       if(F('foot_list') == ''){
          //footer页面底部
          $foot_list = $class

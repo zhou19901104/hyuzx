@@ -848,7 +848,7 @@ a {
 }
 
 .doctor-wrap .doctor .zj-list .zj-r .r-t .cy-list li {
-    width: 30%;
+    /* width: 30%; */
     height: 30px;
     font-size: 14px;
     color: #a6a4a7;
@@ -858,7 +858,7 @@ a {
     line-height: 30px;
     display: block;
     list-style: none;
-    float: left;
+/*     float: left; */
 }
 
 .doctor-wrap .doctor .zj-list .zj-r .r-b-wrap {
@@ -1807,7 +1807,7 @@ a {
 
 .new-list-wrap .list-nav .new-list-li {
     float: left;
-    width: 120px;
+    width: 130px;
     text-align: center;
     line-height: 40px;
     color: #bc8b49;

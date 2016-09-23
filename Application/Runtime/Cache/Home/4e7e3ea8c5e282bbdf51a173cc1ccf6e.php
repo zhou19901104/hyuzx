@@ -42,11 +42,11 @@
     </div>
     <div class="ewm"></div>
     <ul class="flo-list">
-        <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/01.png" alt=""></a></li>
-        <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/02.png" alt=""></a></li>
-        <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/03.png" alt=""></a></li>
-        <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
-        <li class="top"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/05.png" alt=""></li>
+        <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('IMG_URL');?>/zhuye_01.jpg" alt=""></a></li>
+        <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_02.jpg" alt=""></a></li>
+        <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_03.jpg" alt=""></a></li>
+        <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_04.jpg" alt=""></a></li>
+        <li class="top"><img src="<?php echo C('IMG_URL');?>/zhuye_05.jpg" alt=""></li>
     </ul>
 </div>
 
@@ -106,10 +106,10 @@
 																		<dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd><?php endif; endforeach; endif; ?>
 															</dl><?php endforeach; endif; else: echo "" ;endif; ?>
 													</div>
-													<ul class="hot">
+											<!--		<ul class="hot">
 														<li>热门项目</li>
 														<li><a href=""><img src="<?php echo C('IMG_URL');?>/nav-img-1.png" alt=""></a></li>
-													</ul>
+													</ul>-->
 												</div>
 											</li>
 											<?php else: endif; endforeach; endif; else: echo "" ;endif; ?>
@@ -200,7 +200,7 @@
 			<ul class="zj-list">
 				<?php if(is_array($doctor_list)): $i = 0; $__LIST__ = $doctor_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d_list): $mod = ($i % 2 );++$i;?><li>
 						<a href="<?php echo U('Home/Index/doctor_info',array('id'=>$d_list['id']));?>">
-							<img src="/Public/Uploads/doctor/list_<?php echo ($d_list["img_url"]); ?>" alt="">
+							<img src="<?php echo C('SITE_URL'); echo (substr($d_list["img_url"],1)); ?>" alt="">
 							<p class="p-1"><?php echo ($d_list["name"]); ?></p>
 							<p class="p-2"><?php echo ($d_list["zhicheng"]); ?></p>
 						</a>
@@ -210,7 +210,7 @@
 				<p class="tit-text"><span class="s-1">蜕变日记<strong>Metamorphosis diary</strong></span><span class="s-2"><a href="<?php echo U('Home/Index/case_info');?>">MORE&nbsp;></a></span></p>
 				<div class="bd">
 					<a href="<?php echo U('Home/Index/case_info',array('id'=>$case_info['id']));?>">
-						<p class="photo"><img src="/Public/Uploads/anli/list_<?php echo ($case_info["list_url"]); ?>" alt=""></p>
+						<p class="photo"><img src="<?php echo C('SITE_URL'); echo (substr($d_list["img_url"],1)); ?>" alt=""></p>
 						<ul class="text">
 							<li class="p-2">
 								<p class="name"><?php echo ($case_info["name"]); ?><span>They are here to find the youth and beauty</span></p>

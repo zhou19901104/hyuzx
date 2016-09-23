@@ -22,16 +22,13 @@
 <body>
 <!-- 浮动 -->
 <div class="talk">
-
   <div class="online">
     <ul>
       <li class="li-1">在线咨询<span class="close"></span></li>
       <li class="li-2"><a href="javascript:void(0)">xxxxxxxxx</a></li>
       <!--  <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>-->
     </ul>
-
   </div>
-
   <div class="online_2">
     <ul>
       <li class="li-1">电话咨询<span class="close"></span></li>
@@ -51,6 +48,7 @@
 </div>
 
 <!-- nav -->
+
 <div class="nav-wrap">
   <div class="nav">
     <div class="logo"><img src="{:C('IMG_URL')}/logo.png" alt=""></div>
@@ -91,10 +89,10 @@
             </if>
 
             <if condition="$p_class['class_name'] eq '项目系列'">
-              <div class="list">
+        <div class="list">
                 <ul class="li-ul">
                   <volist name='p_class.p_class' id='k_class'>
-                    <if condition="$k_class['id'] neq '98'">
+               <if condition="$k_class['id'] neq '98'">
                       <li class="nav-list-li">
                         <a class="li-a">{$k_class.class_name}</a>
                         <div class="guide-li">
@@ -102,29 +100,33 @@
                             <volist name='k_class.k_class' id='c_class'>
                               <dl>
                                 <if condition="$c_class['tid'] neq NULL">
-                                  <a href="{:U('Home/Index/new_info',array('id'=>$c_class['tid']['id']))}">
+
+                             <!--    <a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}"> -->
+
                                     <dt>{$c_class.class_name}</dt>
                                   </a>
                                   <else/>
                                   <dt>{$c_class.class_name}</dt>
                                 </if>
-                                <foreach name="c_class['c_class']" item="c_vo">
-                                  <if condition="$key eq 0">
+                            <foreach name="c_class['c_class']" item="c_vo">
+
+                                <if condition="$key eq 0">
                                     <dd class="dd-bg"><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a>
                                     </dd>
                                     <else/>
-                                    <dd><a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a>
+                                    <dd>                            <a href="{:U('Home/Index/new_info',array('id'=>$c_vo['id']))}">{$c_vo.class_name}</a>
                                     </dd>
                                   </if>
+
                                 </foreach>
                               </dl>
                             </volist>
                           </div>
-                  <!--        <ul class="hot">
-                            <li>热门项目</li>
-                            <li><a href="{:U('Home/Index/new_info',array('id'=>$hot_info['id']))}"><img
-                                    src="{$hot_info.img_url}" alt=""></a></li>
-                          </ul>-->
+            <!--          <ul class="hot">
+                   <li>热门项目</li>
+                   <li><a href="{:U('Home/Index/new_info',array('id'=>$hot_info['id']))}"><img
+                           src="{$hot_info.img_url}" alt=""></a></li>
+                 </ul> -->
                         </div>
                       </li>
                       <else/>
@@ -214,9 +216,9 @@
       <div class="zj-l">
         <volist name='doctor_list' id="img_list">
           <if condition="$key eq 0">
-            <div class="big-img"><img src="__PUBLIC__/Uploads/doctor/index_{$img_list.index_url}" alt=""></div>
+            <div class="big-img"><img src="{:C('SITE_URL')}{$img_list.bg_img_url|substr=1}" alt=""></div>
             <else/>
-            <div class="big-img" style="display:none;"><img src="__PUBLIC__/Uploads/doctor/index_{$img_list.index_url}"
+            <div class="big-img" style="display:none;"><img src="{:C('SITE_URL')}{$img_list.bg_img_url|substr=1}"
                                                             alt=""></div>
           </if>
         </volist>
@@ -248,21 +250,27 @@
       <div class="r-b-wrap">
         <div class="r-b">
           <ul class="zjslide">
-            <li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/6"><img src="{:C('IMG_URL')}/z-0.png"
-                                                                                 alt=""></a></li>
-            <li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/12"><img src="{:C('IMG_URL')}/z-4.png"
-                                                                                  alt=""></a></li>
-            <li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/15"><img src="{:C('IMG_URL')}/z-12.png"
-                                                                                  alt=""></a></li>
-            <!-- <li><a href="javascript:void(0);"><img src="{:C('IMG_URL')}/z-1.png" alt=""></a></li> -->
-            <li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/14"><img src="{:C('IMG_URL')}/z-6.png"
-                                                                                  alt=""></a></li>
-            <li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/11"><img src="{:C('IMG_URL')}/z-2.png"
-                                                                                  alt=""></a></li>
-            <!-- <li><a href="javascript:void(0);"><img src="{:C('IMG_URL')}/z-3.png" alt=""></a></li> -->
 
-            <li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/13"><img src="{:C('IMG_URL')}/z-5.png"
-                                                                                  alt=""></a></li>
+<!--             <li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/6"><img src="{:C('IMG_URL')}/z-0.png"
+                                                                     alt=""></a></li>
+<li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/12"><img src="{:C('IMG_URL')}/z-4.png"
+                                                                      alt=""></a></li>
+<li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/15"><img src="{:C('IMG_URL')}/z-12.png"
+                                                                      alt=""></a></li>
+<li><a href="javascript:void(0);"><img src="{:C('IMG_URL')}/z-1.png" alt=""></a></li>
+<li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/14"><img src="{:C('IMG_URL')}/z-6.png"
+                                                                      alt=""></a></li>
+<li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/11"><img src="{:C('IMG_URL')}/z-2.png"
+                                                                      alt=""></a></li>
+<li><a href="javascript:void(0);"><img src="{:C('IMG_URL')}/z-3.png" alt=""></a></li>
+
+<li><a href="{:C('SITE_URL')}/Home/Index/doctor_info/id/13"><img src="{:C('IMG_URL')}/z-5.png"
+                                                                      alt=""></a></li> -->
+                                                                    <foreach name="doctor_list" item="val">
+                                                                    <li><a href="{:U('Index/doctor_info',array('id' => $val['id']))}"><img src="{:C('SITE_URL')}{$val.th_img_url|substr=1}" alt=""></a></li>
+                                                                </foreach>
+
+
           </ul>
         </div>
         <span class="s-s-l"></span>

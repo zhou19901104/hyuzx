@@ -15731,3 +15731,1606 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
 
+[ 2016-09-20T18:05:46+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=296 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 296 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=297 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:05:46+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Content/content_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 0,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:05:47+08:00 ] 61.50.106.246 /Admin/Content/content_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`pid`,`class_name` FROM `sd_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:30+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,name
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=1 AND `level`<>1 AND id not in(103,107,100,97,110))
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: re C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 77 行.
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:31+08:00 ] 61.50.106.246 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 127 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 134 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:31+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=85 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=86 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:33+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=296 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 296 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=297 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:33+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Content/content_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 0,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:38+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=299
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=299 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 299 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=300 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=340 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=343 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=346 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=348 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=350 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=353 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:38+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/class_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015626s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "39" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "40" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "46" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "53" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "60" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "61" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "62" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "63" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "64" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "65" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "69" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "81" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "13" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "14" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "31" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "27" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "118" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "20" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "119" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "98" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "101" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "102" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "103" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "104" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "100" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "99" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "105" ) ORDER BY sort desc  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "106" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "107" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "108" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "109" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "113" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "114" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "112" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:40+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=296 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 296 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=297 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:40+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Content/content_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 0,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:44+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 17,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:49+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 34,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:11:54+08:00 ] 61.50.106.246 /Admin/Content/content_edit/id/128.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`cid`,`title`,`description`,`content`,`img_url`,`sort`,`hot` FROM `sd_content` WHERE `id` = 128 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`class_name` FROM `sd_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 59 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:13:34+08:00 ] 61.50.106.246 /Admin/Content/content_del/id/128.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for Admin\Model\ContentModel::_before_delete(), called in C:\www\ThinkPHP\Library\Think\Model.class.php on line 515 and defined C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 33 行.
+SQL: SELECT `img_url`,`id` FROM `sd_content` WHERE `id` = 128 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] unlink(/Public/Uploads/2016-06-16/pc_576271d3966d2.jpg): No such file or directory C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 36 行.
+SQL: DELETE FROM `sd_content` WHERE `id` = 128 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:13:35+08:00 ] 61.50.106.246 /Admin/Content/content_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 0,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:17:48+08:00 ] 61.50.106.246 /Admin/Content/content_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `sd_content` WHERE `title` = '祛眼袋' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sd_content` (`title`,`description`,`cid`,`content`,`sort`,`img_url`,`createtime`,`read_num`) VALUES ('祛眼袋','焕誉·祛眼袋，精细把握下睑松弛皮肤和眶隔脂肪切除量的多少，术前根据求美者眼袋的类型、眶隔脂肪的分布、皮肤的弹性，综合考虑个性化手术方式。去掉眼袋的同时，会将肌皮瓣在眶骨外侧缘骨膜上固定，提紧下睑皮肤，有效改善皱纹，使眼袋部位皮肤提拉、圆润、光滑，并防止睑外翻下睑缘退缩等并发症，使得整个眼部变得年轻。','43','<p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>项目介绍：</strong></span></p><p>　　焕誉 · 
+祛眼袋，精细把握下睑松弛皮肤和眶隔脂肪切除量的多少，术前根据求美者眼袋的类型、眶隔脂肪的分布、皮肤的弹性，综合考虑个性化手术方式。去掉眼袋的同时，会将肌皮瓣在眶骨外侧缘骨膜上固定，提紧下睑皮肤，有效改善皱纹，使眼袋部位皮肤提拉、圆润、光滑，并防止睑外翻下睑缘退缩等并发症，使得整个眼部变得年轻。</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>适应症：</strong></span></p><p>　　先天型眼袋、脂肪型眼袋、松弛型眼袋、衰老型眼袋等各种眼袋</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>对比案例图片：</strong></span></p><p>　　</p><center><img src=\"/ueditor/php/upload/image/20160920/1474366626530151.png\" title=\"1474366626530151.png\" alt=\"20140806141540414041.png\"/></center><p><br/></p><p>　<strong>　<span style=\"color: rgb(255, 0, 0);\">禁忌人群：</span></strong></p><p>　　1、有传染性疾病的人群不适宜做去眼袋手术。</p><p>　　2、孕妇不能做此类手术。</p><p>　　3、有眼部方面疾病的人不能做此类手术。</p><p>　　4、患有“三高”的人也不适宜做去眼袋手术。</p><p>　　5、有精神病，心理疾病的人。</p><center><img src=\"/ueditor/php/upload/image/20160920/1474366649111310.jpg\" title=\"1474366649111310.jpg\" alt=\"5(190).jpg\"/></center><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>手术方法：</strong></span></p><p>　　<strong>1、内路法祛眼袋/内路法祛眼袋+眶隔脂肪填充</strong></p><p>　　内路法祛眼袋就是经过眼内结膜的切口，把过度鼓出的脂肪切除，手术因为不需要皮肤切口，术后可完全不留痕迹。</p><p>　　内路法祛眼袋手术适合对象：皮肤较紧致的年轻人、明显下眼袋的求美者。</p><p>　　内路法祛眼袋手术时程：30—40分钟左右(局部麻醉)。</p><p>　　内路法祛眼袋恢复需要时间：术后第三天开始消肿，7天左右基本恢复。</p><p>　　内路法祛眼袋护理须知：术后48小时内多做冰敷，术后约三天可改成热敷，帮助消胀去瘀即可。</p><p>　　<strong>2、外路法祛眼袋/外路法祛眼袋+眶隔脂肪释放</strong></p><p>　　外切法去眼袋手术时切口沿下睑睫毛下缘到外眦沟，经切口分离后切除膨出的眼袋脂肪。外切法去眼袋手术过程中同时拉紧下睑皮肤，切除多余的下睑皮肤，去除下睑皮肤皱纹。</p><p>　　外路法祛眼袋手术适合对象：眼部皮肤比较松弛的中年人</p><p>　　外路法祛眼袋手术时程：30—40分钟左右(局部麻醉)。</p><p>　　外路法祛眼袋恢复需要时间：术后第5-7天开始消肿，10天左右基本恢复。</p><p>　　外路法祛眼袋护理须知：术后48小时内多做冰敷，术后约三天可改成热敷，帮助消胀去瘀即可。</p><p>　　<strong>3、综合祛眼袋(袋睑缘紧缩)</strong></p><p>　　焕誉综合祛眼袋手术方法，没有伤口，不需缝合，省去色素沉淀的问题，不仅沿袭了精</p><p>　　细微创、安全无痕的韩式整形特色，更以独到的手术设计，有效避免了传统祛眼袋手术可能因操作不慎“矫枉过正”的缺点，让祛眼袋手术更完美无憾。</p><p>　　<strong>4、综合祛眼袋(外眦锚着)</strong></p><p>　　<strong>5、综合祛眼袋+眶隔脂肪释放+丰泪沟</strong></p><p>　　<strong>6、综合祛眼袋+韩式外切+中面部提升</strong></p><p>　　<strong><span style=\"color: rgb(255, 0, 0);\">技术优势：</span></strong></p><p>　<strong>　1、治疗彻底，没有疤痕</strong></p><p>　　韩式祛眼袋手术可以一次性根除脂肪性眼袋，术后不反弹、不外翻、不变形。</p><p>　　<strong>2、适用各种眼袋问题</strong></p><p>　　韩式祛眼袋手术是经典的眼部手术之一.手术使松弛的各层组织得以修复和加强.它适用于任何眼袋，对眼睛没有伤害，能对皮肤、眼轮匝肌、脂肪同时进行处理，使手术效果和维持时间达到最佳。</p><p>　　<strong>3、手术技法精细</strong></p><p>　　医生熟练掌握术中下睑松弛皮肤和眶隔脂肪切除量的多少，能根据患者眼袋的类型、眶隔脂肪的分布、皮肤的弹性，采取相对应的手术方法综合考虑手术方案，达到术后最完美的效果。</p><p>　　<strong>4、安全性高</strong></p><p>　　整形美容祛眼袋治疗选择性强，只对眶隔脂肪起液化作用，而对眼眶周围的血管、神经、淋巴管无损伤;所以安全性高。</p><p>　　<strong>5、不松弛皮肤</strong></p><p>　　当眶隔脂肪导出后，眶隔内相对形成一个空腔，利用微型组织定位器可将眶隔内外两侧隔膜重新组织、定位、粘连;使其在祛掉眶脂的同时皮肤不会松弛。</p><p>　　<strong>6、轻松快捷</strong></p><p>　　全程20--30分钟一次祛除眼袋、肿眼泡同时能改善眼眶周围的微循环淡化黑眼圈;随做随走、不受季节影响、不影响工作和生活。</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>术前注意事项：</strong></span></p><p>　　1.如果存在一些眼部疾病的话，则需要进行治疗之后再进行手术，如结膜炎、睑缘炎、严重砂眼等必须在治愈后才能手术，而眼周有炎症者则需要缓解炎症之后再行手术。</p><p>　　2.进行术前检查，这是必须的祛眼袋术前注意事项，如进行各项化验检查，确定有无易出血性倾向或凝血障碍，有出血倾向病史的受术者要检查血小板和出、凝血时间，而且针对不同的年龄层还要进行相应的调整，如中老年人还需要检测血压和进行心电图检查。</p><p>　　3.避免在女性特定的生理期进行手术，如月经期以及妊娠前期(三个月)或妊娠后期(三个月)。</p><p>　　4.在手术之前要做好相应的祛眼袋术前注意事项，避免服用会影响手术效果的药物，如固醇激素和阿斯匹林等抗凝药物，并且手术当天要清洁面部，不能化妆或护肤，不要戴隐形眼镜。</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>术后注意事项：</strong></span></p><p>　　一、祛眼袋手术后，应注意休息，尽量少看书、电脑、电视，有利于消肿;遵循医嘱服用消炎药品;可用冰袋冷敷手术区，以减少出血，防止肿胀。一般如果有出血个人不易察觉，所以当觉得肿胀加剧等症状时，要遵医嘱及时就医处理。</p><p>　　二、虽然去眼袋术后眼睛的视力不受任何影响，但是过多的用眼，不利于消肿，所以，手术后建议您要注意减少用眼活动。需要适当休息，避免太劳累，并按我们医生的指示到医院进行局部清洁，避免用力在眼部揉搓，术后恢复期应避免或减少辛辣饮食。</p><p>　　三、祛眼袋术后48小时内冰敷可帮助消肿，止痛，一次约15-20分钟左右，最长不可超过20分钟，冰敷后需休息一个小时，后才可再冰敷，伤口及周围以清水冲洗，洗净后将伤口擦干，涂上药膏即可.保持伤口清洁，勿用手触碰伤口，手术后一周拆线，复原期需二个星期。</p>','0','./Public/Uploads/content/2016-09-20/th_57e10ccbebf0e.jpg','1474366668','0') [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:17:49+08:00 ] 61.50.106.246 /Admin/Content/content_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`class_name` FROM `sd_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\5fb705b21f39669351d1c7a5875fcdaa.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:18:40+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 17,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:18:43+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 34,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+
+[ 2016-09-20T18:19:00+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 51,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-09-20T18:19:04+08:00 ] 61.50.106.246 /Admin/Content/content_edit/id/171.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`cid`,`title`,`description`,`content`,`img_url`,`sort`,`hot` FROM `sd_content` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SELECT `id`,`pid`,`class_name` FROM `sd_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 59 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:19:46+08:00 ] 61.50.106.246 /Admin/Content/content_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015626s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `img_url`,`id` FROM `sd_content` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `title`='祛眼袋',`description`='焕誉·祛眼袋，精细把握下睑松弛皮肤和眶隔脂肪切除量的多少，术前根据求美者眼袋的类型、眶隔脂肪的分布、皮肤的弹性，综合考虑个性化手术方式。去掉眼袋的同时，会将肌皮瓣在眶骨外侧缘骨膜上固定，提紧下睑皮肤，有效改善皱纹，使眼袋部位皮肤提拉、圆润、光滑，并防止睑外翻下睑缘退缩等并发症，使得整个眼部变得年轻。',`cid`='43',`content`='<p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>项目介绍：</strong></span></p><p>　　焕誉 · 
+祛眼袋，精细把握下睑松弛皮肤和眶隔脂肪切除量的多少，术前根据求美者眼袋的类型、眶隔脂肪的分布、皮肤的弹性，综合考虑个性化手术方式。去掉眼袋的同时，会将肌皮瓣在眶骨外侧缘骨膜上固定，提紧下睑皮肤，有效改善皱纹，使眼袋部位皮肤提拉、圆润、光滑，并防止睑外翻下睑缘退缩等并发症，使得整个眼部变得年轻。</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>适应症：</strong></span></p><p>　　先天型眼袋、脂肪型眼袋、松弛型眼袋、衰老型眼袋等各种眼袋</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>对比案例图片：</strong></span></p><p>　　</p><center><img src=\"/ueditor/php/upload/image/20160920/1474366626530151.png\" title=\"1474366626530151.png\" alt=\"1474366626530151.png\" width=\"362\" height=\"250\" border=\"0\" vspace=\"0\" style=\"width: 362px; height: 250px;\"/></center><p><br/></p><p>　<strong>　<span style=\"color: rgb(255, 0, 0);\">禁忌人群：</span></strong></p><p>　　1、有传染性疾病的人群不适宜做去眼袋手术。</p><p>　　2、孕妇不能做此类手术。</p><p>　　3、有眼部方面疾病的人不能做此类手术。</p><p>　　4、患有“三高”的人也不适宜做去眼袋手术。</p><p>　　5、有精神病，心理疾病的人。</p><center><img src=\"/ueditor/php/upload/image/20160920/1474366649111310.jpg\" title=\"1474366649111310.jpg\" alt=\"1474366649111310.jpg\" width=\"294\" height=\"250\" border=\"0\" vspace=\"0\" style=\"width: 294px; height: 250px;\"/></center><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>手术方法：</strong></span></p><p>　　<strong>1、内路法祛眼袋/内路法祛眼袋+眶隔脂肪填充</strong></p><p>　　内路法祛眼袋就是经过眼内结膜的切口，把过度鼓出的脂肪切除，手术因为不需要皮肤切口，术后可完全不留痕迹。</p><p>　　内路法祛眼袋手术适合对象：皮肤较紧致的年轻人、明显下眼袋的求美者。</p><p>　　内路法祛眼袋手术时程：30—40分钟左右(局部麻醉)。</p><p>　　内路法祛眼袋恢复需要时间：术后第三天开始消肿，7天左右基本恢复。</p><p>　　内路法祛眼袋护理须知：术后48小时内多做冰敷，术后约三天可改成热敷，帮助消胀去瘀即可。</p><p>　　<strong>2、外路法祛眼袋/外路法祛眼袋+眶隔脂肪释放</strong></p><p>　　外切法去眼袋手术时切口沿下睑睫毛下缘到外眦沟，经切口分离后切除膨出的眼袋脂肪。外切法去眼袋手术过程中同时拉紧下睑皮肤，切除多余的下睑皮肤，去除下睑皮肤皱纹。</p><p>　　外路法祛眼袋手术适合对象：眼部皮肤比较松弛的中年人</p><p>　　外路法祛眼袋手术时程：30—40分钟左右(局部麻醉)。</p><p>　　外路法祛眼袋恢复需要时间：术后第5-7天开始消肿，10天左右基本恢复。</p><p>　　外路法祛眼袋护理须知：术后48小时内多做冰敷，术后约三天可改成热敷，帮助消胀去瘀即可。</p><p>　　<strong>3、综合祛眼袋(袋睑缘紧缩)</strong></p><p>　　焕誉综合祛眼袋手术方法，没有伤口，不需缝合，省去色素沉淀的问题，不仅沿袭了精</p><p>　　细微创、安全无痕的韩式整形特色，更以独到的手术设计，有效避免了传统祛眼袋手术可能因操作不慎“矫枉过正”的缺点，让祛眼袋手术更完美无憾。</p><p>　　<strong>4、综合祛眼袋(外眦锚着)</strong></p><p>　　<strong>5、综合祛眼袋+眶隔脂肪释放+丰泪沟</strong></p><p>　　<strong>6、综合祛眼袋+韩式外切+中面部提升</strong></p><p>　　<strong><span style=\"color: rgb(255, 0, 0);\">技术优势：</span></strong></p><p>　<strong>　1、治疗彻底，没有疤痕</strong></p><p>　　韩式祛眼袋手术可以一次性根除脂肪性眼袋，术后不反弹、不外翻、不变形。</p><p>　　<strong>2、适用各种眼袋问题</strong></p><p>　　韩式祛眼袋手术是经典的眼部手术之一.手术使松弛的各层组织得以修复和加强.它适用于任何眼袋，对眼睛没有伤害，能对皮肤、眼轮匝肌、脂肪同时进行处理，使手术效果和维持时间达到最佳。</p><p>　　<strong>3、手术技法精细</strong></p><p>　　医生熟练掌握术中下睑松弛皮肤和眶隔脂肪切除量的多少，能根据患者眼袋的类型、眶隔脂肪的分布、皮肤的弹性，采取相对应的手术方法综合考虑手术方案，达到术后最完美的效果。</p><p>　　<strong>4、安全性高</strong></p><p>　　整形美容祛眼袋治疗选择性强，只对眶隔脂肪起液化作用，而对眼眶周围的血管、神经、淋巴管无损伤;所以安全性高。</p><p>　　<strong>5、不松弛皮肤</strong></p><p>　　当眶隔脂肪导出后，眶隔内相对形成一个空腔，利用微型组织定位器可将眶隔内外两侧隔膜重新组织、定位、粘连;使其在祛掉眶脂的同时皮肤不会松弛。</p><p>　　<strong>6、轻松快捷</strong></p><p>　　全程20--30分钟一次祛除眼袋、肿眼泡同时能改善眼眶周围的微循环淡化黑眼圈;随做随走、不受季节影响、不影响工作和生活。</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>术前注意事项：</strong></span></p><p>　　1.如果存在一些眼部疾病的话，则需要进行治疗之后再进行手术，如结膜炎、睑缘炎、严重砂眼等必须在治愈后才能手术，而眼周有炎症者则需要缓解炎症之后再行手术。</p><p>　　2.进行术前检查，这是必须的祛眼袋术前注意事项，如进行各项化验检查，确定有无易出血性倾向或凝血障碍，有出血倾向病史的受术者要检查血小板和出、凝血时间，而且针对不同的年龄层还要进行相应的调整，如中老年人还需要检测血压和进行心电图检查。</p><p>　　3.避免在女性特定的生理期进行手术，如月经期以及妊娠前期(三个月)或妊娠后期(三个月)。</p><p>　　4.在手术之前要做好相应的祛眼袋术前注意事项，避免服用会影响手术效果的药物，如固醇激素和阿斯匹林等抗凝药物，并且手术当天要清洁面部，不能化妆或护肤，不要戴隐形眼镜。</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>术后注意事项：</strong></span></p><p>　　一、祛眼袋手术后，应注意休息，尽量少看书、电脑、电视，有利于消肿;遵循医嘱服用消炎药品;可用冰袋冷敷手术区，以减少出血，防止肿胀。一般如果有出血个人不易察觉，所以当觉得肿胀加剧等症状时，要遵医嘱及时就医处理。</p><p>　　二、虽然去眼袋术后眼睛的视力不受任何影响，但是过多的用眼，不利于消肿，所以，手术后建议您要注意减少用眼活动。需要适当休息，避免太劳累，并按我们医生的指示到医院进行局部清洁，避免用力在眼部揉搓，术后恢复期应避免或减少辛辣饮食。</p><p>　　三、祛眼袋术后48小时内冰敷可帮助消肿，止痛，一次约15-20分钟左右，最长不可超过20分钟，冰敷后需休息一个小时，后才可再冰敷，伤口及周围以清水冲洗，洗净后将伤口擦干，涂上药膏即可.保持伤口清洁，勿用手触碰伤口，手术后一周拆线，复原期需二个星期。</p>',`sort`='0' WHERE `id` = 171 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:19:47+08:00 ] 61.50.106.246 /Admin/Content/content_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 0,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:19:59+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 34,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:20:06+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 17,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+
+[ 2016-09-20T18:20:12+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 34,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-09-20T18:20:16+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 51,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:20:20+08:00 ] 61.50.106.246 /Admin/Content/content_edit/id/171.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`cid`,`title`,`description`,`content`,`img_url`,`sort`,`hot` FROM `sd_content` WHERE `id` = 171 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`class_name` FROM `sd_class`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: related C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 59 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:26:43+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,name
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=1 AND `level`<>1 AND id not in(103,107,100,97,110))
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: re C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 77 行.
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:26:43+08:00 ] 61.50.106.246 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 127 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 134 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T18:26:43+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=85 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=86 )
+                    ORDER BY sort DESC [ RunTime:0.0156s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+

@@ -42,11 +42,11 @@
     </div>
     <div class="ewm"></div>
     <ul class="flo-list">
-        <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/01.png" alt=""></a></li>
-        <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/02.png" alt=""></a></li>
-        <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/03.png" alt=""></a></li>
-        <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/04.png" alt=""></a></li>
-        <li class="top"><img src="<?php echo C('SITE_URL');?>/Public/Uploads/comm/05.png" alt=""></li>
+        <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('IMG_URL');?>/zhuye_01.jpg" alt=""></a></li>
+        <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_02.jpg" alt=""></a></li>
+        <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_03.jpg" alt=""></a></li>
+        <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_04.jpg" alt=""></a></li>
+        <li class="top"><img src="<?php echo C('IMG_URL');?>/zhuye_05.jpg" alt=""></li>
     </ul>
 </div>
 
@@ -96,10 +96,10 @@
 																		<dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a></dd><?php endif; endforeach; endif; ?>
 															</dl><?php endforeach; endif; else: echo "" ;endif; ?>
 													</div>
-													<ul class="hot">
+											<!--		<ul class="hot">
 														<li>热门项目</li>
 														<li><a href=""><img src="<?php echo C('IMG_URL');?>/nav-img-1.png" alt=""></a></li>
-													</ul>
+													</ul>-->
 												</div>
 											</li>
 											<?php else: endif; endforeach; endif; else: echo "" ;endif; ?>
@@ -139,7 +139,7 @@
 <!-- 专家列表 -->
 <div class="doctor-cont project-wrap">
 	<p class="doc-tit"><img src="<?php echo C('IMG_URL');?>/zj-tit.png" alt=""></p>
-	<p class="doc-tit"><img src="/Public/Uploads/doctor/info_<?php echo ($info["img_url"]); ?>" alt=""></p>
+	<p class="doc-tit"><img src="<?php echo C('SITE_URL'); echo (substr($info["index_url"],1)); ?>" alt=""></p>
 	<p class="ad"><?php echo ($info["message"]); ?></p>
 	<p class="ad-eng"><?php echo ($info["message_e"]); ?></p>
 	<p class="name"><?php echo ($info["name"]); ?></p>

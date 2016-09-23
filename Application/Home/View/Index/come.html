@@ -175,7 +175,7 @@
 				<volist name='doctor_list' id='d_list'>
 					<li>
 						<a href="{:U('Home/Index/doctor_info',array('id'=>$d_list['id']))}">
-							<img src="__PUBLIC__/Uploads/doctor/list_{$d_list.img_url}" alt="">
+							<img src="{:C('SITE_URL')}{$d_list.img_url|substr=1}" alt="">
 							<p class="p-1">{$d_list.name}</p>
 							<p class="p-2">{$d_list.zhicheng}</p>
 						</a>
@@ -186,7 +186,7 @@
 				<p class="tit-text"><span class="s-1">蜕变日记<strong>Metamorphosis diary</strong></span><span class="s-2"><a href="{:U('Home/Index/case_info')}">MORE&nbsp;></a></span></p>
 				<div class="bd">
 					<a href="{:U('Home/Index/case_info',array('id'=>$case_info['id']))}">
-						<p class="photo"><img src="__PUBLIC__/Uploads/anli/list_{$case_info.list_url}" alt=""></p>
+						<p class="photo"><img src="{:C('SITE_URL')}{$d_list.img_url|substr=1}" alt=""></p>
 						<ul class="text">
 							<li class="p-2">
 								<p class="name">{$case_info.name}<span>They are here to find the youth and beauty</span></p>

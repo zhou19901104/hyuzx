@@ -113,7 +113,7 @@
 <!-- 专家列表 -->
 <div class="doctor-cont project-wrap">
 	<p class="doc-tit"><img src="{:C('IMG_URL')}/zj-tit.png" alt=""></p>
-	<p class="doc-tit"><img src="__PUBLIC__/Uploads/doctor/info_{$info.img_url}" alt=""></p>
+	<p class="doc-tit"><img src="{:C('SITE_URL')}{$info.index_url|substr=1}" alt=""></p>
 	<p class="ad">{$info.message}</p>
 	<p class="ad-eng">{$info.message_e}</p>
 	<p class="name">{$info.name}</p>

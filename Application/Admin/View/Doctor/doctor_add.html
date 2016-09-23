@@ -1,134 +1,140 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>后台用户管理-{$Think.config.cms_name}</title>
-	<include file="Public:head" />
-	
+    <title>后台用户管理-{$Think.config.cms_name}</title>
+    <include file="Public/head" />
+
 </head>
 <body>
-	<div class="midder">
-<form action="{:U('/Admin/Doctor/doctor_add')}" method="post" name="form" id="myform" enctype="multipart/form-data">
-<table  cellpadding="0" cellspacing="0">
-<tr>
-            <td colspan="9" class="table_title">
-               添加医生
-            </td>
-</tr>
-				
-				<tr class="tr rt">
-                    <td width="100">姓名：</td>
-                    <td colspan="3" class="lt">
-                        <input type="text" name="name" style="width:200px" value="">
-                    </td>
-                </tr>
-				
-                <tr class="tr rt">
-                    <td width="100">职称:</td>
-                    <td colspan="3" class="lt">
-                       
-						<textarea name='zhicheng' rows='3' cols='50'></textarea>
-                    </td>
-                </tr>
-				
-                <tr class="tr rt">
-                    <td width="100">医生图片：</td>
-                    <td colspan="3" class="lt">
-						<input type="file" name="img_url" size="28" value='浏览...'  />
-                    </td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">主页图片：</td>
-                    <td colspan="3" class="lt">
-						<input type="file" name="index_url" size="28" value='浏览...' />
-                    </td>
-                </tr>
-				
-				 <tr class="tr rt">
-                    <td width="100">医生类别：</td>
-                    <td colspan="3" class="lt">
-                       <select name="type" style='width:200px;'>
-							<option value="0">请选择</option>
-							<volist name='class_list' id='p_c'>
-								<option value="{$p_c.id}">{$p_c.class_name}</option>
-							</volist>
-						</select>
-                    </td>
-                </tr>
-				
-                <tr class="tr rt">
-                    <td width="100">主打方向：</td>
-					<td colspan="3" class="lt">
-					   <textarea name='zhuone' style="width:800px;height:250px;"></textarea>
-					</td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">主页介绍：</td>
-					<td colspan="3" class="lt">
-					   <textarea name='index_zhu' style="width:800px;height:250px;"></textarea>
-					</td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">医生简介：</td>
-                    <td colspan="3" class="lt">
-						<textarea name='jianjie' rows='3' cols='50'></textarea>
-					</td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">专家介绍：</td>
-                    <td colspan="3" class="lt">
-						<textarea name='jieshao' rows='3' cols='50'></textarea>
-					</td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">主页医生寄语：</td>
-                    <td colspan="3" class="lt">
-						<textarea name='index_message' rows='3' cols='50'></textarea>
-					</td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">医生寄语：</td>
-                    <td colspan="3" class="lt">
-						<textarea name='message' rows='3' cols='50'></textarea>
-					</td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">医生寄语英文：</td>
-                    <td colspan="3" class="lt">
-						<textarea name='message_e' rows='3' cols='50'></textarea>
-					</td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">推荐:</td>
-                    <td colspan="3" class="lt">
-                        <input type="checkbox" name="related" value="1"> 
-                    </td>
-                </tr>
-				
-				<tr class="tr rt">
-                    <td width="100">排序:</td>
-                    <td colspan="3" class="lt">
-                        <input type="text" name="sort" id="sort" style="width:200px;" value="0">
-                    </td>
-                </tr>
+<div class="midder">
+    <form action="{:U('/Admin/Doctor/doctor_add')}" method="post" name="form" enctype="multipart/form-data">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="9" class="table_title">
+                    添加医生
+                </td>
+            </tr>
 
-                <tr class="tr lt">
-        <td colspan="4">
-            
-                <input class="bginput" type="submit" name="submit" value="添 加">
-            &nbsp;
-            <input class="bginput" type="button" onclick="javascript:history.back(-1);" value="返 回" ></td>
-    </tr>
-    
-</table>
-</form>
+            <tr class="tr rt">
+                <td width="100">姓名：</td>
+                <td colspan="3" class="lt">
+                    <input type="text" name="name" style="width:200px" value="">
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">职称:</td>
+                <td colspan="3" class="lt">
+                    <textarea name='zhicheng' rows='3' cols='50'></textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">医生图片：</td>
+                <td colspan="3" class="lt">
+                    <input type="file" name="img_url" size="28" value='浏览...'/>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">医生首页小图：</td>
+                <td colspan="3" class="lt">
+                    <input type="file" name="th_img_url" size="28" value='浏览...'/>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">医生首页大图：</td>
+                <td colspan="3" class="lt">
+                    <input type="file" name="bg_img_url" size="28" value='浏览...'/>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">医生类别：</td>
+                <td colspan="3" class="lt">
+                    <select name="type" style='width:200px;'>
+                        <option value="0">请选择</option>
+                        <volist name='class_list' id='p_c'>
+                            <option value="{$p_c.id}">{$p_c.class_name}</option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">主打方向：</td>
+                <td colspan="3" class="lt">
+                    <textarea name='zhuone' style="width:800px;height:250px;"></textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">主页介绍：</td>
+                <td colspan="3" class="lt">
+                    <textarea name='index_zhu' style="width:800px;height:250px;"></textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">医生简介：</td>
+                <td colspan="3" class="lt">
+                    <textarea name='jianjie' rows='5' cols='50'></textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">专家介绍：</td>
+                <td colspan="3" class="lt">
+                    <textarea name='jieshao' rows='5' cols='50'></textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">主页医生寄语：</td>
+                <td colspan="3" class="lt">
+                    <textarea name='index_message' rows='5' cols='50'></textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">医生寄语：</td>
+                <td colspan="3" class="lt">
+                    <textarea name='message' rows='3' cols='50'></textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">医生寄语英文：</td>
+                <td colspan="3" class="lt">
+                    <textarea name='message_e' rows='3' cols='50'></textarea>
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">推荐:</td>
+                <td colspan="3" class="lt">
+                    <input type="checkbox" name="related" value="1">
+                </td>
+            </tr>
+
+            <tr class="tr rt">
+                <td width="100">排序:</td>
+                <td colspan="3" class="lt">
+                    <input type="text" name="sort" id="sort" style="width:200px;" value="0">
+                </td>
+            </tr>
+
+            <tr class="tr lt">
+                <td colspan="4">
+
+                    <input class="bginput" type="submit" name="submit" value="添 加">
+                    &nbsp;
+                    <input class="bginput" type="button" onclick="javascript:history.back(-1);" value="返 回"></td>
+            </tr>
+
+        </table>
+    </form>
 </div>
 </body>
-	</html>
+</html>

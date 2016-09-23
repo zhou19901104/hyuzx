@@ -42,4 +42,5 @@ return array(
 
     //'URL_MODULE_MAP'    =>    array('hyuzx'=>'admin'),
 
+    'DB_FIELDS_CACHE'=>false,
 );

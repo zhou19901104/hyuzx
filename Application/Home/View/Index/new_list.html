@@ -136,7 +136,7 @@
 					<volist name='content' id='content_list'>
 						<li>
 							<a href="{:U('Home/Index/new_info',array('id'=>$content_list['id']))}">
-								<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$content_list['id']))}"><img src="{:C('SITE_URL')}/{$content_list.img_url|substr=1}" alt=""></a></p>
+								<p class="new-photo"><a href="{:U('Home/Index/new_info',array('id'=>$content_list['cid']))}"><img src="{:C('SITE_URL')}/{$content_list.img_url|substr=1}" alt=""></a></p>
 								<p class="new-tit">{$content_list.title}</p>
 								<p class="new-tit-m">{$content_list.description}</p>
 								<p class="interact"><span class="date">{$content_list.createtime|date="Y-m-d",###}</span><span class="read">{$content_list.read_num}阅读</span></p>

@@ -133,7 +133,7 @@
 				<volist name='doctor_list' id='d_list'>
 					<li>
 						<a href="{:U('Home/Index/doctor_info',array('id'=>$d_list['id']))}">
-							<img src="__PUBLIC__/Uploads/doctor/list_{$d_list.img_url}" alt="">
+							<img src="{:C('SITE_URL')}{$d_list.img_url|substr=1}" alt="">
 							<p class="p-1">{$d_list.name}</p>
 							<p class="p-2">{$d_list.zhicheng}</p>
 						</a>

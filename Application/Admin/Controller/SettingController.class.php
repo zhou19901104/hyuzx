@@ -38,17 +38,14 @@ class SettingController extends CommonController
    {
       if ($_POST) {
          $class_data = I('post.');
-         $check = M('class')->where('class_name = "' . $class_data['class_name'] . '"')->find();
-         if (!$check) {
+
             $re = M('class')->add($class_data);
             if ($re) {
                $this->success('添加成功', U('Admin/Setting/class_list'));
             } else {
                $this->error('添加失败！');
             }
-         } else {
-            $this->error('栏目名称有重复，请重新输入！');
-         }
+
       } else {
          $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
 

@@ -158,7 +158,7 @@
 			<ul class="zj-list">
 				<?php if(is_array($doctor_list)): $i = 0; $__LIST__ = $doctor_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d_list): $mod = ($i % 2 );++$i;?><li>
 						<a href="<?php echo U('Home/Index/doctor_info',array('id'=>$d_list['id']));?>">
-							<img src="/Public/Uploads/doctor/list_<?php echo ($d_list["img_url"]); ?>" alt="">
+							<img src="<?php echo C('SITE_URL'); echo (substr($d_list["img_url"],1)); ?>" alt="">
 							<p class="p-1"><?php echo ($d_list["name"]); ?></p>
 							<p class="p-2"><?php echo ($d_list["zhicheng"]); ?></p>
 						</a>

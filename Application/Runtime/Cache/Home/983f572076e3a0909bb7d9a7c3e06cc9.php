@@ -22,16 +22,13 @@
 <body>
 <!-- 浮动 -->
 <div class="talk">
-
   <div class="online">
     <ul>
       <li class="li-1">在线咨询<span class="close"></span></li>
       <li class="li-2"><a href="javascript:void(0)">xxxxxxxxx</a></li>
       <!--  <li class="li-3"><a href="javascript:void(0)">010-57290660</a></li>-->
     </ul>
-
   </div>
-
   <div class="online_2">
     <ul>
       <li class="li-1">电话咨询<span class="close"></span></li>
@@ -51,6 +48,7 @@
 </div>
 
 <!-- nav -->
+
 <div class="nav-wrap">
   <div class="nav">
     <div class="logo"><img src="<?php echo C('IMG_URL');?>/logo.png" alt=""></div>
@@ -88,23 +86,24 @@
                         <div class="guide-li">
                           <div class="f-l">
                             <?php if(is_array($k_class["k_class"])): $i = 0; $__LIST__ = $k_class["k_class"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$c_class): $mod = ($i % 2 );++$i;?><dl>
-                                <?php if($c_class['tid'] != NULL): ?><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_class['tid']['id']));?>">
+                                <?php if($c_class['tid'] != NULL): ?><!--    <a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"> -->
+
                                     <dt><?php echo ($c_class["class_name"]); ?></dt>
                                   </a>
                                   <?php else: ?>
                                   <dt><?php echo ($c_class["class_name"]); ?></dt><?php endif; ?>
-                                <?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>
+                            <?php if(is_array($c_class['c_class'])): foreach($c_class['c_class'] as $key=>$c_vo): if($key == 0): ?><dd class="dd-bg"><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>
                                     </dd>
                                     <?php else: ?>
-                                    <dd><a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>
+                                    <dd>                            <a href="<?php echo U('Home/Index/new_info',array('id'=>$c_vo['id']));?>"><?php echo ($c_vo["class_name"]); ?></a>
                                     </dd><?php endif; endforeach; endif; ?>
                               </dl><?php endforeach; endif; else: echo "" ;endif; ?>
                           </div>
-                  <!--        <ul class="hot">
-                            <li>热门项目</li>
-                            <li><a href="<?php echo U('Home/Index/new_info',array('id'=>$hot_info['id']));?>"><img
-                                    src="<?php echo ($hot_info["img_url"]); ?>" alt=""></a></li>
-                          </ul>-->
+            <!--          <ul class="hot">
+                   <li>热门项目</li>
+                   <li><a href="<?php echo U('Home/Index/new_info',array('id'=>$hot_info['id']));?>"><img
+                           src="<?php echo ($hot_info["img_url"]); ?>" alt=""></a></li>
+                 </ul> -->
                         </div>
                       </li>
                       <?php else: endif; endforeach; endif; else: echo "" ;endif; ?>
@@ -183,9 +182,9 @@
   <div class="doctor">
     <div class="zj-list">
       <div class="zj-l">
-        <?php if(is_array($doctor_list)): $i = 0; $__LIST__ = $doctor_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$img_list): $mod = ($i % 2 );++$i; if($key == 0): ?><div class="big-img"><img src="/Public/Uploads/doctor/index_<?php echo ($img_list["index_url"]); ?>" alt=""></div>
+        <?php if(is_array($doctor_list)): $i = 0; $__LIST__ = $doctor_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$img_list): $mod = ($i % 2 );++$i; if($key == 0): ?><div class="big-img"><img src="<?php echo C('SITE_URL'); echo (substr($img_list["bg_img_url"],1)); ?>" alt=""></div>
             <?php else: ?>
-            <div class="big-img" style="display:none;"><img src="/Public/Uploads/doctor/index_<?php echo ($img_list["index_url"]); ?>"
+            <div class="big-img" style="display:none;"><img src="<?php echo C('SITE_URL'); echo (substr($img_list["bg_img_url"],1)); ?>"
                                                             alt=""></div><?php endif; endforeach; endif; else: echo "" ;endif; ?>
       </div>
       <div class="zj-r">
@@ -209,21 +208,25 @@
       <div class="r-b-wrap">
         <div class="r-b">
           <ul class="zjslide">
-            <li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/6"><img src="<?php echo C('IMG_URL');?>/z-0.png"
-                                                                                 alt=""></a></li>
-            <li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/12"><img src="<?php echo C('IMG_URL');?>/z-4.png"
-                                                                                  alt=""></a></li>
-            <li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/15"><img src="<?php echo C('IMG_URL');?>/z-12.png"
-                                                                                  alt=""></a></li>
-            <!-- <li><a href="javascript:void(0);"><img src="<?php echo C('IMG_URL');?>/z-1.png" alt=""></a></li> -->
-            <li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/14"><img src="<?php echo C('IMG_URL');?>/z-6.png"
-                                                                                  alt=""></a></li>
-            <li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/11"><img src="<?php echo C('IMG_URL');?>/z-2.png"
-                                                                                  alt=""></a></li>
-            <!-- <li><a href="javascript:void(0);"><img src="<?php echo C('IMG_URL');?>/z-3.png" alt=""></a></li> -->
 
-            <li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/13"><img src="<?php echo C('IMG_URL');?>/z-5.png"
-                                                                                  alt=""></a></li>
+<!--             <li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/6"><img src="<?php echo C('IMG_URL');?>/z-0.png"
+                                                                     alt=""></a></li>
+<li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/12"><img src="<?php echo C('IMG_URL');?>/z-4.png"
+                                                                      alt=""></a></li>
+<li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/15"><img src="<?php echo C('IMG_URL');?>/z-12.png"
+                                                                      alt=""></a></li>
+<li><a href="javascript:void(0);"><img src="<?php echo C('IMG_URL');?>/z-1.png" alt=""></a></li>
+<li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/14"><img src="<?php echo C('IMG_URL');?>/z-6.png"
+                                                                      alt=""></a></li>
+<li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/11"><img src="<?php echo C('IMG_URL');?>/z-2.png"
+                                                                      alt=""></a></li>
+<li><a href="javascript:void(0);"><img src="<?php echo C('IMG_URL');?>/z-3.png" alt=""></a></li>
+
+<li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/13"><img src="<?php echo C('IMG_URL');?>/z-5.png"
+                                                                      alt=""></a></li> -->
+                                                                    <?php if(is_array($doctor_list)): foreach($doctor_list as $key=>$val): ?><li><a href="<?php echo U('Index/doctor_info',array('id' => $val['id']));?>"><img src="<?php echo C('SITE_URL'); echo (substr($val["th_img_url"],1)); ?>" alt=""></a></li><?php endforeach; endif; ?>
+
+
           </ul>
         </div>
         <span class="s-s-l"></span>

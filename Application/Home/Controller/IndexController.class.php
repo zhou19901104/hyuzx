@@ -153,35 +153,14 @@ class IndexController extends CommonController
    public function new_info()
    {
 
-//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-//      for ($i = 0; $i < count($foot_list); $i++) {
-//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-//      }
-//      $this->assign('foot_list', $foot_list);
-//
-//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-//
-//      for ($i = 0; $i < count($class_list); $i++) {
-//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-//            }
-//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-//            }
-//         }
-//      }
-//      $this->assign('class_list', $class_list);
 
       $id = I('get.id');
 
-      $info = M('content')->where('id = "' . $id . '"')->find();
+      $info = M('content')->where('cid = "' . $id . '"')->find();
 
-      if (!$info) {
-         $info = M('content')->where('cid = "' . $id . '"')->find();
-      }
+      // if (!$info) {
+      //    $info = M('content')->where('cid = "' . $id . '"')->find();
+      // }
 
       $data['read_num'] = $info['read_num'] + 1;
       M('content')->where('id = "' . $info['id'] . '"')->save($data);
