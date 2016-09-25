@@ -20152,3 +20152,629 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
 
+[ 2016-09-23T18:39:51+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:39:59+08:00 ] 61.50.106.246 /xm/smbmx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "71" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='90' WHERE ( id = "125" ) [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 2,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\0c2b5ac594521f7bbb8ef863bbea221b.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:40:06+08:00 ] 61.50.106.246 /xm/yww
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "32" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='110' WHERE ( id = "88" ) [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 45,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\0c2b5ac594521f7bbb8ef863bbea221b.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:40:10+08:00 ] 61.50.106.246 /xm/jtlx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "54" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='15' WHERE ( id = "172" ) [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 19,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\0c2b5ac594521f7bbb8ef863bbea221b.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:40:15+08:00 ] 61.50.106.246 /xm/blqyd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "66" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='34' WHERE ( id = "169" ) [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 25,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\0c2b5ac594521f7bbb8ef863bbea221b.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015626s ]
+
+[ 2016-09-23T18:40:28+08:00 ] 61.50.106.246 /xm/slxcjz
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "45" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='13' WHERE ( id = "177" ) [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 3,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\0c2b5ac594521f7bbb8ef863bbea221b.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:40:37+08:00 ] 61.50.106.246 /xm/rds
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( id = "81" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "81" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "82" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "83" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "82" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "83" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:40:41+08:00 ] 61.50.106.246 /xm/botox
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( cid = "82" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='63' WHERE ( id = "111" ) [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 7,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\0c2b5ac594521f7bbb8ef863bbea221b.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:40:52+08:00 ] 61.50.106.246 /Home/Index/band_info/id/157.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( related = 1 ) LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` ORDER BY sort desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( id = "157" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "新闻动态" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `read_num`='455' WHERE ( id = "157" ) [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:40:56+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 25,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:41:10+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 25,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:41:31+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:44:07+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:44:08+08:00 ] 61.50.106.246 /Public/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:45:14+08:00 ] 61.50.106.246 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "项目系列" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_content` WHERE ( hot = 1 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` LIMIT 4   [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:45:15+08:00 ] 61.50.106.246 /Public/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:45:18+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 18,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:45:18+08:00 ] 61.50.106.246 /Public/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:45:56+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 21,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:45:57+08:00 ] 61.50.106.246 /Public/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:45:59+08:00 ] 61.50.106.246 /Home/Index/case_info.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0000s ]
+SQL: SELECT m.title,m.cid,m.related,c.id,c.abbob FROM sd_content m INNER JOIN sd_class as c on m.cid=c.id  WHERE ( related=1 ) LIMIT 15,6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_doctor` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_doctor` WHERE ( related = 1 ) ORDER BY sort desc LIMIT 5   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( related = 1 and id <> "10" ) ORDER BY sort desc LIMIT 3   [ RunTime:0.0156s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id = "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE ( id <> "10" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( class_name = "焕誉案例" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-23T18:46:00+08:00 ] 61.50.106.246 /Public/Home/js/jquery-1.10.2.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: class_info C:\www\hyuzx\Application\Runtime\Cache\Home\efa1d52ea06d0527c4ff1fc8c05556e9.php 第 5 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

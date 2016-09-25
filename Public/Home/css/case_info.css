@@ -309,7 +309,7 @@ a {
 
 .nav-wrap .nav-li .n-li .list .li-ul .nav-list-li .guide-li .f-l {
     float: left;
-
+    width: 100%;
 }
 
 .nav-wrap .nav-li .n-li .list .li-ul .nav-list-li .guide-li dl {
