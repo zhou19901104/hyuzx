@@ -187,7 +187,7 @@ class CaseController extends CommonController
             $up = new Upload($cfg);
             $result = $up->upload($_FILES);
             //遍历$z,对各个上传好的"相册"进行对应的处理
-            dump($result);
+            //dump($result);
 
             foreach ($result as $k => $v) {
                 //原图路径名

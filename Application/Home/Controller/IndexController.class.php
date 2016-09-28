@@ -42,29 +42,6 @@ class IndexController extends CommonController
    public function new_list()
    {
 
-//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-//
-//      for ($i = 0; $i < count($foot_list); $i++) {
-//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-//      }
-//
-//
-//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-//
-//      for ($i = 0; $i < count($class_list); $i++) {
-//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->find();
-//            }
-//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-//            }
-//         }
-//      }
-
-
       $id = I('get.id');
 
       $class_info = M('class')->where('id = "' . $id . '"')->find();
@@ -87,9 +64,6 @@ class IndexController extends CommonController
 //      echo 1;
 //      dump($class_info);die();
 
-//
-//      $this->assign('class_list', $class_list);
-//      $this->assign('foot_list', $foot_list);
       $this->assign('pp_class', $pp_class);
       $this->assign('class_info', $class_info);
       $this->display();
@@ -109,31 +83,6 @@ class IndexController extends CommonController
 
       $case_info = M('case')->order('sort desc')->find();
       $this->assign('case_info', $case_info);
-
-//      $foot_list = M('class')->where('pid = "12" and id <> "98"')->select();
-//      for ($i = 0; $i < count($foot_list); $i++) {
-//         $foot_list[$i]['zi_list'] = M('class')->where('pid = "' . $foot_list[$i]['id'] . '"')->select();
-//      }
-//      $this->assign('foot_list', $foot_list);
-//
-//      $class_list = M('class')->where('pid = 0')->order('sort desc')->select();
-//
-//      for ($i = 0; $i < count($class_list); $i++) {
-//         $class_list[$i]['p_class'] = M('class')->where('pid = "' . $class_list[$i]['id'] . '"')->select();
-//         for ($k = 0; $k < count($class_list[$i]['p_class']); $k++) {
-//            $class_list[$i]['p_class'][$k]['k_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['id'] . '"')->select();
-//            for ($l = 0; $l < count($class_list[$i]['p_class'][$k]['k_class']); $l++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$l]['tid'] = M('content')->where('cid = "' . $class_list[$i]['p_class'][$k]['k_class'][$l]['id'] . '"')->field('id')->find();
-//            }
-//            for ($c = 0; $c < count($class_list[$i]['p_class'][$k]['k_class']); $c++) {
-//               $class_list[$i]['p_class'][$k]['k_class'][$c]['c_class'] = M('class')->where('pid = "' . $class_list[$i]['p_class'][$k]['k_class'][$c]['id'] . '"')->select();
-//            }
-//         }
-//      }
-//      $this->assign('class_list', $class_list);
-
-
-
 
       $id = I('get.id');
       $info = M('content')->where('id = "' . $id . '"')->find();
@@ -183,6 +132,9 @@ class IndexController extends CommonController
 
       $this->assign('info', $info);
       $this->assign('related_list', $related_list);
+
+      //dump($info);die();
+
       $this->display();
    }
 

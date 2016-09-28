@@ -54,6 +54,8 @@ $(window).scroll(function(event) {
 				
 });
 
+
+
 /*banner图轮播*/
 var bawidth=$(window).width();
 		$('.box-wrap .box').css('width',''+bawidth+'px');
@@ -172,6 +174,11 @@ $('.guide-li').hover(function() {
 	$(this).siblings('.li-a').removeClass('sss');
 
 });
+
+
+
+
+
 
 /*焕誉项目轮播
 	$('.pro-list .prslide>li').hover(function() {

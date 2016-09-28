@@ -40,7 +40,8 @@
   <div class="ewm"></div>
   <ul class="flo-list">
     <li><a target='_blank' href="{:C('SHANG_WU')}"><img src="{:C('IMG_URL')}/zhuye_01.jpg" alt=""></a></li>
-    <li id="online_1"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_02.jpg" alt=""></a></li>
+   <!-- <li id="online_1"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_02.jpg" alt=""></a></li>-->
+    <li><a target='_blank' href="{:C('SHANG_WU')}"><img src="{:C('IMG_URL')}/zhuye_02.jpg" alt=""></a></li>
     <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_03.jpg" alt=""></a></li>
     <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_04.jpg" alt=""></a></li>
     <li class="top"><img src="{:C('IMG_URL')}/zhuye_05.jpg" alt=""></li>
@@ -178,7 +179,7 @@
         <volist name='p_list' id='p_l'>
           <if condition="$p_l['id'] neq 98">
             <li class="bd">
-              <img src="{:C('IMG_URL')}/p-{$key}.png" alt="">
+              <a href="{:C('SITE_URL')}/xm/{$p_l['abbob']}"><img src="{:C('IMG_URL')}/p-{$key}.png" alt=""></a>
               <p class="p-1">{$p_l.class_name}</p>
               <p class="p-2">{$p_l.class_e_name}</p>
               <div class="none block">
@@ -239,7 +240,7 @@
             <p class="name">{$d_list.name}/<span class="job">{$d_list.zhicheng}</span></p>
             <p class="lan">{$d_list.index_message}</p>
             <p class="p-3">{$d_list.jianjie}</p>
-            <p class="cy-tit">主打方向 Main Direction</p>
+            <p class="cy-tit">擅长术式 Good Operating</p>
 
             <ul class="cy-list">
               <volist name='d_list["jingli"]' id="j_list">
@@ -356,11 +357,11 @@
   <div class="huan-list">
     <div class="gallery">
       <ul class="hjslide ">
-        <li><a href="{:C('IMG_URL')}/hj-1-b.png"><img src="{:C('IMG_URL')}/hj-1.png" alt=""></a></li>
-        <li><a href="{:C('IMG_URL')}/hj-2-b.png"><img src="{:C('IMG_URL')}/hj-2.png" alt=""></a></li>
-        <li><a href="{:C('IMG_URL')}/hj-3-b.png"><img src="{:C('IMG_URL')}/hj-3.png" alt=""></a></li>
-        <li><a href="{:C('IMG_URL')}/hj-4-b.png"><img src="{:C('IMG_URL')}/hj-4.png" alt=""></a></li>
-        <li><a href="{:C('IMG_URL')}/hj-5-b.png"><img src="{:C('IMG_URL')}/hj-5.png" alt=""></a></li>
+        <li><img src="{:C('IMG_URL')}/hj-1.png" alt=""></li>
+        <li><img src="{:C('IMG_URL')}/hj-2.png" alt=""></li>
+        <li><img src="{:C('IMG_URL')}/hj-3.png" alt=""></li>
+        <li><img src="{:C('IMG_URL')}/hj-4.png" alt=""></li>
+        <li><img src="{:C('IMG_URL')}/hj-5.png" alt=""></li>
       </ul>
       <div class="clear"></div>
     </div>

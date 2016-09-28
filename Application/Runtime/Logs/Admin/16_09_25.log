@@ -1635,3 +1635,1732 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
 
+[ 2016-09-25T09:41:46+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Case/case_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`sort`,`jianyan`,`name` FROM `sd_case` ORDER BY sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T09:41:47+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Case/case_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`jianyan`,`name` FROM `sd_case` ORDER BY sort DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T09:41:49+08:00 ] 61.50.106.246 /Admin/Case/case_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T09:44:49+08:00 ] 180.153.205.252 /Admin/Case/case_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T09:58:10+08:00 ] 61.50.106.246 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000976s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000976s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T09:58:10+08:00 ] 61.50.106.246 /Admin/Login/verify?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T09:59:59+08:00 ] 61.50.106.246 /Admin/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0029s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:00:10+08:00 ] 61.50.106.246 /Admin/Login/verify?&0.10785343195311725
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:00:14+08:00 ] 61.50.106.246 /Admin/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:00:40+08:00 ] 61.50.106.246 /Admin/Login/verify?&0.37254867795854807
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:00:41+08:00 ] 61.50.106.246 /Admin/Login/verify?&0.37254867795854807&0.9622511228080839
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:00:43+08:00 ] 61.50.106.246 /Admin/Login/verify?&0.37254867795854807&0.9622511228080839&0.4655768033117056
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T10:00:45+08:00 ] 61.50.106.246 /Admin/Login/verify?&0.37254867795854807&0.9622511228080839&0.4655768033117056&0.6031173039227724
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:00:50+08:00 ] 61.50.106.246 /Admin/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0039s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:02:02+08:00 ] 101.226.68.215 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T10:02:20+08:00 ] 61.50.106.246 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T10:02:20+08:00 ] 61.50.106.246 /Admin/Login/verify?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:02:38+08:00 ] 61.50.106.246 /Admin/Login/verify?&0.790287600364536
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:02:44+08:00 ] 61.50.106.246 /Admin/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0029s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-09-25T10:02:44+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`title`,name
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=1 AND `level`<>1 AND id not in(103,107,100,97,110))
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: re C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 77 行.
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:02:44+08:00 ] 61.50.106.246 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 127 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:02:44+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=85 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=86 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:02:51+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=296 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 296 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=297 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:02:51+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Content/content_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 0,17   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:02:57+08:00 ] 61.50.106.246 /Admin/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:03:05+08:00 ] 61.50.106.246 /Admin/Login/verify?&0.37267630407586694
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T10:03:15+08:00 ] 61.50.106.246 /Admin/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0029s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-09-25T10:03:15+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`title`,name
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=1 AND `level`<>1 AND id not in(103,107,100,97,110))
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: re C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 77 行.
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T10:03:15+08:00 ] 61.50.106.246 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 127 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T10:03:15+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=85 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=86 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:10:57+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=296
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=296 )
+                    ORDER BY sort DESC [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 296 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=297 )
+                    ORDER BY sort DESC [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T10:10:57+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Content/content_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 0,17   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:11:01+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0039s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 17,17   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:11:03+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 34,17   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T10:11:05+08:00 ] 61.50.106.246 /Admin/Content/content_list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 17,17   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:11:07+08:00 ] 61.50.106.246 /Admin/Content/content_edit/id/121.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`cid`,`title`,`description`,`content`,`img_url`,`sort`,`hot` FROM `sd_content` WHERE `id` = 121 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`pid`,`class_name` FROM `sd_class`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: related C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 59 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+NOTIC: [8] Undefined index: p_class C:\www\hyuzx\Application\Runtime\Cache\Admin\fe76c1dcdf864f529917aa95bccd807b.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T10:11:15+08:00 ] 61.50.106.246 /Admin/Content/content_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `img_url`,`id` FROM `sd_content` WHERE `id` = 121 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `sd_content` SET `title`='脱唇毛',`description`='女人一张脸要干净白皙外重要的就是不能有毛绒绒的小胡子，颜色太深挡不了还会给人带来不太柔美的错觉，唇毛尴尬处处有，一笑起来就跟一撇小胡子一样的存在，让爱美的女生怎么安心?本来是颜色较浅且柔软的汗毛却因为皮质激素分泌过多而造成粗黑浓密的现象，不仅影响外表就连自信心都会受到打击。焕誉脱唇毛，永久无痛唇毛，帮你摆脱毛发困扰。',`cid`='121',`content`='<p>　　<strong><span style=\"color: rgb(255, 0, 0);\">项目介绍</span></strong></p><p>　　女人一张脸要干净白皙外重要的就是不能有毛绒绒的小胡子，颜色太深挡不了还会给人带来不太柔美的错觉，唇毛尴尬处处有，一笑起来就跟一撇小胡子一样的存在，让爱美的女生怎么安心?本来是颜色较浅且柔软的汗毛却因为皮质激素分泌过多而造成粗黑浓密的现象，不仅影响外表就连自信心都会受到打击。焕誉脱唇毛，永久无痛唇毛，帮你摆脱毛发困扰。</p><p style=\"white-space: normal;\"><span style=\"color: rgb(255, 0, 0);\"><strong>&nbsp; &nbsp; 案例对比图片</strong></span></p><p style=\"white-space: normal; text-align: center;\"><span style=\"color: rgb(255, 0, 0);\"><strong><img src=\"http://ab.hyuzx.com/ueditor/php/upload/image/20160919/1474281188833955.png\" title=\"1474281188833955.png\" alt=\"图片13.png\"/></strong></span></p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>技术介绍</strong></span></p><p>　　超冰半导体脱毛激光(SopranoICE)，创新结合脱毛金标准经典波长810nm及流行波长755nm，半导体激光双手具顶级配置，极致满足市场脱毛需求。超冰半导体激光脱毛采用低能量密度、10Hz超高平均激光功率，DP(Dual 
+Pulse)双脉冲技术和IN-Motion快速滑动技术、接触式冷却完美结合，通过逐步能量累计升温模式温和加热毛囊及周围干细胞，当毛囊部位的温度升高到45℃左右并维持一段时间，毛囊和毛囊周围生长干细胞就会被破坏凋亡，使其失去活性，实现无痛快速脱毛。</p><p style=\"text-align: center;\"><img src=\"/ueditor/php/upload/image/20160919/1474281174746128.png\" title=\"1474281174746128.png\" alt=\"图片10.png\"/></p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>技术的优势</strong></span></p><p>　　<strong>1、安全：</strong>亚洲人皮肤基底细胞层黑色素细胞含量中等，超冰脱毛能避免瞬时能量尖峰，降低色沉风险。</p><p>　　<strong>2、舒适：</strong>超冰脱毛延续了冰点SHR模式，配合-7℃同步接触式冷却，更舒适。</p><p>　　<strong>3、综合改善：</strong>超冰嫩肤脱毛能在脱毛的同时，改善毛孔粗大、皮肤松弛等皮肤问题。</p><p style=\"white-space: normal;\"><span style=\"color: rgb(255, 0, 0);\"><strong>&nbsp; &nbsp; 禁忌人群</strong></span></p><p style=\"white-space: normal;\">　　孕妇</p><p style=\"white-space: normal;\">　　接受过阳光暴晒者(3-4周内)</p><p style=\"white-space: normal;\">　　有开放伤口者</p><p style=\"white-space: normal;\">　　有感染伤口者</p><p style=\"white-space: normal;\">　　患有皮肤病者</p><p style=\"white-space: normal;\">　　癫痫患者</p><p style=\"white-space: normal;\">　　治疗前6个月服用过维A酸类药物</p><p style=\"white-space: normal;\">　　6周内使用过其他方式脱毛(如蜡脱)</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>术前注意事项</strong></span></p><p>　　1、不要晒太多的阳光，外出最好带上防晒霜。</p><p>　　2、必须彻底刮除要做手术区域的毛发。</p><p>　　3、面部和颈部需卸妆后才可以进行脱毛手术。</p><p>　　<span style=\"color: rgb(255, 0, 0);\"><strong>术后注意事项</strong></span></p><p>　　1、脱毛治疗时会有轻度的灼热和疼痛感，有少数人可能出现轻度红肿反应，通常约在1-2小时后，缓解和消失，因个体差异原因，极少数人会出现暂时性水肿。</p><p>　　2、术后24小时禁止游泳及蒸桑拿洗热水澡。治疗后当天宜用低温水清洁皮肤，同时建议不要用沐浴露，以减少刺激。</p><p>　　3、极少数人治疗后有可能出现暂时性色沉，不需处理，3--6个月可自行恢复。</p><p>　　4、注意保湿防晒，治疗部位涂抹保湿霜。</p><p>　　5、一周内不要用力挫擦治疗区，不要按摩治疗区。</p>',`sort`='0' WHERE `id` = 121 [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T10:11:16+08:00 ] 61.50.106.246 /Admin/Content/content_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\ContentModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\ContentModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_content` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `sd_content` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT d.id,d.cid,d.title,d.description,d.createtime FROM sd_content d ORDER BY d.id ASC LIMIT 0,17   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+NOTIC: [8] Undefined index: class_name C:\www\hyuzx\Application\Runtime\Cache\Admin\7ab0911c97506d088c999e05ff81032e.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T15:52:24+08:00 ] 61.50.106.246 /Admin/Case/case_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:54:23+08:00 ] 61.50.106.246 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:54:23+08:00 ] 61.50.106.246 /Admin/Login/verify?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:54:32+08:00 ] 61.50.106.246 /Admin/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:54:35+08:00 ] 61.50.106.246 /Admin/Login/verify?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:54:42+08:00 ] 61.50.106.246 /Admin/Login/checklogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_users` [ RunTime:0.0000s ]
+SQL: SELECT `uid`,`role_id`,`username`,`password`,`status`,`remark` FROM `sd_users` WHERE ( username='administrator' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-09-25T15:54:42+08:00 ] 61.50.106.246 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title`,name
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=1 AND `level`<>1 AND id not in(103,107,100,97,110))
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: re C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 77 行.
+NOTIC: [8] Undefined variable: sub_menu_html C:\www\hyuzx\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:54:42+08:00 ] 61.50.106.246 /Admin/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant gd_info - assumed 'gd_info' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 127 行.
+NOTIC: [8] Undefined index: SERVER_ADDR C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 134 行.
+NOTIC: [8] Use of undefined constant WEB_ROOT - assumed 'WEB_ROOT' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 137 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: ikphp C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 5 行.
+NOTIC: [8] Undefined variable: caches C:\www\hyuzx\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:54:42+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=85 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 85 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=86 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:55:05+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=70 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=71 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:55:05+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Node/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_node` ORDER BY sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:55:06+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=151
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=151 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 151 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=152 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:55:06+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: ssubmit C:\www\hyuzx\Application\Admin\Controller\UserController.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `sd_role` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_role` WHERE ( id in(1,6,9,2) )  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: order_by C:\www\hyuzx\Application\Admin\Controller\UserController.class.php 第 92 行.
+SQL: select *,sd_users.status as ustatus ,sd_users.uid as uuid
+               FROM sd_users
+               LEFT JOIN sd_role ON sd_users.role_id = sd_role.id WHERE sd_users.uid !='' [ RunTime:0.0000s ]
+SQL: select *,sd_users.status as ustatus ,sd_users.uid as uuid
+               FROM sd_users
+               LEFT JOIN sd_role ON sd_users.role_id = sd_role.id WHERE sd_users.uid !='' [ RunTime:0.0000s ]
+SQL: select *,sd_users.status as ustatus ,sd_users.uid as uuid
+               FROM sd_users
+               LEFT JOIN sd_role ON sd_users.role_id = sd_role.id WHERE sd_users.uid !='' limit 0,50 [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map C:\www\hyuzx\Application\Admin\Controller\UserController.class.php 第 103 行.
+NOTIC: [2] Invalid argument supplied for foreach() C:\www\hyuzx\Application\Admin\Controller\UserController.class.php 第 103 行.
+NOTIC: [8] Undefined variable: city C:\www\hyuzx\Application\Admin\Controller\UserController.class.php 第 107 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant hlbs - assumed 'hlbs' C:\www\hyuzx\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 54 行.
+NOTIC: [8] Use of undefined constant hlbs - assumed 'hlbs' C:\www\hyuzx\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 54 行.
+NOTIC: [8] Undefined variable: pageUrl C:\www\hyuzx\Application\Runtime\Cache\Admin\65e605872ed5d34210f5b33beb13f5a3.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-09-25T15:55:40+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=70
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=70 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=71 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:55:40+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Node/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_node` ORDER BY sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:55:42+08:00 ] 61.50.106.246 /Admin/Index/left/id/85.html?id=299
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_node` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=299 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+SQL: SELECT `title` FROM `sd_node` WHERE `id` = 299 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=300 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=340 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=343 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=346 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=348 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=350 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+SQL: SELECT `id`,`data`,`title`
+                    FROM `sd_node`
+                    WHERE ( `status` =1 AND `display`=2 AND `level` <>1 AND `pid`=353 )
+                    ORDER BY sort DESC [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 54 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' C:\www\hyuzx\Application\Admin\Controller\IndexController.class.php 第 65 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:55:42+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Setting/class_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_class` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = 0 ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "12" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "39" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "40" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "46" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "53" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "60" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "61" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "62" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "63" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "64" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "65" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "69" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "81" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "13" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "14" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "31" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "27" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "118" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "20" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "119" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "98" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "101" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "102" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "103" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "104" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "100" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "99" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "105" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "106" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "107" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "108" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "109" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "11" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "113" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "114" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "110" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_class` WHERE ( pid = "112" ) ORDER BY sort desc  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:55:44+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Case/case_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`jianyan`,`name` FROM `sd_case` ORDER BY sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:56:04+08:00 ] 61.50.106.246 /Admin/Case/case_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:57:56+08:00 ] 61.50.106.246 /Admin/Case/case_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: INSERT INTO `sd_case` (`name`,`jianyan`,`course`,`sort`,`img_url`,`min_url`) VALUES ('1234','水电费水电费地方','&lt;p&gt;实打实的发送到发送到发送到发送到&lt;/p&gt;','0','./Public/Uploads/case/2016-09-25/57e7838409cde.jpg','./Public/Uploads/case/2016-09-25/57e7838409cde.png') [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:57:57+08:00 ] 61.50.106.246 /Admin/Case/case_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`jianyan`,`name` FROM `sd_case` ORDER BY sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:57:58+08:00 ] 61.50.106.246 /Admin/Index/index.html?s=/Admin/Case/case_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`sort`,`jianyan`,`name` FROM `sd_case` ORDER BY sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:58:05+08:00 ] 101.226.99.195 /Admin/Index/index.html?s=/Admin/Node/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:58:06+08:00 ] 180.153.214.176 /Admin/Index/index.html?s=/Admin/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T15:58:09+08:00 ] 61.50.106.246 /Admin/Case/case_edit/id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_case` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T16:00:26+08:00 ] 61.50.106.246 /Admin/Case/case_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: validate C:\www\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto C:\www\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `id`,`img_url`,`list_url`,`min_url` FROM `sd_case` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given C:\www\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] unlink(0): No such file or directory C:\www\hyuzx\Application\Admin\Controller\CaseController.class.php 第 102 行.
+SQL: UPDATE `sd_case` SET `name`='1234',`jianyan`='水电费水电费地方',`sort`='0',`list_url`='./Public/Uploads/case/2016-09-25/57e7841a007b3.jpg' WHERE `id` = 20 [ RunTime:0.0078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-25T16:00:27+08:00 ] 61.50.106.246 /Admin/Case/case_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `id`,`sort`,`jianyan`,`name` FROM `sd_case` ORDER BY sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T16:00:29+08:00 ] 61.50.106.246 /Admin/Case/case_edit/id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `sd_case` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-09-25T16:01:09+08:00 ] 101.226.61.206 /Admin/Case/case_edit/id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T16:05:00+08:00 ] 61.50.106.246 /Admin/Case/case_del/id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+NOTIC: [2] Missing argument 2 for Admin\Model\CaseModel::_before_delete(), called in C:\www\ThinkPHP\Library\Think\Model.class.php on line 515 and defined C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0029s ]
+SQL: SELECT `img_url`,`list_url`,`min_url`,`id` FROM `sd_case` WHERE `id` = 20 LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `sd_case` WHERE `id` = 20 [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T16:05:01+08:00 ] 61.50.106.246 /Admin/Case/case_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\CaseModel::_before_delete() should be compatible with Think\Model::_before_delete($options) C:\www\hyuzx\Application\Admin\Model\CaseModel.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `sd_case` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`sort`,`jianyan`,`name` FROM `sd_case` ORDER BY sort DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-09-25T16:08:00+08:00 ] 101.226.33.216 /Admin/Case/case_del/id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+

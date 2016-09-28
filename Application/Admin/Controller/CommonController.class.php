@@ -60,6 +60,7 @@ class CommonController extends Controller
             $this->redirect('Home/Index/index');
          }
       }
+
    }
 
 }

@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{$class_info.class_name}</title>
+
+    <if condition="ACTION_NAME eq 'new_info'">
+        <title>{$info.title}</title>
+        <else />
+        <title>{$class_info.class_name}</title>
+    </if>
 
     <link rel="stylesheet" type="text/css" href="{:C('CSS_URL')}/style.css">
     <link rel="stylesheet"  href="{:C('CSS_URL')}/zoom.css" media="all" />
@@ -43,7 +48,8 @@
     <div class="ewm"></div>
     <ul class="flo-list">
         <li><a target='_blank' href="{:C('SHANG_WU')}"><img src="{:C('IMG_URL')}/zhuye_01.jpg" alt=""></a></li>
-        <li id="online_1"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_02.jpg" alt=""></a></li>
+        <!--<li id="online_1"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_02.jpg" alt=""></a></li>-->
+        <li><a target='_blank' href="{:C('SHANG_WU')}"><img src="{:C('IMG_URL')}/zhuye_02.jpg" alt=""></a></li>
         <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_03.jpg" alt=""></a></li>
         <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="{:C('IMG_URL')}/zhuye_04.jpg" alt=""></a></li>
         <li class="top"><img src="{:C('IMG_URL')}/zhuye_05.jpg" alt=""></li>

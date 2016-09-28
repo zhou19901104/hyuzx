@@ -17,6 +17,11 @@ class CommonController extends Controller
    {
       parent::__construct();
 
+      if (ismobile()) {
+         //设置默认默认主题为  跳转到手机端
+         header("location: http://m.hyuzx.com/");
+      }
+
       $class = M('Class');
 //     F('foot_list',null);
 //     F('class_list',null);

@@ -26,6 +26,8 @@ return array(
   'SHOW_PAGE_TRACE'=>false,
   'SPECIAL_USER' => 'administrator',
 
+
+
     'CSS_URL' => C('SITE_URL').'/Public/Admin/css',
     'JS_URL' => C('SITE_URL').'/Public/Admin/js',
     'IMG_URL' => C('SITE_URL').'/Public/Admin/images',

@@ -40,7 +40,8 @@
   <div class="ewm"></div>
   <ul class="flo-list">
     <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('IMG_URL');?>/zhuye_01.jpg" alt=""></a></li>
-    <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_02.jpg" alt=""></a></li>
+   <!-- <li id="online_1"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_02.jpg" alt=""></a></li>-->
+    <li><a target='_blank' href="<?php echo C('SHANG_WU');?>"><img src="<?php echo C('IMG_URL');?>/zhuye_02.jpg" alt=""></a></li>
     <li id="online_2" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_03.jpg" alt=""></a></li>
     <li class="vip" style="cursor: pointer;"><a href="javascript:void(0)"><img src="<?php echo C('IMG_URL');?>/zhuye_04.jpg" alt=""></a></li>
     <li class="top"><img src="<?php echo C('IMG_URL');?>/zhuye_05.jpg" alt=""></li>
@@ -148,7 +149,7 @@
     <div class="prolist" style="height: 520px;">
       <ul class="prslide">
         <?php if(is_array($p_list)): $i = 0; $__LIST__ = $p_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$p_l): $mod = ($i % 2 );++$i; if($p_l['id'] != 98): ?><li class="bd">
-              <img src="<?php echo C('IMG_URL');?>/p-<?php echo ($key); ?>.png" alt="">
+              <a href="<?php echo C('SITE_URL');?>/xm/<?php echo ($p_l['abbob']); ?>"><img src="<?php echo C('IMG_URL');?>/p-<?php echo ($key); ?>.png" alt=""></a>
               <p class="p-1"><?php echo ($p_l["class_name"]); ?></p>
               <p class="p-2"><?php echo ($p_l["class_e_name"]); ?></p>
               <div class="none block">
@@ -200,7 +201,7 @@
             <p class="name"><?php echo ($d_list["name"]); ?>/<span class="job"><?php echo ($d_list["zhicheng"]); ?></span></p>
             <p class="lan"><?php echo ($d_list["index_message"]); ?></p>
             <p class="p-3"><?php echo ($d_list["jianjie"]); ?></p>
-            <p class="cy-tit">主打方向 Main Direction</p>
+            <p class="cy-tit">擅长术式 Good Operating</p>
 
             <ul class="cy-list">
               <?php if(is_array($d_list["jingli"])): $i = 0; $__LIST__ = $d_list["jingli"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$j_list): $mod = ($i % 2 );++$i;?><li><?php echo ($j_list); ?></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -312,11 +313,11 @@
   <div class="huan-list">
     <div class="gallery">
       <ul class="hjslide ">
-        <li><a href="<?php echo C('IMG_URL');?>/hj-1-b.png"><img src="<?php echo C('IMG_URL');?>/hj-1.png" alt=""></a></li>
-        <li><a href="<?php echo C('IMG_URL');?>/hj-2-b.png"><img src="<?php echo C('IMG_URL');?>/hj-2.png" alt=""></a></li>
-        <li><a href="<?php echo C('IMG_URL');?>/hj-3-b.png"><img src="<?php echo C('IMG_URL');?>/hj-3.png" alt=""></a></li>
-        <li><a href="<?php echo C('IMG_URL');?>/hj-4-b.png"><img src="<?php echo C('IMG_URL');?>/hj-4.png" alt=""></a></li>
-        <li><a href="<?php echo C('IMG_URL');?>/hj-5-b.png"><img src="<?php echo C('IMG_URL');?>/hj-5.png" alt=""></a></li>
+        <li><img src="<?php echo C('IMG_URL');?>/hj-1.png" alt=""></li>
+        <li><img src="<?php echo C('IMG_URL');?>/hj-2.png" alt=""></li>
+        <li><img src="<?php echo C('IMG_URL');?>/hj-3.png" alt=""></li>
+        <li><img src="<?php echo C('IMG_URL');?>/hj-4.png" alt=""></li>
+        <li><img src="<?php echo C('IMG_URL');?>/hj-5.png" alt=""></li>
       </ul>
       <div class="clear"></div>
     </div>

@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?php echo ($class_info["class_name"]); ?></title>
+
+    <?php if(ACTION_NAME == 'new_info'): ?><title><?php echo ($info["title"]); ?></title>
+        <?php else: ?>
+        <title><?php echo ($class_info["class_name"]); ?></title><?php endif; ?>
 
     <link rel="stylesheet" type="text/css" href="<?php echo C('CSS_URL');?>/style.css">
     <link rel="stylesheet"  href="<?php echo C('CSS_URL');?>/zoom.css" media="all" />
