@@ -28,7 +28,7 @@ $('.online .close').click(function(event) {
  var aa=close;
 
 $('.vip').click(function(event) {
-	
+
 	if(aa==close){
 		$('.ewm').css('display', 'block');
 		aa=open;
@@ -38,6 +38,8 @@ $('.vip').click(function(event) {
 		aa=close;
 	}
 });
+
+
 
 /*导航漂浮*/
 $(window).scroll(function(event) {
@@ -51,7 +53,7 @@ $(window).scroll(function(event) {
 	} else{
 		$('.nav-wrap').css({'position':'','opacity':'1'});//当小于导航高度时去掉定位，透明度为1
 	};
-				
+
 });
 
 
@@ -63,34 +65,62 @@ var bawidth=$(window).width();
 		//步骤 1. 从角标开始 ，点击角标，发生变化
 		//         2. 角标动的同时，图片也相应的切换
 		//         3. 循环定时器
-		
+
 		var banum=10; //变量保存zindex的信息，每点击一次zindex层次加1
+
 		var bannerTimer=null; //存储定时器
+
 		var iNow=0;    //累加器    初始为0；
+
 		var balen=$('.box ul li').length;  //获取ul中li的个数
+
 		var baspeed1=1500;
 		var baspeed2=1000;
-		$('.slide-wrap li').eq(0).children('.b-box').children('.img-1').stop().animate({opacity: 1, top: '80px'}, baspeed1);
-		$('.slide-wrap li').eq(0).children('.b-box').children('.img-2').stop().animate({opacity: 1, bottom: '233px'}, baspeed1);
+
+		//打开页面显示情况
+		//$('.slide-wrap li').eq(0).children('.b-box').children('.img-1').stop().animate({opacity: 1, top: '80px'}, baspeed1);
+		//$('.slide-wrap li').eq(0).children('.b-box').children('.img-2').stop().animate({opacity: 1, bottom: '233px'}, baspeed1);
+		//$('.slide-wrap li').eq(0).children('.b-box').children('.img-4').stop().animate({opacity: 1, top: '70px'}, baspeed1);
+
+		$('.slide-wrap li').eq(0).children('.b-box').children('.img-5').stop().animate({opacity: 1, bottom: '40px'}, baspeed1);
+
 		$('.box ol li').click(function(event) {
 			banum++;
 			$(this).addClass('current').siblings('li').removeClass('current');
+
 			var baindex=$(this).index();
+
 			$('.box ul li').eq(baindex).css({
 				zIndex: banum
 			}).hide().fadeIn(baspeed2);
+
 			$('.box ul li').eq(baindex-1).children('.b-box').children('.img-1').stop().animate({opacity: 0, top: '0'}, baspeed2);
 			$('.box ul li').eq(baindex-1).children('.b-box').children('.img-2').stop().animate({opacity: 0, bottom: '0'}, baspeed2);
 			$('.box ul li').eq(baindex-1).children('.b-box').children('.img-3').stop().animate({opacity: 0, top: '-100px'}, baspeed2);
+
 			$('.box ul li').eq(baindex).children('.b-box').children('.img-1').stop().animate({opacity: 1, top: '80px'}, baspeed1);
 			$('.box ul li').eq(baindex).children('.b-box').children('.img-2').stop().animate({opacity: 1, bottom: '233px'}, baspeed1);
 			$('.box ul li').eq(baindex).children('.b-box').children('.img-3').stop().animate({opacity: 1, top: '70px'}, baspeed1);
+
 			$('.box ul li').eq(baindex+1).children('.b-box').children('.img-1').stop().animate({opacity: 0, top: '0'}, baspeed2);
 			$('.box ul li').eq(baindex+1).children('.b-box').children('.img-2').stop().animate({opacity: 0, bottom: '0'}, baspeed2);
 			$('.box ul li').eq(baindex+1).children('.b-box').children('.img-3').stop().animate({opacity: 0, top: '-100px'}, baspeed2);
+
+			//新增一张图
+			$('.box ul li').eq(baindex-1).children('.b-box').children('.img-4').stop().animate({opacity: 0, top: '-70px'}, baspeed2);
+			$('.box ul li').eq(baindex).children('.b-box').children('.img-4').stop().animate({opacity: 1, top: '70px'}, baspeed1);
+			$('.box ul li').eq(baindex+1).children('.b-box').children('.img-4').stop().animate({opacity: 0, top: '-70px'}, baspeed2);
+
+
+			$('.box ul li').eq(baindex-1).children('.b-box').children('.img-5').stop().animate({opacity: 0, bottom: '-150px'}, baspeed2);
+			$('.box ul li').eq(baindex).children('.b-box').children('.img-5').stop().animate({opacity: 1, bottom: '40px'}, baspeed1);
+			$('.box ul li').eq(baindex+1).children('.b-box').children('.img-5').stop().animate({opacity: 0, bottom: '-150px'}, baspeed2);
+
 			//点击完成之后，累加器从当前开始增加
 			iNow=baindex;
 		});
+
+
 
 		//自动播放
 		function baautoPlay(){
@@ -103,15 +133,28 @@ var bawidth=$(window).width();
 			$('.box ul li').eq(iNow).css({
 				zIndex: banum
 			}).hide().fadeIn(baspeed2);
+
 			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-1').stop().animate({opacity: 0, top: '0'}, baspeed2);
 			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-2').stop().animate({opacity: 0, bottom: '0'}, baspeed2);
 			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-3').stop().animate({opacity: 0, top: '-100px'}, baspeed2);
+
 			$('.box ul li').eq(iNow).children('.b-box').children('.img-1').stop().animate({opacity: 1, top: '80px'}, baspeed1);
 			$('.box ul li').eq(iNow).children('.b-box').children('.img-2').stop().animate({opacity: 1, bottom: '233px'}, baspeed1);
 			$('.box ul li').eq(iNow).children('.b-box').children('.img-3').stop().animate({opacity: 1, top: '70px'}, baspeed1);
+
 			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-1').stop().animate({opacity: 0, top: '0'}, baspeed2);
 			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-2').stop().animate({opacity: 0, bottom: '0'}, baspeed2);
 			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-3').stop().animate({opacity: 0, top: '-100px'}, baspeed2);
+
+
+			//新增一张图
+			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-4').stop().animate({opacity: 0, top: '-70px'}, baspeed2);
+			$('.box ul li').eq(iNow).children('.b-box').children('.img-4').stop().animate({opacity: 1, top: '70px'}, baspeed1);
+			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-4').stop().animate({opacity: 0, top: '-70px'}, baspeed2);
+
+			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-5').stop().animate({opacity: 0, bottom: '-150px'}, baspeed2);
+			$('.box ul li').eq(iNow).children('.b-box').children('.img-5').stop().animate({opacity: 1, bottom: '40px'}, baspeed1);
+			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-5').stop().animate({opacity: 0, bottom: '-150px'}, baspeed2);
 		}
 		bannerTimer=setInterval(baautoPlay,3000);
 
@@ -136,19 +179,36 @@ var bawidth=$(window).width();
 			$('.box ul li').eq(iNow).css({
 				zIndex: banum
 			}).hide().fadeIn(baspeed2);
+
 			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-1').stop().animate({opacity: 0, top: '0'}, baspeed2);
 			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-2').stop().animate({opacity: 0, bottom: '0'}, baspeed2);
 			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-3').stop().animate({opacity: 0, top: '-100px'}, baspeed2);
+
 			$('.box ul li').eq(iNow).children('.b-box').children('.img-1').stop().animate({opacity: 1, top: '80px'}, baspeed1);
 			$('.box ul li').eq(iNow).children('.b-box').children('.img-2').stop().animate({opacity: 1, bottom: '233px'}, baspeed1);
 			$('.box ul li').eq(iNow).children('.b-box').children('.img-3').stop().animate({opacity: 1, top: '70px'}, baspeed1);
+
 			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-1').stop().animate({opacity: 0, top: '0'}, baspeed2);
 			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-2').stop().animate({opacity: 0, bottom: '0'}, baspeed2);
 			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-3').stop().animate({opacity: 0, top: '-100px'}, baspeed2);
+
+			//新增一张图
+			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-4').stop().animate({opacity: 0, top: '-70px'}, baspeed2);
+			$('.box ul li').eq(iNow).children('.b-box').children('.img-4').stop().animate({opacity: 1, top: '70px'}, baspeed1);
+			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-4').stop().animate({opacity: 0, top: '-70px'}, baspeed2);
+
+			$('.box ul li').eq(iNow-1).children('.b-box').children('.img-5').stop().animate({opacity: 0, bottom: '-150px'}, baspeed2);
+			$('.box ul li').eq(iNow).children('.b-box').children('.img-5').stop().animate({opacity: 1, bottom: '40px'}, baspeed1);
+			$('.box ul li').eq(iNow+1).children('.b-box').children('.img-5').stop().animate({opacity: 0, bottom: '-150px'}, baspeed2);
 		});
+
 		$('.next').click(function(event) {
 			baautoPlay();
 		});
+
+
+
+
 
 /*导航划过显示*/
 $('.nav-li>li').hover(function() {
@@ -229,7 +289,7 @@ $('.guide-li').hover(function() {
 		    }else{
 				$('.prslide').stop().animate({left:(-prnum2*prwidth)}, prspeed);
 		    }
-		    	
+
 		};
 
 	$('.pro-list .s-s-r').click(function(event) {
@@ -285,7 +345,7 @@ $('.zjslide>li').mouseover(function(event) {
 		    }else{
 				$('.zjslide').stop().animate({left:(-zjnum2*zjwidth)}, zjspeed);
 		    }
-		    	
+
 		};
 
 	$('.r-b-wrap .s-s-r').click(function(event) {
@@ -294,13 +354,13 @@ $('.zjslide>li').mouseover(function(event) {
 	$('.r-b-wrap .s-s-l').click(function(event) {
 		zjbackPlay();
 	});
-	
+
 /*焕誉成功项目轮播*/
 
 /*复制轮播第一个li到最后*/
 	var tag=$('.calist .caslide li:first').clone();
 	$('.calist .caslide').append(tag);
-	
+
 	var cawidth=$('.caslide li').width();
 	var canum_li = $('.caslide li').length;
 		canum_li -= 1;//长度去掉页面显示的3个
@@ -314,7 +374,7 @@ $('.zjslide>li').mouseover(function(event) {
 		    if(canum2>canum_li){
 		    $('.caslide').css('left', 0);//如果ul轮播到最后一个  则ul瞬间跳到ul最前面
 		    $('.caslide').stop().animate({left:-cawidth}, speed1);//从第二个图片开始向左移动一个单位
-		   	canum2=1;//返回最开始 计数为1 相当于已经点击了一下 
+		   	canum2=1;//返回最开始 计数为1 相当于已经点击了一下
 		    }else{
 		    $('.caslide').stop().animate({left:(-canum2*cawidth)}, speed1);//根据计数器移动计数器个单位长度
 		};
@@ -329,7 +389,7 @@ $('.zjslide>li').mouseover(function(event) {
 	     	canum2=canum_li-1;
 	    }else{
 			$('.caslide').stop().animate({left:(-canum2*cawidth)}, speed1);
-	    }	    
+	    }
 	});
 
 
@@ -363,7 +423,7 @@ $('.zjslide>li').mouseover(function(event) {
 		    }else{
 				$('.hjslide').stop().animate({left:(-hjnum2*hjwidth)}, hjspeed);
 		    }
-		    	
+
 		};
 
 	$('.huan-list .s-s-r').click(function(event) {
@@ -383,7 +443,7 @@ $('.zjslide>li').mouseover(function(event) {
 	buildNav     : true,	// 显示指示器效果
 	navFormatter : function(){ return "&#9679;"; } // 指示器格式，为空即会显示123
 	});*/
-	
+
 /*视频轮播图*/
 
 var num=$('.show_off li img').height();
@@ -432,10 +492,10 @@ $('.w_r ul li').click(function(event) { //点击缩略图更换大图
 	as = $(this).find('img').attr('rel');
 	var mm;
 	mm = $(this).find('img').attr('src');
-	
+
 	$('.video-current').removeClass();
 	$(this).addClass('video-current');
-	
+
 	$('#videoa').html('<video id="dd" width="100%" height="100%" controls="controls" poster="'+mm+'"><source id="big_pic" src="'+as+'" type="video/mp4" /></video>');
 	//$('#big_pic').attr('src', as);
 });
@@ -482,7 +542,7 @@ var docwidth=$('.docslide li').width();
 		    }else{
 				$('.docslide').stop().animate({left:(-docnum2*docwidth)}, docspeed);
 		    }
-		    	
+
 		};
 
 	$('.doc-cont-wrap .s-s-r').click(function(event) {
@@ -506,15 +566,15 @@ $('.doc-cont-wrap .s-s-l').hover(function() {
 /*专家列表 新闻列表页tab栏*/
 	var newHight;
 	var docHight;
-	
+
 	window.onload = function () {
 		zjwidth=$('.zjslide li').width();
 		zjwidth+=24;
 		$('.new-list-wrap').css('height', $('.new-list').height());//新闻列表页获取的高度添加到大的div
 		$('.doctor-list-wrap').css('height', $('.doc-list').height());//专家列表页获取的高度添加到大的div
-		
+
 	}
-	
+
 $('.list-nav .new-list-li,.list-nav .doc-list-li').click(function(event) {
 	var dd=$(this).index();
 	newHight=$(this).children('.new-list').height();//当前的内容的高度

@@ -9,7 +9,11 @@
 namespace Home\Controller;
 
 
-class AnliController
-{
 
+class AnliController  extends CommonController
+{
+    public function sp_li()
+    {
+        $this->display();
+    }
 }

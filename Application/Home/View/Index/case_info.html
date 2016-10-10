@@ -98,26 +98,43 @@
 		</div>
 	</div>
 </div>
+
 <!-- banner -->
 <div class="box-wrap">
 	<div class="box">
 		<ul class="slide-wrap">
-			<li style="z-index:10;" class="b-l-1">
+			<a href="{:C('SITE_URL')}/hd/jqsl" target="_blank"><li class="b-l-4" style="z-index:10;">
+				<div class="b-box">
+					<img src="{:C('IMG_URL')}/b5-font.png" alt="" class="img-5">
+				</div>
+			</li></a>
+			<a href="{:C('SHANG_WU')}" target="_blank"><li class="b-l-3">
+				<div class="b-box">
+					<img src="{:C('IMG_URL')}/b3-font.png" alt="" class="img-4">
+				</div>
+			</li></a>
+
+			<a href="{:C('SHANG_WU')}" target="_blank"><li class="b-l-1">
 				<div class="b-box">
 					<img src="{:C('IMG_URL')}/b1-font1.png" alt="" class="img-1">
 					<img src="{:C('IMG_URL')}/b1-font2.png" alt="" class="img-2">
 				</div>
-			</li>
-			<li class="b-l-2">
+			</li></a>
+			<a href="{:C('SHANG_WU')}" target="_blank"> <li class="b-l-2">
 				<div class="b-box">
 					<img src="{:C('IMG_URL')}/b2-font.png" alt="" class="img-3">
 				</div>
-			</li>
+			</li></a>
+
 		</ul>
+
 		<ol>
 			<li class="current"></li>
 			<li></li>
+			<li></li>
+			<li></li>
 		</ol>
+
 		<span class="prev"></span>
 		<span class="next"></span>
 	</div>
@@ -170,26 +187,30 @@
 		</ul>
 	</div>
 	<!-- 相关案例 -->
-	<div class='con-list-wrap'>
-		<p class="tit ptit">相关推荐<span>related suggestion</span></p>
-		<ul class="diary-list">
+	<!--<div class='con-list-wrap'>-->
+		<!--<p class="tit ptit">相关推荐<span>related suggestion</span></p>-->
+		<!--<ul class="diary-list">-->
 
-			<volist name='anli_list' id="a_list">
-				<li class="bd">
-					<a href="{:U('Home/Index/case_info',array('id'=>$a_list['id']))}">
-						<img src="__PUBLIC__/Uploads/anli/list_{$a_list.list_url}" alt="">
-						<ul class="text">
-							<!--<li class="p-1"><img src="{:C('IMG_URL')}/case-min-1.png" alt=""></li>-->
-							<li class="p-1"><img src="__PUBLIC__/Uploads/anli/min_{$a_list.min_url}" alt=""></li>
-							<li class="p-2">
-								<p class="name">{$a_list.name}<span>They are here to find the youth and beauty</span></p>
-								<p class=" explain">{$a_list.jianyan}</p>
-							</li>
-						</ul>
-					</a>
-				</li>
-			</volist>
 
-		</ul>
-	</div>
+
+			<!--<volist name='anli_list' id="a_list">-->
+				<!--<li class="bd">-->
+					<!--<a href="{:U('Home/Index/case_info',array('id'=>$a_list['id']))}">-->
+						<!--<img src="__PUBLIC__/Uploads/anli/list_{$a_list.list_url}" alt="">-->
+						<!--<ul class="text">-->
+							<!--&lt;!&ndash;<li class="p-1"><img src="{:C('IMG_URL')}/case-min-1.png" alt=""></li>&ndash;&gt;-->
+							<!--<li class="p-1"><img src="__PUBLIC__/Uploads/anli/min_{$a_list.min_url}" alt=""></li>-->
+							<!--<li class="p-2">-->
+								<!--<p class="name">{$a_list.name}<span>They are here to find the youth and beauty</span></p>-->
+								<!--<p class=" explain">{$a_list.jianyan}</p>-->
+							<!--</li>-->
+						<!--</ul>-->
+					<!--</a>-->
+				<!--</li>-->
+			<!--</volist>-->
+
+
+
+		<!--</ul>-->
+	<!--</div>-->
 </div>

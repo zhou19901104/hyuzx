@@ -250,6 +250,7 @@ a {
 .nav-wrap .nav .nav-list {
     float: left;
     height: 80px;
+    margin-left:130px;
 }
 
 .nav-wrap .nav .nav-list .nav-li .n-li {
@@ -454,6 +455,16 @@ a {
     height: 640px;
     background: url(../images/b2-bg.png) center center no-repeat;
 }
+.box ul .b-l-3{
+    height: 640px;
+    background: url(../images/b3-bg.png) center center no-repeat;
+}
+.box ul .b-l-4{
+    height: 640px;
+    background: url(../images/b4-bg.jpg) center center no-repeat;
+}
+
+
 
 .box ol {
     position: absolute;
@@ -485,6 +496,7 @@ a {
     opacity: 0;
 }
 
+
 .box .slide-wrap .b-l-2 .b-box {
     width: 1200px;
     height: 640px;
@@ -496,6 +508,19 @@ a {
     position: absolute;
     top: -100px;
     left: 0;
+    opacity: 0;
+}
+
+.box .slide-wrap .b-l-3 .b-box .img-4 {
+    position: absolute;
+    top: -100px;
+    left: 42%;
+    opacity: 0;
+}
+.box .slide-wrap .b-l-4 .b-box .img-5 {
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
     opacity: 0;
 }
 
@@ -733,8 +758,8 @@ a {
 
 .doctor-wrap .doctor .zj-list .zj-l .big-img {
     position: absolute;
-    top: 23%;
-    left: 17%;
+    top: 20%;
+    left: 15%;
 }
 
 .doctor-wrap .doctor .zj-list .zj-r {
@@ -1031,7 +1056,7 @@ a {
 }
 
 .huan-wrap .huanjing .j-2 .j-2-l .j-text {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 30px;
     text-indent: 2em;
     margin-top: 6px;
@@ -1044,7 +1069,7 @@ a {
 }
 
 .huan-wrap .huanjing .j-1 .j-1-r .j-text {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 30px;
     text-indent: 2em;
     margin-top: 6px;
@@ -1320,7 +1345,7 @@ a {
 }
 
 .footer-wrap .footer .f-m .f-nav li .f-n-list dd a {
-    font-size: 13px;
+    font-size: 12px;
     color: #CDCDCD;
 }
 

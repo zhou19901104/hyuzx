@@ -89,6 +89,10 @@ return array(
 		'xm/ztzflx' => array('Index/new_info', array('id' => 59)),
 		'xm/ztzftc' => array('Index/new_info', array('id' => 127)),
 
+
+		'hd/jqsl' => array('Home/Anli/sp_li'),
+
+		   'SITE_URL' => 'http://www.hyuzx.com',
 	),
 
 

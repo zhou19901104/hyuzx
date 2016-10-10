@@ -126,26 +126,43 @@
 		</div>
 	</div>
 </div>
+
 <!-- banner -->
 <div class="box-wrap">
 	<div class="box">
 		<ul class="slide-wrap">
-			<li style="z-index:10;" class="b-l-1">
+			<a href="<?php echo C('SITE_URL');?>/hd/jqsl" target="_blank"><li class="b-l-4" style="z-index:10;">
+				<div class="b-box">
+					<img src="<?php echo C('IMG_URL');?>/b5-font.png" alt="" class="img-5">
+				</div>
+			</li></a>
+			<a href="<?php echo C('SHANG_WU');?>" target="_blank"><li class="b-l-3">
+				<div class="b-box">
+					<img src="<?php echo C('IMG_URL');?>/b3-font.png" alt="" class="img-4">
+				</div>
+			</li></a>
+
+			<a href="<?php echo C('SHANG_WU');?>" target="_blank"><li class="b-l-1">
 				<div class="b-box">
 					<img src="<?php echo C('IMG_URL');?>/b1-font1.png" alt="" class="img-1">
 					<img src="<?php echo C('IMG_URL');?>/b1-font2.png" alt="" class="img-2">
 				</div>
-			</li>
-			<li class="b-l-2">
+			</li></a>
+			<a href="<?php echo C('SHANG_WU');?>" target="_blank"> <li class="b-l-2">
 				<div class="b-box">
 					<img src="<?php echo C('IMG_URL');?>/b2-font.png" alt="" class="img-3">
 				</div>
-			</li>
+			</li></a>
+
 		</ul>
+
 		<ol>
 			<li class="current"></li>
 			<li></li>
+			<li></li>
+			<li></li>
 		</ol>
+
 		<span class="prev"></span>
 		<span class="next"></span>
 	</div>
@@ -174,10 +191,10 @@
 				<p class="tit-text"><span class="s-1">蜕变日记<strong>Metamorphosis diary</strong></span><span class="s-2"><a href="<?php echo U('Home/Index/case_info');?>">MORE&nbsp;></a></span></p>
 				<div class="bd">
 					<a href="<?php echo U('Home/Index/case_info',array('id'=>$case_info['id']));?>">
-						<p class="photo"><img src="/Public/Uploads/anli/list_<?php echo ($case_info["list_url"]); ?>" alt=""></p>
+						<p class="photo"><img src="<?php echo C('SITE_URL');?>/<?php echo (substr($case_info["list_url"],1)); ?>" alt=""></p>
 						<ul class="text">
 							<li class="p-2">
-								<p class="name"><?php echo ($case_info["name"]); ?><span>They are here to find the youth and beauty</span></p>
+								<p class="name"><?php echo ($case_info["name"]); ?><span>Change the goddess Only between a read</span></p>
 								<p class=" explain"><?php echo ($case_info["jianyan"]); ?></p>
 							</li>
 						</ul>

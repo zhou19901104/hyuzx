@@ -21,7 +21,7 @@ return array(
     'SHOW_PAGE_TRACE'  =>  false,//开启页面跟踪信息
 
     //配置站点绝对路径
-    'SITE_URL' => 'http://ab.hyuzx.com',
+    'SITE_URL' => 'http://hyuzx.com',
 
     'URL_MODEL'             =>  2,       // URL访问模式,可选参数0、1、2、3,代表以下四种模式
 

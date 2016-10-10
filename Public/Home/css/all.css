@@ -250,6 +250,7 @@ a {
 .nav-wrap .nav .nav-list {
     float: left;
     height: 80px;
+    margin-left:130px;
 }
 
 .nav-wrap .nav .nav-list .nav-li .n-li {
@@ -454,6 +455,14 @@ a {
     height: 640px;
     background: url(../images/b2-bg.png) center center no-repeat;
 }
+.box ul .b-l-3{
+    height: 640px;
+    background: url(../images/b3-bg.png) center center no-repeat;
+}
+.box ul .b-l-4{
+    height: 640px;
+    background: url(../images/b4-bg.jpg) center center no-repeat;
+}
 
 .box ol {
     position: absolute;
@@ -498,7 +507,18 @@ a {
     left: 0;
     opacity: 0;
 }
-
+.box .slide-wrap .b-l-3 .b-box .img-4 {
+    position: absolute;
+    top: -100px;
+    left: 42%;
+    opacity: 0;
+}
+.box .slide-wrap .b-l-4 .b-box .img-5 {
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    opacity: 0;
+}
 .box ol li {
     width: 15px;
     height: 15px;
@@ -511,6 +531,7 @@ a {
 .box ol .current {
     background-position: left;
 }
+
 
 .box .prev {
     width: 40px;
@@ -1321,7 +1342,7 @@ a {
 }
 
 .footer-wrap .footer .f-m .f-nav li .f-n-list dd a {
-    font-size: 13px;
+    font-size: 12px;
     color: #CDCDCD;
 }
 

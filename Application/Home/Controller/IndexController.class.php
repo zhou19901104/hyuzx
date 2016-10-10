@@ -74,8 +74,8 @@ class IndexController extends CommonController
     */
    public function band_info()
    {
-
-      $related_list = M('content')->where('related = 1')->limit(6)->select();
+      $s = rand(0, 50);
+      $related_list = M('content')->alias('m')->field('m.title,m.cid,m.related,c.id,c.abbob')->join('__CLASS__ as c on m.cid=c.id')->where('related=1')->limit($s, 6)->select();
       $this->assign('related_list', $related_list);
 
       $doctor_list = M('doctor')->limit(3)->order('sort desc')->select();
@@ -311,4 +311,11 @@ class IndexController extends CommonController
       $this->display('Empty/_empty');
    }
 
+   /**
+    * 专题页面
+    */
+   public function sp_li()
+   {
+      $this->display();
+   }
 }
