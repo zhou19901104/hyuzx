@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% 微软雅黑,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after {
+    content:".";
+    display:table;
+}
+.clearfix:after{clear:both;}
+
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}
+s,i,em{font-style:normal;text-decoration:none;}
+
+.col-red{color: #C81623!important;}
+.w{
+    width: 1200px;
+}
+
+.ming_eye{
+    height:950px;
+    padding-top: 75px;
+    margin:0 auto;
+    text-align: center;
+}
+.ming_top p{
+    font:600 40px/40px 微软雅黑;
+}
+
+.ming_top p i{
+    color: #000;
+}
+.ming_center{
+    height: 620px;
+    float: left;
+}
+.ming_center_1{
+    float: left;
+    width:292px;
+    height:549px;
+    margin:30px 0 0 80px;
+}
+.ming_up{
+    height: 251px;
+
+}
+
+.ming_up p{
+    font:600 40px/40px 微软雅黑;
+    margin: 30px 0 30px 0;
+}
+.ming_up p i {
+    color: #000;
+}
+.anli_tu{
+    height: 805px;
+    margin:0 auto;
+    text-align: center;
+}
+.anli_tu img{
+     margin-bottom:35px;
+ }
+.anli_tu p {
+    font:300 17px/17px "微软雅黑";
+    padding-bottom: 15px;
+}
+.dingzhi{
+    height: 1075px;
+    text-align: center;
+    background-color: #d2af67;
+}
+
+.dingzhi_top{
+    margin:0 auto;
+    height: 155px;
+}
+.dingzhi_top p{
+    padding: 30px 0 30px 0;
+    font:600 40px/40px "微软雅黑";
+    color: #fff;
+}
+.dingzhi_center{
+    height: 801px;
+    margin:0 auto;
+}
+.dingzhi_up{
+    margin:0 auto;
+padding: 15px 0 0 0 ;
+}
+.hexin{
+    height: 910px;
+    text-align: center;
+}
+.hexin_top{
+    height: 175px;
+    margin:0 auto;
+    padding-top: 45px;
+
+}
+.hexin_up{
+    height: 690px;
+    margin:0 auto;
+}
+
+.hexin_top p {
+    font:600 40px/40px "微软雅黑";
+    margin-bottom: 20px;
+}
+.hexin_top p i{
+   color: #d2af67;
+
+}
+.hexin_qie{
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

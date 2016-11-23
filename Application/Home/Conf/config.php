@@ -91,6 +91,7 @@ return array(
 
 
 		'hd/jqsl' => array('Home/Anli/sp_li'),
+		'hd/xz' => array('Home/Anli/xz'),
 
 		   'SITE_URL' => 'http://www.hyuzx.com',
 	),

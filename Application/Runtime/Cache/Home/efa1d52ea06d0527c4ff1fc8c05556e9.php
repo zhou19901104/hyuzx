@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="" />
+
+    <?php if(!empty($info["title"])): ?><meta name="keywords" content="北京整形，焕誉，<?php echo ($info["title"]); ?>" /><?php endif; ?>
 
     <?php if(ACTION_NAME == 'new_info'): ?><title><?php echo ($info["title"]); ?></title>
         <?php else: ?>

@@ -464,6 +464,11 @@ a {
     background: url(../images/b4-bg.jpg) center center no-repeat;
 }
 
+.box ul .b-l-6{
+    height: 640px;
+    background: url(../images/xz_banner.jpg) center center no-repeat;
+}
+
 .box ol {
     position: absolute;
     bottom: 40px;

@@ -24,7 +24,7 @@ return array(
   'RBAC_ACCESS_TABLE' => 'sd_access',
   'RBAC_NODE_TABLE' => 'sd_node',
   'SHOW_PAGE_TRACE'=>false,
-  'SPECIAL_USER' => 'administrator',
+  'SPECIAL_USER' => 'huanyuyiliao',
 
 
 

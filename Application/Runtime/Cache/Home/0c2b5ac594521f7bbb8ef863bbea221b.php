@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="" />
+
+    <?php if(!empty($info["title"])): ?><meta name="keywords" content="北京整形，焕誉，<?php echo ($info["title"]); ?>" /><?php endif; ?>
 
     <?php if(ACTION_NAME == 'new_info'): ?><title><?php echo ($info["title"]); ?></title>
         <?php else: ?>
@@ -131,17 +134,19 @@
 <div class="box-wrap">
 	<div class="box">
 		<ul class="slide-wrap">
-			<a href="<?php echo C('SITE_URL');?>/hd/jqsl" target="_blank"><li class="b-l-4" style="z-index:10;">
+<!-- 			<a href="<?php echo C('SITE_URL');?>/hd/jqsl" target="_blank"><li class="b-l-4" style="z-index:10;">
 				<div class="b-box">
 					<img src="<?php echo C('IMG_URL');?>/b5-font.png" alt="" class="img-5">
 				</div>
-			</li></a>
-			<a href="<?php echo C('SHANG_WU');?>" target="_blank"><li class="b-l-3">
+			</li></a> -->
+			<a href="<?php echo C('SHANG_WU');?>" target="_blank"><li class="b-l-3"  style="z-index:10;">
 				<div class="b-box">
 					<img src="<?php echo C('IMG_URL');?>/b3-font.png" alt="" class="img-4">
 				</div>
 			</li></a>
-
+<a href="<?php echo C('SITE_URL');?>/hd/xz" target="_blank">
+				<li class="b-l-6"></li>
+				</a>
 			<a href="<?php echo C('SHANG_WU');?>" target="_blank"><li class="b-l-1">
 				<div class="b-box">
 					<img src="<?php echo C('IMG_URL');?>/b1-font1.png" alt="" class="img-1">
@@ -159,6 +164,7 @@
 		<ol>
 			<li class="current"></li>
 			<li></li>
+<!-- 			<li></li> -->
 			<li></li>
 			<li></li>
 		</ol>

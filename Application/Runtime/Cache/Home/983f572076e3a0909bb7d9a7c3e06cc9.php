@@ -122,17 +122,21 @@
   <div class="box">
     <ul class="slide-wrap">
 
-      <a href="<?php echo C('SITE_URL');?>/hd/jqsl" target="_blank"><li class="b-l-4" style="z-index:10;">
-        <div class="b-box">
-          <img src="<?php echo C('IMG_URL');?>/b5-font.png" alt="" class="img-5">
-        </div>
-      </li></a>
+<!--       <a href="<?php echo C('SITE_URL');?>/hd/jqsl" target="_blank"><li class="b-l-4" style="z-index:10;">
+  <div class="b-box">
+    <img src="<?php echo C('IMG_URL');?>/b5-font.png" alt="" class="img-5">
+  </div>
+</li></a> -->
 
-      <a href="<?php echo C('SHANG_WU');?>" target="_blank"><li class="b-l-3">
+      <a href="<?php echo C('SHANG_WU');?>" target="_blank"><li class="b-l-3" style="z-index:10;">
         <div class="b-box">
           <img src="<?php echo C('IMG_URL');?>/b3-font.png" alt="" class="img-4">
         </div>
-      </li></a>
+      </li>
+      </a>
+      <a href="<?php echo C('SITE_URL');?>/hd/xz" target="_blank">
+        <li class="b-l-6"></li>
+        </a>
 
       <a href="<?php echo C('SHANG_WU');?>" target="_blank"><li class="b-l-1">
         <div class="b-box">
@@ -140,6 +144,7 @@
           <img src="<?php echo C('IMG_URL');?>/b1-font2.png" alt="" class="img-2">
         </div>
       </li></a>
+
       <a href="<?php echo C('SHANG_WU');?>" target="_blank"> <li class="b-l-2">
         <div class="b-box">
           <img src="<?php echo C('IMG_URL');?>/b2-font.png" alt="" class="img-3">
@@ -149,7 +154,9 @@
 
     <ol>
       <li class="current"></li>
+<!--       <li></li> -->
       <li></li>
+
       <li></li>
       <li></li>
     </ol>
@@ -250,7 +257,7 @@
 
 <li><a href="<?php echo C('SITE_URL');?>/Home/Index/doctor_info/id/13"><img src="<?php echo C('IMG_URL');?>/z-5.png"
                                                                       alt=""></a></li> -->
-                                                                    <?php if(is_array($doctor_list)): foreach($doctor_list as $key=>$val): ?><li><a href="<?php echo U('Index/doctor_info',array('id' => $val['id']));?>"><img src="<?php echo C('SITE_URL'); echo (substr($val["th_img_url"],1)); ?>" alt=""></a></li><?php endforeach; endif; ?>
+                                                                    <?php if(is_array($doctor_list)): foreach($doctor_list as $key=>$val): ?><li><a href="<?php echo U('Index/doctor_info',array('id' => $val['id']));?>" target="_blank"><img src="<?php echo C('SITE_URL'); echo (substr($val["th_img_url"],1)); ?>" alt=""></a></li><?php endforeach; endif; ?>
 
 
           </ul>
@@ -332,7 +339,7 @@
   <div class="huan-list">
     <div class="gallery">
       <ul class="hjslide ">
-        <!--<li><img src="<?php echo C('IMG_URL');?>/hj-1.png" alt=""></li>-->
+        <li><img src="<?php echo C('IMG_URL');?>/hj-1.png" alt=""></li>
         <li><img src="<?php echo C('IMG_URL');?>/hj-2.png" alt=""></li>
         <li><img src="<?php echo C('IMG_URL');?>/hj-3.png" alt=""></li>
         <li><img src="<?php echo C('IMG_URL');?>/hj-4.png" alt=""></li>
